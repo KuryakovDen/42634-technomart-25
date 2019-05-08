@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Денис Куряков](https://up.htmlacademy.ru/htmlcss/25/user/42634).
-* Наставник: `Владимир Шнайдер` (https://htmlacademy.ru/profile/id639951).
+* Наставник: [`Владимир Шнайдер`] (https://htmlacademy.ru/profile/id639951).
 
 ---
 
