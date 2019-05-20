@@ -57,12 +57,40 @@
       </nav>
     </header>
     <main>
-      <section class="modal-popup">
+      <section class="modal-cart visually-hidden">
         <img src="img/modal-check.svg" width="66" height="66" alt="Галочка подтверждения">
         <img src="img/modal-close.svg" width="21" height="21" alt="Кнопка закрытия">
         <b>Товар добавлен в корзину!</b>
         <button>ОФОРМИТЬ ЗАКАЗ</button>
         <button>ПРОДОЛЖИТЬ ПОКУПКИ</button>
+      </section>
+      <section class="modal-map-window visually-hidden">
+        <img src="img/map-close.svg" width="21" height="21" alt="Иконка закрытия карты">
+
+      </section>
+      <section class="modal-feedback-form visually-hidden">
+        <img src="img/form-close.svg" width="21" height="21" alt="Иконка закрытия формы">
+        <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="form-feedback-fullname">
+            <label for="fullname-customer">
+              Ваше имя:
+            </label> 
+            <input id="fullname-customer" type="text" name="fullname" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="form-feedback-email">
+            <label for="email-customer">
+              Ваш e-mail:
+            </label> 
+            <input id="email-customer" type="text" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p class="form-feedback-description">
+            <label for="feedback-site">
+              Текст письма:
+            </label> 
+            <input id="feedback-site" type="text" name="text-description" value="" placeholder="В свободной форме">
+          </p>
+          <button class="form-submit" type="submit">Отправить</button>
+        </form>
       </section>
       <div class="header-perforator">
         <h2>Перфораторы</h2>
