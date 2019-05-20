@@ -11,8 +11,9 @@
       </a>
       <div class="header-search">
         <img src="img/icon-search.svg" width="17" height="17" alt="Иконка поиска">
-        <a href="">Поиск:</a>
-        <!--There will be form!-->
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+          <input id="search-text" type="text" value="" placeholder="Поиск:"> 
+        </form>
       </div>
       <div class="header-bookmarks">
         <img src="img/icon-bookmark.svg" width="14" height="16" alt="Иконка закладки">
@@ -50,6 +51,17 @@
       </nav>
     </header>
     <main class="main-page">
+      <section class="registration-container visually-hidden">
+        <form class="registraion-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="">
+            <label for="registraion-fullname">
+              Ваше имя:
+            </label>
+            <input id="registraion-fullname visually-hidden" type="text" value="" name="reg-fullname" placeholder="Имя Фамилия">
+          </p>
+          <button class="registraion-submit" type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </section>
       <section class="technomart-info">
         <div class="about-company">
           <h3>КОМПАНИЯ «Техномарт»</h3>
