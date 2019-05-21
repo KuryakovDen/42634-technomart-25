@@ -10,9 +10,12 @@
         <img src="img/logo-technomart.svg" alt="Логотип" width="109" height="19">
       </a>
       <div class="header-search">
-        <img src="img/icon-search.svg" width="17" height="17" alt="Иконка поиска">
-        <a href="#">Поиск:</a>
-        <!--There will be form!-->
+        <label for="search-form">
+          <img src="" width="17" height="17" alt="Иконка поиска">
+        </label>
+        <form id="search-form" action="https://echo.htmlacademy.ru" method="POST">
+          <input id="search-text" type="text" placeholder="Поиск:"> 
+        </form>
       </div>
       <div class="header-bookmarks">
         <img src="img/icon-bookmark.svg" width="14" height="16" alt="Иконка закладки">
@@ -75,19 +78,19 @@
             <label for="fullname-customer">
               Ваше имя:
             </label> 
-            <input id="fullname-customer" type="text" name="fullname" value="" placeholder="Имя Фамилия">
+            <input id="fullname-customer" type="text" name="fullname" placeholder="Имя Фамилия">
           </p>
           <p class="form-feedback-email">
             <label for="email-customer">
               Ваш e-mail:
             </label> 
-            <input id="email-customer" type="text" name="email" value="" placeholder="email@example.com">
+            <input id="email-customer" type="text" name="email" placeholder="email@example.com">
           </p>
           <p class="form-feedback-description">
             <label for="feedback-site">
               Текст письма:
             </label> 
-            <input id="feedback-site" type="text" name="text-description" value="" placeholder="В свободной форме">
+            <input id="feedback-site" type="text" name="text-description" placeholder="В свободной форме">
           </p>
           <button class="form-submit" type="submit">Отправить</button>
         </form>
@@ -107,6 +110,10 @@
         </ul>
       </section>
       <section class="filters-container">
+        <form class="form-generators" action="https://echo.htmlacademy.ru" method="POST">
+         
+          <button>Показать</button>
+        </form>
           <div class="catalog-filters-generator-supply">
             <p>Производители:</p>
             <ul class="generator-list">
@@ -131,7 +138,6 @@
             </ul>
             <!--There will be form-->
           </div>
-          <button>Показать</button>
       </section>
       <section class="perforator-catalog">
         <div class="perforator-item">
@@ -259,7 +265,7 @@
     </main>
     <footer>
       <section class="footer-navigation">
-        <a href="index.html" class="catalog-footer-logo">
+        <a href="index.html" class="catalog-footer-logo" aria-label="Логотип Техномарта">
           <img src="img/logo-technomart.svg" alt="Логотип" width="138" height="23">
         </a>
         <div class="footer-address-telephone">
@@ -290,9 +296,9 @@
           <p>Все права защищены</p>
         </div>
         <div class="social-networks">
-          <a href="#"><img src="img/icon-vk.svg" width="26" height="15" alt="Логотип Вконтакте"></a>
-          <a href="#"><img src="img/icon-fb.svg" width="12" height="22" alt="Логотип Фейсбук"></a>
-          <a href="#"><img src="img/icon-insta.svg" width="21" height="21" alt="Логотип Инстаграмм"></a>
+          <a href="#" aria-label="Вконтакте"><img src="img/icon-vk.svg" width="26" height="15" alt="Логотип Вконтакте"></a>
+          <a href="#" aria-label="Facebook"><img src="img/icon-fb.svg" width="12" height="22" alt="Логотип Фейсбук"></a>
+          <a href="#" aria-label="Instagram"><img src="img/icon-insta.svg" width="21" height="21" alt="Логотип Инстаграмм"></a>
         </div>
         <div class="feedback-email">
           <b>Обратная связь:</b>
