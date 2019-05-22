@@ -36,15 +36,27 @@
       </nav>
     </header>
     <main class="main-page">
-      <section class="registration-container">
-        <form class="registraion-form" action="https://echo.htmlacademy.ru" method="POST">
-          <p class="">
-            <label for="registraion-fullname">
+      <section class="modal-feedback-form">
+        <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="form-feedback-fullname">
+            <label for="fullname-customer">
               Ваше имя:
-            </label>
-            <input id="registraion-fullname" type="text"  name="reg-fullname" placeholder="Имя Фамилия">
+            </label> 
+            <input id="fullname-customer" type="text" name="fullname" placeholder="Имя Фамилия">
           </p>
-          <button class="registraion-submit" type="submit">ОТПРАВИТЬ</button>
+          <p class="form-feedback-email">
+            <label for="email-customer">
+              Ваш e-mail:
+            </label> 
+            <input id="email-customer" type="text" name="email" placeholder="email@example.com">
+          </p>
+          <p class="form-feedback-description">
+            <label for="feedback-site">
+              Текст письма:
+            </label> 
+            <input id="feedback-site" type="text" name="text-description" placeholder="В свободной форме">
+          </p>
+          <button class="form-submit" type="submit">Отправить</button>
         </form>
       </section>
       <section class="menu-container">
