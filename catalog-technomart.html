@@ -69,28 +69,46 @@
       </section>
       <section class="filters-container">
         <form class="form-generators" action="https://echo.htmlacademy.ru" method="POST">
-         
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul class="generator-list">
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" id="item-bosch" checked>
+                <label for="item-bosch">BOSCH</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="interscole" id="item-interscole">
+                <label for="item-interscole">ИНТЕРСКОЛ</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="makita" id="item-makita" checked>
+                <label for="item-makita">MAKIta</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="item-dewalt">
+                <label for="item-dewalt">Dewalt</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="item-hitachi">
+                <label for="item-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul class="supply-list">
+              <li class="filter-option">
+                <input class="filter-input filter-input-radio" type="radio" name="product-group" value="battery-value" id="battery" checked>
+                <label for="battery">Аккумуляторные</label>
+              </li>
+              <li class="filter-option">
+                <input class="filter-input filter-input-radio" type="radio" name="product-group" value="network-value" id="network">
+                <label for="network">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
           <button>Показать</button>
         </form>
-          <div class="catalog-filters-generator-supply">
-            <p>Производители:</p>
-            <ul class="generator-list">
-              <li>BOSCH</li>
-              <li>ИНТЕРСКОЛ</li>
-              <li>MAKIta</li>
-              <li>Dewalt</li>
-              <li>Hitachi</li>
-            </ul>
-            <!--There will be form-->
-          </div>
-          <div class="catalog-filters">
-            <p>Питание:</p>
-            <ul class="supply-list">
-              <li>Аккумуляторные</li>
-              <li>Сетевые</li>
-            </ul>
-            <!--There will be form-->
-          </div>
       </section>
       <section class="perforator-catalog">
         <div class="perforator-item">
