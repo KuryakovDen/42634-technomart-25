@@ -10,25 +10,31 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="header-logo" href="index.html">
-        <img src="img/logo-technomart.svg" alt="Логотип" width="109" height="19">
-      </a>
-      <div class="header-search">
-        <form class="header-form" action="https://echo.htmlacademy.ru" method="POST">
-          <button class="search-button" aria-label="Кнопка поиска"></button>
-          <input id="search-form" type="text" placeholder="Поиск:"> 
-        </form>
-      </div>
-      <a href="#">Закладки: 0</a>
-      <a href="#">Корзина: 10</a>
-      <a href="#">Оформить заказ</a>
+      <section class="header-additional-navigation">
+        <div class="header-logo-container">
+          <a class="header-logo" href="index.html">
+            <img src="img/logo-technomart.svg" alt="Логотип" width="109" height="19">
+          </a>
+        </div>
+        <div class="header-search">
+          <form class="header-form" action="https://echo.htmlacademy.ru" method="POST">
+            <button class="search-button" aria-label="Кнопка поиска"></button>
+            <input id="search-form" type="text" placeholder="Поиск:"> 
+          </form>
+        </div>
+          <a href="#">Закладки: 0</a>
+          <a href="#">Корзина: 10</a>
+          <a href="#">Оформить заказ</a>
+      </section>
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <p class="header-phone">+7 (812) 555-05-55</p>
       <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <a href="#">Войти</a>
-      <a href="#">Регистрация</a>
+      <div class="entry-links">
+        <a href="#" class="entry">Войти</a>
+        <a href="#" class="entry">Регистрация</a>
+      </div>
       <nav class="main-navigation">
-        <ul>
+        <ul class="main-navigation-list">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog-technomart.html">Каталог</a></li>
@@ -175,7 +181,7 @@
           +7 (812) 555-05-55
         </address>
         <div class="navigation-usual">
-          <ul>
+          <ul class="navigation-usual-list">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Каталог</a></li>
@@ -184,7 +190,7 @@
           </ul>
         </div>
         <div class="navigation-equipment">
-          <ul>
+          <ul class="navigation-equipment-list">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Инструменты</a></li>
             <li><a href="#">Техника</a></li>

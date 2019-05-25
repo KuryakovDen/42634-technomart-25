@@ -1,15 +1,85 @@
+/* Для всех */
 
 body {
     margin: 0;
     padding: 0;
-
     font-size: 17px;
     line-height: 24px;
-    
-    color: #ffffff;
-    background-color: black;
+    font-family: "Cuprum", Arial, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url();
+}
+
+a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+
+.main-navigation-list, .navigation-usual-list,
+.navigation-equipment-list, .pagination-list {
+    list-style: none;
+}
+
+/* Шапка */
+
+header {
+    background-color: #f4f7f9;
+}
+
+.header-logo-container {
+    background-color: red;
+    width: 220px;
+    height: 47px;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    text-align: center;
+}
+
+.header-logo-container:hover {
+    background-color: #ca2c37;
+}
+
+.header-logo-container:active {
+    background-color: #ba2732;
+}
+
+
+.header-additional-navigation {
+    background-color: #293449;
+}
+
+.main-navigation {
+    background-color: #32425c;
+}
+
+.entry-links a{
+    color:#000000;
+    background-color:#f4f7f9;
+}
+
+/* Main */
+
+.advantages-container {
+    background-color: #f4f7f9;
+}
+
+.pagination-list {
+    background-color: #ee3643;
+}
+
+/* Footer*/
+
+.footer-navigation {
+    background-color: #32425c;
+}
+
+.footer-feedback {
+    background-color: #293449;
 }
 
 .upper {
     text-transform: uppercase;
 }
+
+/* Частные классы */
