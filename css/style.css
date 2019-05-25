@@ -16,11 +16,24 @@ a {
     text-decoration: none;
 }
 
+.white-text {
+    color:#ffffff;
+}
 
 .main-navigation-list, .navigation-usual-list,
 .navigation-equipment-list, .pagination-list {
     list-style: none;
 }
+
+.red-button {
+    width: 253px;
+    height: 38px;
+    background-color: #ee3643;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+
 
 /* Шапка */
 
@@ -36,11 +49,11 @@ header {
     text-align: center;
 }
 
-.header-logo-container:hover {
+.header-logo-container:hover, .red-button:hover {
     background-color: #ca2c37;
 }
 
-.header-logo-container:active {
+.header-logo-container:active, .red-button:active {
     background-color: #ba2732;
 }
 
@@ -68,6 +81,46 @@ header {
     background-color: #ee3643;
 }
 
+.buy-button {
+    width: 135px;
+    height: 38px;
+    background-color: #63a63e;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color: #5fbb2d;
+}
+
+.buy-button:active {
+    background-color: #518534;
+}
+
+.bookmarks-button {
+    background-color: white;
+    width: 135px;
+    height: 38px;
+    border: solid 3px #63a63e;
+    border-radius: 5px;
+}
+
+.bookmarks-button:hover {
+    border: solid 3px #32425c;
+}
+
+.bookmarks-button:active {
+    opacity: 0.3;
+    border: solid 3px #32425c;
+}
+
+.crossed-outed-price {
+    text-decoration: line-through;
+}
+
+.perforator-info {
+    background-color: #f4f7f9;
+}
+
 /* Footer*/
 
 .footer-navigation {
@@ -80,6 +133,10 @@ header {
 
 .upper {
     text-transform: uppercase;
+}
+
+.golden-color a{
+    color:#ffd180;
 }
 
 /* Частные классы */
