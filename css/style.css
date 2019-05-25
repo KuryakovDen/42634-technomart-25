@@ -16,6 +16,14 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .white-text {
     color:#ffffff;
 }
@@ -33,7 +41,9 @@ a {
     border-radius: 5px;
 }
 
-
+.ptsans {
+    font-family: "PTSans", Arial, sans-serif;
+}
 
 /* Шапка */
 
@@ -75,6 +85,11 @@ header {
 
 .advantages-container {
     background-color: #f4f7f9;
+}
+
+.header-perforator {
+    background-color: #f2f6f8;
+    padding: 32px 742px 34px 30px;
 }
 
 .pagination-list {
@@ -119,6 +134,11 @@ header {
 
 .perforator-info {
     background-color: #f4f7f9;
+    padding: 67px 132px 73px 130px;
+}
+
+.perforator-item {
+    
 }
 
 /* Footer*/
