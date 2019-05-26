@@ -63,6 +63,7 @@ input[type="text"]:focus {
 
 .ptsans {
     font-family: "PTSans", Arial, sans-serif;
+    font-size: 13px;
 }
 
 /* Шапка */
@@ -101,10 +102,19 @@ header {
     width: 270px;
     height: 45px;
     border: solid 3px #ffffff;
+    font-size: 21px;
 }
 
 .header-additional-navigation {
     background-color: #293449;
+}
+
+.popular-products-header h2,
+.popular-generators-header h2,
+.advantages-container h3,
+.about-company h3,
+.contacts h3 {
+    font-size: 30px;
 }
 
 .main-navigation-list a:hover {
@@ -152,6 +162,7 @@ header {
 .entry {
     color: black;
     background-color: yellow;
+    font-size: 21px;
 }
 
 /* Main */
@@ -291,6 +302,7 @@ header {
 
 .footer-feedback {
     background-color: #293449;
+    font-size: 16px;
 }
 
 .logo-footer {
@@ -305,6 +317,13 @@ header {
 .golden-color a{
     color:#ffd180;
 }
+
+
+.navigation-list,
+.footer-address-telephone {
+    font-size: 18px;
+}
+ 
 
 .navigation-list a:hover, 
 .navigation-list-about:hover {
