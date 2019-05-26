@@ -49,6 +49,18 @@ input[type="text"]:focus {
     border-radius: 5px;
 }
 
+.white-button {
+    width: 220px;
+    height: 38px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.red-text {
+    color: #ee3643;
+}
+
 .ptsans {
     font-family: "PTSans", Arial, sans-serif;
 }
@@ -57,6 +69,15 @@ input[type="text"]:focus {
 
 header {
     background-color: #f4f7f9;
+}
+
+.main-header h1 {
+    width: 196px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.44;
 }
 
 .header-logo-container {
@@ -76,6 +97,12 @@ header {
 }
 
 
+.header-phone {
+    width: 270px;
+    height: 45px;
+    border: solid 3px #ffffff;
+}
+
 .header-additional-navigation {
     background-color: #293449;
 }
@@ -86,6 +113,25 @@ header {
     box-shadow: inset 0px -5px 0 0 #293449;
     background-color: #32425c;
     
+}
+
+.private-office a{
+    width: 183px;
+    height: 20px;
+    font-family: Cuprum;
+    font-size: 21px;
+    line-height: 1;
+    color: #000000;
+}
+
+.private-office-link {
+    text-decoration: underline;
+    color: #32425c;
+    font-size: 16px;
+}
+
+.private-office li:first-child {
+    list-style-type: none;
 }
 
 .main-navigation-list a:active {
@@ -103,9 +149,9 @@ header {
     background-color: #32425c;
 }
 
-.entry-links a{
-    color:#000000;
-    background-color:#f4f7f9;
+.entry {
+    color: black;
+    background-color: yellow;
 }
 
 /* Main */
@@ -119,6 +165,29 @@ header {
     padding: 32px 742px 34px 30px;
 }
 
+.popular-generators-img li{
+    list-style-type: none;
+}
+
+.popular-generator-item {
+    width: 220px;
+    height: 145px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.popular-generator-item img {
+    vertical-align: bottom;
+}
+
+.popular-generator-item:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-generator-item:active {
+    box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
 /*
 .pagination-list {
     
@@ -142,6 +211,24 @@ header {
 
 .pagination-item-current a {
     background-color: #ee3643;
+}
+
+
+.breadcrumbs a {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: left;
+    color: #000000;
+}
+
+.breadcrumbs li {
+    list-style-type: none;
+}
+
+.breadcrumbs-current {
+    font-family: PTSans;
+    font-size: 13px;
 }
 
 .buy-button {
@@ -178,11 +265,18 @@ header {
 
 .crossed-outed-price {
     text-decoration: line-through;
+    color: #999999;
 }
 
 .perforator-info {
     background-color: #f4f7f9;
     padding: 67px 132px 73px 130px;
+}
+
+.index-link {
+    width: 220px;
+    height: 38px;
+    background-color: #ee3643;
 }
 
 .perforator-item {
@@ -197,6 +291,11 @@ header {
 
 .footer-feedback {
     background-color: #293449;
+}
+
+.logo-footer {
+    width: 220px;
+    height: 68px;
 }
 
 .upper {
