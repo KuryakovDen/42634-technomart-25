@@ -16,6 +16,14 @@ a {
     text-decoration: none;
 }
 
+input[type="text"]:hover {
+    border: solid 2px #b5b5b5;
+}
+
+input[type="text"]:focus {
+    border: solid 2px #ee3643;
+}
+
 .visually-hidden {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -72,6 +80,25 @@ header {
     background-color: #293449;
 }
 
+.main-navigation-list a:hover {
+    width: 940px;
+    height: 60px;
+    box-shadow: inset 0px -5px 0 0 #293449;
+    background-color: #32425c;
+    
+}
+
+.main-navigation-list a:active {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1;
+    width: 65px;
+    height: 12px;
+    opacity: 0.5;
+    font-size: 17px;
+    background-color: #1d2739;
+}
+
 .main-navigation {
     background-color: #32425c;
 }
@@ -92,7 +119,28 @@ header {
     padding: 32px 742px 34px 30px;
 }
 
+/*
 .pagination-list {
+    
+}
+*/
+
+.pagination-item a{
+    width: 38px;
+    height: 38px;
+    color: black;
+    border: solid 1px #e5e5e5;
+}
+
+.pagination-item a:hover {
+    border: solid 1px #bdc6ca;
+}
+
+.pagination-item a:active {
+    border: solid 1px #ee3643;
+}
+
+.pagination-item-current a {
     background-color: #ee3643;
 }
 
@@ -157,6 +205,30 @@ header {
 
 .golden-color a{
     color:#ffd180;
+}
+
+.navigation-list a:hover, 
+.navigation-list-about:hover {
+    text-decoration: underline;
+}
+
+.navigation-list a:active {
+    opacity: 0.5;
+}
+
+.navigation-list-about:active {
+    color: #ee3643;
+}
+
+.social-networks a {
+    width: 42px;
+    height: 42px;
+    background-color: #212a3a;
+}
+
+.social-networks a:hover, 
+.social-networks a:active{
+    background-color: #ee3643;
 }
 
 /* Частные классы */
