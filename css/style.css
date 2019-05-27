@@ -79,6 +79,7 @@ header {
     font-weight: normal;
     font-style: italic;
     line-height: 1.44;
+    text-align: left;
 }
 
 .header-logo-container {
@@ -97,12 +98,20 @@ header {
     background-color: #ba2732;
 }
 
+.header-address {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+    color: #32425c;
+}
 
 .header-phone {
     width: 270px;
     height: 45px;
     border: solid 3px #ffffff;
     font-size: 21px;
+    line-height: 1;
+    text-align: left;
 }
 
 .header-additional-navigation {
@@ -134,6 +143,17 @@ header {
     color: #000000;
 }
 
+/*
+.private-office a:hover {
+    
+}
+*/
+
+.private-office a:active {
+    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .private-office-link {
     text-decoration: underline;
     color: #32425c;
@@ -159,10 +179,28 @@ header {
     background-color: #32425c;
 }
 
-.entry {
+.entry-links a{
+    display: block;
+    background-color: #f4f7f9;
     color: black;
-    background-color: yellow;
     font-size: 21px;
+    line-height: 1;
+    text-align: center;
+}
+
+.entry-links a:hover,
+.private-office-list a:hover {
+    color: #ee3643;
+}
+
+.private-office-list a:active {
+    opacity: 0.3;
+    color: rgba(50, 66, 92, 0.3);
+}
+
+.entry-links a:active {
+    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 /* Main */
@@ -285,9 +323,13 @@ header {
 }
 
 .index-link {
+    display: block;
     width: 220px;
     height: 38px;
     background-color: #ee3643;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 5px;
 }
 
 .perforator-item {
