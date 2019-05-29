@@ -83,12 +83,14 @@ header {
 }
 
 .header-logo-container {
-    background-color: red;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
     width: 220px;
-    height: 47px;
+    height: auto;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     text-align: center;
 }
+
 
 .header-logo-container:hover, .red-button:hover {
     background-color: #ca2c37;
@@ -96,6 +98,11 @@ header {
 
 .header-logo-container:active, .red-button:active {
     background-color: #ba2732;
+}
+
+.header-logo {
+    display: block;
+    padding: 13px 56px 15px 55px;
 }
 
 .header-address {
@@ -118,21 +125,34 @@ header {
     background-color: #293449;
 }
 
+.menu-item {
+    display: block;
+    width: 150px;
+    height: auto;
+    line-height: auto;
+    text-align: center;
+    padding: 14px 28px 13px 44px;
+}
+
+.menu-item:hover {
+    background-color: #212a3a;
+}
+
+.menu-item:active {
+    background-color: #161d29;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .popular-products-header h2,
 .popular-generators-header h2,
 .advantages-container h3,
 .about-company h3,
 .contacts h3 {
     font-size: 30px;
+    text-align: left;
 }
 
-.main-navigation-list a:hover {
-    width: 940px;
-    height: 60px;
-    box-shadow: inset 0px -5px 0 0 #293449;
-    background-color: #32425c;
-    
-}
+
 
 .private-office a{
     width: 183px;
@@ -164,12 +184,25 @@ header {
     list-style-type: none;
 }
 
-.main-navigation-list a:active {
-    text-align: left;
+.main-navigation-link a{
+    display: block;
+    height: auto;
+    width: 127px;
+    line-height: auto;
+    background-color: #32425c;
+    text-align: center;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 22px;
+    padding-bottom: 26px;
+}
+
+.main-navigation-link a:hover {
+    background-color: #1d2739;
+}
+
+.main-navigation-link a:active {
     color: rgba(255, 255, 255, 0.5);
-    line-height: 1;
-    width: 65px;
-    height: 12px;
     opacity: 0.5;
     font-size: 17px;
     background-color: #1d2739;
@@ -178,6 +211,7 @@ header {
 .main-navigation {
     background-color: #32425c;
 }
+
 
 .entry-links a{
     display: block;
@@ -214,6 +248,15 @@ header {
     padding: 32px 742px 34px 30px;
 }
 
+.popular-header {
+    background-color: #f9f5f0;
+    line-height: 1;
+}
+
+.popular-header h2 {
+    color: #32425c;
+}
+
 .popular-generators-img li{
     list-style-type: none;
 }
@@ -237,11 +280,15 @@ header {
 .popular-generator-item:active {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
-/*
-.pagination-list {
-    
+
+
+.pagination-list a:hover{
+    border: solid 1px #bdc6ca;
 }
-*/
+
+.pagination-list a:active {
+    border: solid 1px #ee3643;
+}
 
 .pagination-item a{
     width: 38px;
@@ -329,11 +376,52 @@ header {
     background-color: #ee3643;
     text-align: center;
     line-height: 38px;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
-.perforator-item {
-    
+.make-order {
+    display: block;
+    width: 150px;
+    height: auto;
+    background-color:#63a63e;
+    line-height: 1.06;
+    text-align: center;
+    padding: 14px 22px 13px 20px;
+}
+
+.make-order:hover {
+    background-color: #5fbb2d;
+    color: white
+}
+
+.make-order:active {
+    background-color: #518534;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.page-link {
+    display: block;
+    width: 38px;
+    height: auto;
+    border: solid 1px #e5e5e5;
+    background-color: #ffffff;
+    line-height: auto;
+    text-align: center;
+    color: #000000;
+    font-size: 13px;
+    font-family: PTSans;
+}
+
+.page-link:last-child {
+    width: 140px;
+    text-transform: uppercase;
+}
+
+.perforator-item span{
+    font-family: PTSans;
+    font-weight: bold;
+    line-height: 1.06;
 }
 
 /* Footer*/
@@ -349,7 +437,12 @@ header {
 
 .logo-footer {
     width: 220px;
-    height: 68px;
+    height: auto;
+    margin-left: 130px;
+}
+
+.footer-logo {
+    padding: 20px 41px 25px 41px;
 }
 
 .upper {
@@ -384,6 +477,7 @@ header {
     width: 42px;
     height: 42px;
     background-color: #212a3a;
+    border-radius: 50%;
 }
 
 .social-networks a:hover, 
