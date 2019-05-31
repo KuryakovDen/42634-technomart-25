@@ -32,8 +32,8 @@ input[type="text"]:focus {
     margin: -1px;
 }
 
-.white-text {
-    color:#ffffff;
+.navigation-equipment a {
+    color:#ffd180;
 }
 
 .main-navigation-list, .navigation-usual-list,
@@ -57,8 +57,15 @@ input[type="text"]:focus {
     border-radius: 5px;
 }
 
-.red-text {
+.page-header-title {
     color: #ee3643;
+    width: 196px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 1.44;
+    text-align: left;
 }
 
 .ptsans {
@@ -72,37 +79,22 @@ header {
     background-color: #f4f7f9;
 }
 
-.main-header h1 {
-    width: 196px;
-    height: 60px;
-    font-size: 16px;
-    font-weight: normal;
-    font-style: italic;
-    line-height: 1.44;
-    text-align: left;
-}
-
-.header-logo-container {
+.header-logo {
+    display: block;
+    padding: 13px 56px 15px 55px;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     background-color: #ee3643;
     width: 220px;
     height: auto;
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     text-align: center;
 }
 
-
-.header-logo-container:hover, .red-button:hover {
+.header-logo:hover, .red-button:hover {
     background-color: #ca2c37;
 }
 
-.header-logo-container:active, .red-button:active {
+.header-logo:active, .red-button:active {
     background-color: #ba2732;
-}
-
-.header-logo {
-    display: block;
-    padding: 13px 56px 15px 55px;
 }
 
 .header-address {
@@ -119,6 +111,7 @@ header {
     font-size: 21px;
     line-height: 1;
     text-align: left;
+    color: #ee3643;
 }
 
 .header-additional-navigation {
@@ -332,6 +325,7 @@ header {
     height: 38px;
     background-color: #63a63e;
     border-radius: 5px;
+    color: #ffffff;
 }
 
 .buy-button:hover {
@@ -449,14 +443,10 @@ header {
     text-transform: uppercase;
 }
 
-.golden-color a{
-    color:#ffd180;
-}
-
-
 .navigation-list,
 .footer-address-telephone {
     font-size: 18px;
+    color: #ffffff;
 }
  
 
@@ -483,6 +473,26 @@ header {
 .social-networks a:hover, 
 .social-networks a:active{
     background-color: #ee3643;
+}
+
+.feedback-email {
+    color: #ffffff;
+}
+
+.feedback-email a {
+    color:#ffd180;
+}
+
+.copyright {
+    color: #ffffff;
+}
+
+.site-developer {
+    color: #ffffff;
+}
+
+.site-developer a {
+    color:#ffd180;
 }
 
 /* Частные классы */
