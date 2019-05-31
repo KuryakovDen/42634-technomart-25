@@ -39,7 +39,8 @@ input[type="text"]:focus {
 .main-navigation-list,
 .navigation-usual-list,
 .navigation-equipment-list,
-.pagination-list {
+.pagination-list,
+.main-menu-list {
     list-style: none;
 }
 
@@ -97,7 +98,7 @@ header {
 .header-address {
     font-size: 14px;
     line-height: 1.71;
-    text-align: center;
+    text-align: left;
     color: #32425c;
 }
 
@@ -195,11 +196,13 @@ header {
 
 .entry-links a{
     display: block;
-    background-color: #f4f7f9;
+    background-color: white;
     color: black;
     font-size: 21px;
     line-height: 1;
     text-align: center;
+    width: 121px;
+    margin: 10px;
 }
 
 .entry-links a:hover,
@@ -217,7 +220,41 @@ header {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.entry-links a:first-child {
+    padding: 14px 27px 15px 48px;
+    box-sizing: border-box;
+}
+
+.entry-links a:last-child {
+    padding: 14px 25px 11px 25px;
+}
+
 /* Main */
+
+.main-menu {
+    color: #ffffff;
+    width: 300px;
+}
+
+.main-menu:first-child {
+    background-color: #ffbf47;
+}
+
+.main-menu:nth-child(2) {
+    background-color: #3bbce3;
+}
+
+.main-menu:nth-child(3) {
+    background-color: #dc91d8;
+}
+
+.main-menu:nth-child(4) {
+    background-color: #8ed78f;
+}
+
+.main-menu:nth-child(5) {
+    background-color: #ffc047;
+}
 
 .advantages-container {
     background-color: #f4f7f9;
