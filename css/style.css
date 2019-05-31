@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 17px;
-    line-height: 24px;
+    line-height: auto;
     font-family: "Cuprum", Arial, sans-serif;
     color: #000000;
     background-color: #ffffff;
@@ -28,7 +28,7 @@ input[type="text"]:focus {
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
-    height: 1px;
+    height: auto;
     margin: -1px;
 }
 
@@ -36,41 +36,36 @@ input[type="text"]:focus {
     color:#ffd180;
 }
 
-.main-navigation-list, .navigation-usual-list,
-.navigation-equipment-list, .pagination-list {
+.main-navigation-list,
+.navigation-usual-list,
+.navigation-equipment-list,
+.pagination-list {
     list-style: none;
 }
 
-.red-button {
+.button {
     width: 253px;
-    height: 38px;
+    height: auto;
     background-color: #ee3643;
     color: #ffffff;
     border-radius: 5px;
 }
 
-.white-button {
+.button-buy,
+.button-show {
     width: 220px;
-    height: 38px;
     background-color: #ffffff;
     color: #000000;
-    border-radius: 5px;
 }
 
 .page-header-title {
     color: #ee3643;
     width: 196px;
-    height: 60px;
+    height: auto;
     font-size: 16px;
     font-weight: normal;
     font-style: italic;
-    line-height: 1.44;
     text-align: left;
-}
-
-.ptsans {
-    font-family: "PTSans", Arial, sans-serif;
-    font-size: 13px;
 }
 
 /* Шапка */
@@ -89,11 +84,13 @@ header {
     text-align: center;
 }
 
-.header-logo:hover, .red-button:hover {
+.header-logo:hover,
+.button:hover {
     background-color: #ca2c37;
 }
 
-.header-logo:active, .red-button:active {
+.header-logo:active,
+.button:active {
     background-color: #ba2732;
 }
 
@@ -106,10 +103,9 @@ header {
 
 .header-phone {
     width: 270px;
-    height: 45px;
+    height: auto;
     border: solid 3px #ffffff;
     font-size: 21px;
-    line-height: 1;
     text-align: left;
     color: #ee3643;
 }
@@ -122,7 +118,6 @@ header {
     display: block;
     width: 150px;
     height: auto;
-    line-height: auto;
     text-align: center;
     padding: 14px 28px 13px 44px;
 }
@@ -136,31 +131,24 @@ header {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.popular-products-header h2,
-.popular-generators-header h2,
-.advantages-container h3,
-.about-company h3,
-.contacts h3 {
+.title {
     font-size: 30px;
     text-align: left;
 }
 
-
+.advantages-container h3:first-child,
+.advantages-container p:first-child {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 13px;
+}
 
 .private-office a{
     width: 183px;
-    height: 20px;
+    height: auto;
     font-family: Cuprum;
     font-size: 21px;
-    line-height: 1;
     color: #000000;
 }
-
-/*
-.private-office a:hover {
-    
-}
-*/
 
 .private-office a:active {
     opacity: 0.3;
@@ -181,7 +169,6 @@ header {
     display: block;
     height: auto;
     width: 127px;
-    line-height: auto;
     background-color: #32425c;
     text-align: center;
     padding-left: 31px;
@@ -204,7 +191,6 @@ header {
 .main-navigation {
     background-color: #32425c;
 }
-
 
 .entry-links a{
     display: block;
@@ -256,7 +242,7 @@ header {
 
 .popular-generator-item {
     width: 220px;
-    height: 145px;
+    height: auto;
     border: solid 1px #eaeaea;
     background-color: #ffffff;
     text-align: center;
@@ -274,7 +260,6 @@ header {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
-
 .pagination-list a:hover{
     border: solid 1px #bdc6ca;
 }
@@ -285,7 +270,7 @@ header {
 
 .pagination-item a{
     width: 38px;
-    height: 38px;
+    height: auto;
     color: black;
     border: solid 1px #e5e5e5;
 }
@@ -301,7 +286,6 @@ header {
 .pagination-item-current a {
     background-color: #ee3643;
 }
-
 
 .breadcrumbs a {
     font-family: PTSans;
@@ -322,7 +306,7 @@ header {
 
 .buy-button {
     width: 135px;
-    height: 38px;
+    height: auto;
     background-color: #63a63e;
     border-radius: 5px;
     color: #ffffff;
@@ -339,7 +323,7 @@ header {
 .bookmarks-button {
     background-color: white;
     width: 135px;
-    height: 38px;
+    height: auto;
     border: solid 3px #63a63e;
     border-radius: 5px;
 }
@@ -366,10 +350,9 @@ header {
 .index-link {
     display: block;
     width: 220px;
-    height: 38px;
+    height: auto;
     background-color: #ee3643;
     text-align: center;
-    line-height: 38px;
     border-radius: 4px;
     font-size: 14px;
 }
@@ -379,7 +362,6 @@ header {
     width: 150px;
     height: auto;
     background-color:#63a63e;
-    line-height: 1.06;
     text-align: center;
     padding: 14px 22px 13px 20px;
 }
@@ -400,7 +382,6 @@ header {
     height: auto;
     border: solid 1px #e5e5e5;
     background-color: #ffffff;
-    line-height: auto;
     text-align: center;
     color: #000000;
     font-size: 13px;
@@ -465,7 +446,7 @@ header {
 
 .social-networks a {
     width: 42px;
-    height: 42px;
+    height: auto;
     background-color: #212a3a;
     border-radius: 50%;
 }
