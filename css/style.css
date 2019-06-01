@@ -1,0 +1,517 @@
+/* Для всех */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: auto;
+    font-family: "Cuprum", Arial, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url();
+}
+
+a {
+    color:#ffffff;
+    text-decoration: none;
+}
+
+input[type="text"]:hover {
+    border: solid 2px #b5b5b5;
+}
+
+input[type="text"]:focus {
+    border: solid 2px #ee3643;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: auto;
+    margin: -1px;
+}
+
+.navigation-equipment a {
+    color:#ffd180;
+}
+
+.main-navigation-list,
+.navigation-usual-list,
+.navigation-equipment-list,
+.pagination-list,
+.main-menu-list {
+    list-style: none;
+}
+
+.button {
+    width: 253px;
+    height: auto;
+    background-color: #ee3643;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.button-buy,
+.button-show {
+    width: 220px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.page-header-title {
+    color: #ee3643;
+    width: 196px;
+    height: auto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+}
+
+/* Шапка */
+
+header {
+    background-color: #f4f7f9;
+}
+
+.header-logo {
+    display: block;
+    padding: 13px 56px 15px 55px;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    background-color: #ee3643;
+    width: 220px;
+    height: auto;
+    text-align: center;
+}
+
+.header-logo:hover,
+.button:hover {
+    background-color: #ca2c37;
+}
+
+.header-logo:active,
+.button:active {
+    background-color: #ba2732;
+}
+
+.header-address {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    color: #32425c;
+}
+
+.header-phone {
+    width: 270px;
+    height: auto;
+    border: solid 3px #ffffff;
+    font-size: 21px;
+    text-align: left;
+    color: #ee3643;
+    text-align: center;
+}
+
+.header-additional-navigation {
+    background-color: #293449;
+}
+
+.menu-item {
+    display: block;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    padding: 14px 28px 13px 44px;
+}
+
+.menu-item:hover {
+    background-color: #212a3a;
+}
+
+.menu-item:active {
+    background-color: #161d29;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.title {
+    font-size: 30px;
+    text-align: left;
+}
+
+.advantages-container h3:first-child,
+.advantages-container p:first-child {
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 13px;
+}
+
+.private-office a{
+    width: 183px;
+    height: auto;
+    font-family: Cuprum;
+    font-size: 21px;
+    color: #000000;
+}
+
+.private-office a:active {
+    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.private-office-link {
+    text-decoration: underline;
+    color: #32425c;
+    font-size: 16px;
+}
+
+.private-office li:first-child {
+    list-style-type: none;
+}
+
+.main-navigation-link a{
+    display: block;
+    height: auto;
+    width: 127px;
+    background-color: #32425c;
+    text-align: center;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-top: 22px;
+    padding-bottom: 26px;
+}
+
+.main-navigation-link a:hover {
+    background-color: #1d2739;
+}
+
+.main-navigation-link a:active {
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    font-size: 17px;
+    background-color: #1d2739;
+}
+
+.main-navigation {
+    background-color: #32425c;
+}
+
+.entry-links a{
+    display: block;
+    background-color: white;
+    color: black;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+    width: 121px;
+    margin: 10px;
+}
+
+.entry-links a:hover,
+.private-office-list a:hover {
+    color: #ee3643;
+}
+
+.private-office-list a:active {
+    opacity: 0.3;
+    color: rgba(50, 66, 92, 0.3);
+}
+
+.entry-links a:active {
+    opacity: 0.3;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.entry-links a:first-child {
+    padding: 14px 27px 15px 48px;
+    box-sizing: border-box;
+}
+
+.entry-links a:last-child {
+    padding: 14px 25px 11px 25px;
+}
+
+/* Main */
+
+.main-menu {
+    color: #ffffff;
+    width: 300px;
+}
+
+.main-menu:first-child {
+    background-color: #ffbf47;
+}
+
+.main-menu:nth-child(2) {
+    background-color: #3bbce3;
+}
+
+.main-menu:nth-child(3) {
+    background-color: #dc91d8;
+}
+
+.main-menu:nth-child(4) {
+    background-color: #8ed78f;
+}
+
+.main-menu:nth-child(5) {
+    background-color: #ffc047;
+}
+
+.advantages-container {
+    background-color: #f4f7f9;
+}
+
+.header-perforator {
+    background-color: #f2f6f8;
+    padding: 32px 742px 34px 30px;
+}
+
+.popular-header {
+    background-color: #f9f5f0;
+    line-height: 1;
+}
+
+.popular-header h2 {
+    color: #32425c;
+}
+
+.popular-generators-img li{
+    list-style-type: none;
+}
+
+.popular-generator-item {
+    width: 220px;
+    height: auto;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.popular-generator-item img {
+    vertical-align: bottom;
+}
+
+.popular-generator-item:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-generator-item:active {
+    box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.pagination-list a:hover{
+    border: solid 1px #bdc6ca;
+}
+
+.pagination-list a:active {
+    border: solid 1px #ee3643;
+}
+
+.pagination-item a{
+    width: 38px;
+    height: auto;
+    color: black;
+    border: solid 1px #e5e5e5;
+}
+
+.pagination-item a:hover {
+    border: solid 1px #bdc6ca;
+}
+
+.pagination-item a:active {
+    border: solid 1px #ee3643;
+}
+
+.pagination-item-current a {
+    background-color: #ee3643;
+}
+
+.breadcrumbs a {
+    font-family: PTSans;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: left;
+    color: #000000;
+}
+
+.breadcrumbs li {
+    list-style-type: none;
+}
+
+.breadcrumbs-current {
+    font-family: PTSans;
+    font-size: 13px;
+}
+
+.buy-button {
+    width: 135px;
+    height: auto;
+    background-color: #63a63e;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.buy-button:hover {
+    background-color: #5fbb2d;
+}
+
+.buy-button:active {
+    background-color: #518534;
+}
+
+.bookmarks-button {
+    background-color: white;
+    width: 135px;
+    height: auto;
+    border: solid 3px #63a63e;
+    border-radius: 5px;
+}
+
+.bookmarks-button:hover {
+    border: solid 3px #32425c;
+}
+
+.bookmarks-button:active {
+    opacity: 0.3;
+    border: solid 3px #32425c;
+}
+
+.crossed-outed-price {
+    text-decoration: line-through;
+    color: #999999;
+}
+
+.perforator-info {
+    background-color: #f4f7f9;
+    padding: 67px 132px 73px 130px;
+}
+
+.index-link {
+    display: block;
+    width: 220px;
+    height: auto;
+    background-color: #ee3643;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.make-order {
+    display: block;
+    width: 150px;
+    height: auto;
+    background-color:#63a63e;
+    text-align: center;
+    padding: 14px 22px 13px 20px;
+}
+
+.make-order:hover {
+    background-color: #5fbb2d;
+    color: white
+}
+
+.make-order:active {
+    background-color: #518534;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.page-link {
+    display: block;
+    width: 38px;
+    height: auto;
+    border: solid 1px #e5e5e5;
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    font-size: 13px;
+    font-family: PTSans;
+}
+
+.page-link:last-child {
+    width: 140px;
+    text-transform: uppercase;
+}
+
+.perforator-item span{
+    font-family: PTSans;
+    font-weight: bold;
+    line-height: 1.06;
+}
+
+/* Footer*/
+
+.footer-navigation {
+    background-color: #32425c;
+}
+
+.footer-feedback {
+    background-color: #293449;
+    font-size: 16px;
+}
+
+.logo-footer {
+    width: 220px;
+    height: auto;
+    margin-left: 130px;
+}
+
+.footer-logo {
+    padding: 20px 41px 25px 41px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.navigation-list,
+.footer-address-telephone {
+    font-size: 18px;
+    color: #ffffff;
+}
+ 
+
+.navigation-list a:hover, 
+.navigation-list-about:hover {
+    text-decoration: underline;
+}
+
+.navigation-list a:active {
+    opacity: 0.5;
+}
+
+.navigation-list-about:active {
+    color: #ee3643;
+}
+
+.social-networks a {
+    width: 42px;
+    height: auto;
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+
+.social-networks a:hover, 
+.social-networks a:active{
+    background-color: #ee3643;
+}
+
+.feedback-email {
+    color: #ffffff;
+}
+
+.feedback-email a {
+    color:#ffd180;
+}
+
+.copyright {
+    color: #ffffff;
+}
+
+.site-developer {
+    color: #ffffff;
+}
+
+.site-developer a {
+    color:#ffd180;
+}
+
+/* Частные классы */

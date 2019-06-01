@@ -3,35 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="header-logo" href="index.html">
-        <img src="img/logo-technomart.svg" alt="Логотип" width="109" height="19">
-      </a>
-      <div class="header-search">
+      <section class="header-additional-navigation">
+        <a class="header-logo" href="index.html">
+          <img src="img/logo-technomart.svg" alt="Логотип" width="109" height="19">
+        </a>
         <form class="header-form" action="https://echo.htmlacademy.ru" method="POST">
-          <button class="search-button" aria-label="Кнопка поиска"></button>
-          <input id="search-form" type="text" placeholder="Поиск:"> 
+          <button class="search-button" aria-label="Кнопка поиска" type="submit"></button>
+          <input id="search-form" type="text" placeholder="Поиск:" name="search"> 
         </form>
-      </div>
-      <a href="#">Закладки: 0</a>
-      <a href="#">Корзина: 10</a>
-      <a href="#">Оформить заказ</a>
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <a href="#" class="menu-item">Закладки: 0</a>
+        <a href="#" class="menu-item">Корзина: 10</a>
+        <a href="#" class="make-order">Оформить заказ</a>
+      </section>
+      <h1 class="page-header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <p class="header-phone">+7 (812) 555-05-55</p>
       <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <a href="#">Войти</a>
-      <a href="#">Регистрация</a>
+      <div class="entry-links">
+        <a href="#" class="entry">Войти</a>
+        <a href="#" class="entry">Регистрация</a>
+      </div>
       <nav class="main-navigation">
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">Компания</a></li>
-          <li><a href="catalog-technomart.html">Каталог</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-link">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-navigation-link">
+            <a href="#">Компания</a>
+          </li>
+          <li class="main-navigation-link">
+            <a href="catalog-technomart.html">Каталог</a>
+          </li>
+          <li class="main-navigation-link">
+            <a href="#">Новости</a>
+          </li>
+          <li class="main-navigation-link">
+            <a href="#">Спецпредложения</a>
+          </li>
+          <li class="main-navigation-link">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="main-navigation-link">
+            <a href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -56,19 +76,49 @@
             </label> 
             <input id="feedback-site" type="text" name="text-description" placeholder="В свободной форме">
           </p>
-          <button class="form-submit" type="submit">Отправить</button>
+          <button class="form-submit button" type="submit">Отправить</button>
         </form>
       </section>
       <section class="menu-container">
         <h2 class="visually-hidden">Меню</h2>
-        <div class="menu">
-          <!--There will be menu!-->
-        </div>
+        <ul class="main-menu-list">
+          <li class="main-menu">
+            <a href="#" aria-label="materials">
+              <img src="img/icon-1.svg" width="44" height="65" alt="Карточка материалов">
+            </a>
+          </li>
+          <li class="main-menu">
+            <a href="#" aria-label="tool">
+              <img src="img/icon-2.svg" width="75" height="61" alt="Карточка инструментов">
+            </a>
+          </li>
+          <li class="main-menu">
+            <a href="#" aria-label="equipment">
+              <img src="img/icon-3.svg" width="78" height="62" alt="Карточка техники">
+            </a>
+          </li>
+          <li class="main-menu">
+            <a href="#" aria-label="sales">
+              <img src="img/icon-4.svg" width="59" height="72" alt="Карточка со скидками">
+            </a>
+          </li>
+          <li class="main-menu">
+            <a href="#" aria-label="delivery">
+              <img src="img/icon-5.svg" width="78" height="63" alt="Карточка с доставкой">
+            </a>
+          </li>
+          <li class="main-menu">
+            <a href="#" aria-label="slider">
+              
+            </a>
+          </li>
+          <a href="#" class="index-link">ОТКРЫТЬ КАТАЛОГ</a>
+        </ul>
       </section>
       <section class="popular-products">
-        <div class="popular-products-header">
-          <h2>Популярные товары:</h2>
-          <a href="#">все поПулярные товары</a>
+        <div class="popular-products-header popular-header">
+          <h2 class="upper title">Популярные товары:</h2>
+          <a href="#" class="upper index-link">все поПулярные товары</a>
         </div>
         <div class="popular-products-price">
           <ul class="popular-products-list">
@@ -76,20 +126,71 @@
           </ul>
         </div>
       </section>
-      <section class="popular-generators">
-        <div class="popular-generators-header">
-          <h2>Популярные ПРОИзводители:</h2>
-          <a href="#">все производители</a>
+      <section class="popular-generators-container">
+        <div class="popular-generators-header popular-header">
+          <h2 class="upper title">Популярные ПРОИзводители:</h2>
+          <a href="#" class="upper index-link">все производители</a>
         </div>
-        <div class="popular-generators-img">
-          <ul class="popular-generators-list">
-            <!--There will be li!-->
+        <div class="generators-img-container">
+          <ul class="popular-generators-img">
+            <li class="popular-generator-item">
+              <a href="#" aria-label="bosch-link">
+                <img src="img/bosch.png" width="126" height="37" alt="Логотип производителя">
+              </a>
+            </li>
+            <li class="popular-generator-item">
+              <a href="#" aria-label="makita-link" class="popular-generator-link">
+                <img src="img/makita.png" width="123" height="40" alt="Логотип производителя">
+              </a>
+            </li>
+            <li class="popular-generator-item">
+              <a href="#" aria-label="dewalt-link">
+                <img src="img/de-walt.png" width="146" height="44" alt="Логотип производителя">
+              </a>
+            </li>
+            <li class="popular-generator-item">
+              <a href="#" aria-label="interscole-link">
+                <img src="img/invalid-name.png" width="200" height="88" alt="Логотип производителя">
+              </a>
+            </li>
+            <li class="popular-generator-item">
+              <a href="#" aria-label="hitachi-link">
+                <img src="img/hitachi.png" width="169" height="31" alt="Логотип производителя">
+              </a>
+            </li>
+            <li class="popular-generator-item">
+              <a href="#" aria-label="lg-link">
+                <img src="img/lg.png" width="121" height="73" alt="Логотип производителя">
+              </a>
+            </li>
+            <li class="popular-generator-item">
+              <a href="#" aria-label="aeg-link">
+                <img src="img/aeg.png" width="151" height="96" alt="Логотип производителя">
+              </a>
+            </li>
+            <li class="popular-generator-item">
+              <a href="#" aria-label="metalbo-link">
+                <img src="img/metabo.png" width="204" height="69" alt="Логотип производителя">
+              </a>
+            </li>
           </ul>
         </div>
       </section>
+      <section class="advantages-container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <h3 class="upper title">Сервисы</h3>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <h3 class="upper title">Доставка</h3>
+        <p>Мы с удовольствием доставим ваш товар прямо 
+          к вашему подъезду совершенно бесплатно!
+          Ведь мы неплохо заработаем, 
+          поднимая его на ваш этаж!</p>
+        <!--There will be text!-->
+      </section>
       <section class="technomart-info">
         <div class="about-company">
-          <h3>КОМПАНИЯ «Техномарт»</h3>
+          <h3 class="upper title">КОМПАНИЯ «Техномарт»</h3>
           <p class="about-company-description-1">
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
@@ -104,40 +205,40 @@
             <li>Автотрейдинг</li>
             <li>ЖилДекорЭкспедиция</li>
           </ul>
-          <a href="#">Подробнее о компании</a>
+          <a href="#" class="index-link upper">Подробнее о компании</a>
         </div>
         <div class="contacts">
-          <h3>КОНТАКТЫ</h3>
+          <h3 class="upper title">КОНТАКТЫ</h3>
           <p>
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
-          <div class="map">
-            <!--There will be map!-->
-          </div>
-          <a href="#">Заблудились? Напишите нам!</a>
+          <img src="img/map.jpg" width="300" height="158" alt="Картинка карты">
+          <a href="#" class="index-link upper">Заблудились? Напишите нам!</a>
         </div>
       </section>
     </main>
     <footer>
       <section class="footer-navigation">
-        <a href="index.html" class="catalog-footer-logo">
-          <img src="img/logo-technomart.svg" alt="Логотип" width="138" height="23">
-        </a>
-        <address class="footer-address-telephone">
+        <div class="header-logo-container logo-footer">
+          <a class="header-logo footer-logo" href="index.html">
+            <img src="img/logo-technomart.svg" alt="Логотип" width="138" height="23">
+          </a>
+        </div>
+        <p class="footer-address-telephone">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55
-        </address>
+        </p>
         <div class="navigation-usual">
-          <ul>
+          <ul class="navigation-usual-list navigation-list">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="catalog-technomart.html">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </div>
         <div class="navigation-equipment">
-          <ul>
+          <ul class="navigation-equipment-list navigation-list">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Инструменты</a></li>
             <li><a href="#">Техника</a></li>
@@ -147,21 +248,21 @@
       </section>
       <section class="footer-feedback">
         <div class="copyright">
-          <p>&copy; 2010-2019 Компания "Техномарт"</p>
+          <p >&copy; 2010-2019 Компания "Техномарт"</p>
           <p>Все права защищены</p>
         </div>
         <div class="social-networks">
-          <a href="#" aria-label="Вконтакте"><img src="img/icon-vk.svg" width="26" height="15" alt="Логотип Вконтакте"></a>
-          <a href="#" aria-label="Facebook"><img src="img/icon-fb.svg" width="12" height="22" alt="Логотип Фейсбук"></a>
-          <a href="#" aria-label="Instagram"><img src="img/icon-insta.svg" width="21" height="21" alt="Логотип Инстаграмм"></a>
+          <a href="#" aria-label="Вконтакте" class="index-link"><img src="img/icon-vk.svg" width="26" height="15" alt="Логотип Вконтакте"></a>
+          <a href="#" aria-label="Facebook" class="index-link"><img src="img/icon-fb.svg" width="12" height="22" alt="Логотип Фейсбук"></a>
+          <a href="#" aria-label="Instagram" class="index-link"><img src="img/icon-insta.svg" width="21" height="21" alt="Логотип Инстаграмм"></a>
         </div>
         <div class="feedback-email">
-          <b>Обратная связь:</b>
-          <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <p>Обратная связь:</p>
+          <a href="mail@htmlacademy.ru" class="navigation-list-about">mail@htmlacademy.ru</a>
         </div>
         <div class="site-developer">
-          <b>Разработано —</b>
-          <a href="#">Сайт HTML Academy</a>
+          <p>Разработано —</p>
+          <a href="#" class="navigation-list-about">Сайт HTML Academy</a>
         </div>
       </section>
     </footer>
