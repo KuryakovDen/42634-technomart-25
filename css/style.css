@@ -308,7 +308,7 @@ header {
 
 .pagination-item a{
     width: 38px;
-    height: auto;
+    height: 38px;
     color: black;
     border: solid 1px #e5e5e5;
 }
@@ -388,7 +388,6 @@ header {
 .index-link {
     display: block;
     width: 220px;
-    height: auto;
     background-color: #ee3643;
     text-align: center;
     border-radius: 4px;
@@ -416,8 +415,7 @@ header {
 
 .page-link {
     display: block;
-    width: 38px;
-    height: auto;
+    width: 100%;
     border: solid 1px #e5e5e5;
     background-color: #ffffff;
     text-align: center;
@@ -426,9 +424,11 @@ header {
     font-family: PTSans;
 }
 
-.page-link:last-child {
+.page-link-next {
+    display: block;
     width: 140px;
     text-transform: uppercase;
+    background-color: #5fbb2d;
 }
 
 .perforator-item span{
@@ -441,6 +441,7 @@ header {
 
 .footer-navigation {
     background-color: #32425c;
+    margin-bottom: -18px;
 }
 
 .footer-feedback {
@@ -484,9 +485,21 @@ header {
 
 .social-networks a {
     width: 42px;
-    height: auto;
+    height:42px;
     background-color: #212a3a;
     border-radius: 50%;
+}
+
+.social-networks img:first-child {
+    margin: 13px 8px 14px 8px;
+}
+
+.social-networks img:nth-child(2) {
+    margin: 10px 15px 10px 15px;
+}
+
+.social-networks img:last-child {
+    margin: 10px 11px 11px 10px;
 }
 
 .social-networks a:hover, 
@@ -514,4 +527,9 @@ header {
     color:#ffd180;
 }
 
-/* Частные классы */
+/* Сеточные стили */
+
+.main-header {
+    min-height: 320px;
+    border:4px dotted blue;
+}
