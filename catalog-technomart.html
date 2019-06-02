@@ -19,14 +19,14 @@
           <input id="search-form" type="text" placeholder="Поиск:"> 
         </form>
         <a href="#" class="menu-item">Закладки: 0</a>
-        <a href="#" class="menu-item">Корзина: 10</a>
+        <a href="#" class="menu-item cart-checked">Корзина: 10</a>
         <a href="#" class="make-order">Оформить заказ</a>
       </section>
       <h1 class="page-header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <p class="header-phone">+7 (812) 555-05-55</p>
       <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       <div class="private-office">
-        <a href="#">Равшан Джамшутович</a>
+        <a href="#" class="private-office-name">Равшан Джамшутович</a>
         <ul class="private-office-list">
           <li><a href="#" class="private-office-link">Мои заказы</a></li>
           <li><a href="#" class="private-office-link">Личный кабинет</a></li>
@@ -59,17 +59,18 @@
       </nav>
     </header>
     <main>
-      <section class="modal-cart">
+      <section class="modal modal-cart">
         <img src="img/modal-check.svg" width="66" height="66" alt="Галочка подтверждения">
-        <img src="img/modal-close.svg" width="21" height="21" alt="Кнопка закрытия">
         <b>Товар добавлен в корзину!</b>
-        <button class="button">ОФОРМИТЬ ЗАКАЗ</button>
-        <button class="button button-buy">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+        <div class="modal-button-background">
+          <button class="button">ОФОРМИТЬ ЗАКАЗ</button>
+          <button class="button button-buy">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+        </div>
       </section>
       <section class="modal-map-window">
 
       </section>
-      <section class="modal-feedback-form">
+      <section class="modal modal-feedback-form">
         <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
           <p class="form-feedback-fullname">
             <label for="fullname-customer">
@@ -89,7 +90,9 @@
             </label> 
             <input id="feedback-site" type="text" name="text-description" placeholder="В свободной форме">
           </p>
-          <button class="form-submit-button upper button" type="submit">Отправить</button>
+          <div class="modal-submit-background">
+            <button class="form-submit-button upper button" type="submit">Отправить</button>
+          </div>
         </form>
       </section>
       <div class="header-perforator">
@@ -169,7 +172,7 @@
           <button class="perforator-bookmarks upper bookmarks-button">В закладки</button>
         </div>
         <div class="perforator-item">
-          <img src="img/new-flag.png" alt="Изображение NEW" width="60" height="59">
+          <img src="img/item3.jpg" alt="Изображение товара" width="218" height="170">
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <span class="discount-price">12500 Р.</span>
           <img src="img/item-button.png" width="141" height="38" alt="Декор-элемент цены">
@@ -190,7 +193,6 @@
           <button class="perforator-bookmarks upper bookmarks-button">В закладки</button>
         </div>
         <div class="perforator-item">
-          <img src="img/new-flag.png" alt="Изображение NEW" width="60" height="59">
           <img src="img/item2.jpg" alt="Изображение товара" width="218" height="170">
           <h3>Перфоратор BOSCH BFG 6000</h3>
           <span class="crossed-outed-price">30500 Р.</span>
@@ -212,7 +214,6 @@
           <button class="perforator-bookmarks upper bookmarks-button">В закладки</button>
         </div>
         <div class="perforator-item">
-          <img src="img/new-flag.png" alt="Изображение NEW" width="60" height="59">
           <img src="img/item1.jpg" alt="Изображение товара" width="218" height="170">
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <span class="crossed-outed-price">22500 Р.</span>

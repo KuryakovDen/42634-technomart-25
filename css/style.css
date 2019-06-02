@@ -36,6 +36,10 @@ input[type="text"]:focus {
     color:#ffd180;
 }
 
+.main-navigation-list {
+    display: flex;
+}
+
 .main-navigation-list,
 .navigation-usual-list,
 .navigation-equipment-list,
@@ -45,8 +49,9 @@ input[type="text"]:focus {
 }
 
 .button {
+    display: block;
     width: 253px;
-    height: auto;
+    line-height: 1.29;
     background-color: #ee3643;
     color: #ffffff;
     border-radius: 5px;
@@ -77,11 +82,9 @@ header {
 
 .header-logo {
     display: block;
-    padding: 13px 56px 15px 55px;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     background-color: #ee3643;
     width: 220px;
-    height: auto;
     text-align: center;
 }
 
@@ -113,6 +116,7 @@ header {
 }
 
 .header-additional-navigation {
+    display: flex;
     background-color: #293449;
 }
 
@@ -131,6 +135,10 @@ header {
 .menu-item:active {
     background-color: #161d29;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.cart-checked {
+    background-color: #ee3643;
 }
 
 .title {
@@ -194,6 +202,10 @@ header {
     background-color: #32425c;
 }
 
+.entry-links {
+    display: flex;
+}
+
 .entry-links a{
     display: block;
     background-color: white;
@@ -208,6 +220,12 @@ header {
 .entry-links a:hover,
 .private-office-list a:hover {
     color: #ee3643;
+}
+
+.private-office-name{
+    background-color: white;
+    text-align: center;
+    padding: 14px 69px 11px 47px;
 }
 
 .private-office-list a:active {
@@ -278,12 +296,18 @@ header {
     list-style-type: none;
 }
 
+.popular-generators-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .popular-generator-item {
     width: 220px;
-    height: auto;
+    height: 145px;
     border: solid 1px #eaeaea;
     background-color: #ffffff;
     text-align: center;
+    margin: 20px;
 }
 
 .popular-generator-item img {
@@ -325,6 +349,17 @@ header {
     background-color: #ee3643;
 }
 
+.perforator-catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs {
+    display: flex;
+    width: 255px;
+    justify-content: space-around;
+}
+
 .breadcrumbs a {
     font-family: PTSans;
     font-size: 13px;
@@ -343,8 +378,9 @@ header {
 }
 
 .buy-button {
+    display: block;
     width: 135px;
-    height: auto;
+    line-height: 1.29;
     background-color: #63a63e;
     border-radius: 5px;
     color: #ffffff;
@@ -388,6 +424,8 @@ header {
 .index-link {
     display: block;
     width: 220px;
+    height: 38px;
+    line-height: 38px;
     background-color: #ee3643;
     text-align: center;
     border-radius: 4px;
@@ -431,10 +469,54 @@ header {
     background-color: #5fbb2d;
 }
 
+.perforator-item {
+    border: 2px solid #000000;
+    margin: 5px;
+    width: 218px;
+}
+
 .perforator-item span{
     font-family: PTSans;
     font-weight: bold;
     line-height: 1.06;
+}
+
+.modal {
+    display: block;
+    width: 620px;
+    min-height: 282px;
+    background-color: #ffffff;
+    box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+    border-top: 7px solid #ee3643;
+    margin: 20px;
+}
+
+.modal-cart b {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.modal-button-background {
+    display: flex;
+    background-color: #f1f1f1;
+}
+
+.modal-button-background button {
+    width: 220px;
+}
+
+
+.modal-feedback-form {
+    min-height: 430px;
+}
+
+.modal-submit-background {
+    background-color: #f4f4f4;
+}
+
+.form-submit-button {
+    display: block;
+    margin: 37px 80px 37px 80px;
 }
 
 /* Footer*/
@@ -445,6 +527,8 @@ header {
 }
 
 .footer-feedback {
+    display: flex;
+    justify-content: space-around;
     background-color: #293449;
     font-size: 16px;
 }
@@ -468,7 +552,6 @@ header {
     font-size: 18px;
     color: #ffffff;
 }
- 
 
 .navigation-list a:hover, 
 .navigation-list-about:hover {
@@ -481,6 +564,10 @@ header {
 
 .navigation-list-about:active {
     color: #ee3643;
+}
+
+.social-networks {
+    display: flex;
 }
 
 .social-networks a {
@@ -532,4 +619,20 @@ header {
 .main-header {
     min-height: 320px;
     border:4px dotted blue;
+    margin-bottom: 59px;
+}
+
+.header-additional-navigation {
+    border:4px dotted firebrick;
+    margin: 5px;
+}
+
+.entry-links {
+    border:4px dotted mediumpurple;
+    margin: 5px;
+}
+
+.main-navigation {
+    border:4px dotted teal;
+    margin: 5px;
 }
