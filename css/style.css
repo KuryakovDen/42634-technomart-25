@@ -48,6 +48,13 @@ input[type="text"]:focus {
     list-style: none;
 }
 
+.navigation-usual-list,
+.navigation-equipment-list {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
 .button {
     display: block;
     width: 253px;
@@ -117,6 +124,7 @@ header {
 
 .header-additional-navigation {
     display: flex;
+    justify-content: center;
     background-color: #293449;
 }
 
@@ -254,6 +262,23 @@ header {
     width: 300px;
 }
 
+.main-menu h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.main-menu a {
+    display: block;
+    width: 135px;
+    height: 38px;
+    line-height: 38px;
+    opacity: 0.1;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
 .main-menu:first-child {
     background-color: #ffbf47;
 }
@@ -322,31 +347,18 @@ header {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
+.pagination-list {
+    display: flex;
+    width: 106px;
+    justify-content: space-between;
+}
+
 .pagination-list a:hover{
     border: solid 1px #bdc6ca;
 }
 
 .pagination-list a:active {
     border: solid 1px #ee3643;
-}
-
-.pagination-item a{
-    width: 38px;
-    height: 38px;
-    color: black;
-    border: solid 1px #e5e5e5;
-}
-
-.pagination-item a:hover {
-    border: solid 1px #bdc6ca;
-}
-
-.pagination-item a:active {
-    border: solid 1px #ee3643;
-}
-
-.pagination-item-current a {
-    background-color: #ee3643;
 }
 
 .perforator-catalog {
@@ -451,9 +463,22 @@ header {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.pagination-item a:hover {
+    border: solid 1px #bdc6ca;
+}
+
+.pagination-item a:active {
+    border: solid 1px #ee3643;
+}
+
+.pagination-item-current a {
+    background-color: #ee3643;
+}
+
 .page-link {
     display: block;
-    width: 100%;
+    width: 38px;
+    height: 38px;
     border: solid 1px #e5e5e5;
     background-color: #ffffff;
     text-align: center;
@@ -466,19 +491,25 @@ header {
     display: block;
     width: 140px;
     text-transform: uppercase;
-    background-color: #5fbb2d;
 }
 
 .perforator-item {
-    border: 2px solid #000000;
     margin: 5px;
     width: 218px;
+}
+
+.perforator-item:hover {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .perforator-item span{
     font-family: PTSans;
     font-weight: bold;
     line-height: 1.06;
+}
+
+.perforator-item h3 {
+    text-align: center;
 }
 
 .modal {
