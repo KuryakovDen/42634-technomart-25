@@ -345,6 +345,7 @@ input[type="text"]:focus {
 
 .popular-header h2 {
     color: #32425c;
+    margin-bottom: 21px;
 }
 
 .popular-header a {
@@ -388,6 +389,9 @@ input[type="text"]:focus {
 
 .popular-perforators {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-left: 131x;
 }
 
 .pagination-list {
@@ -537,7 +541,8 @@ input[type="text"]:focus {
 }
 
 .perforator-item {
-    margin: 5px;
+    margin-left: 22px;
+    margin-bottom: 21px;
     width: 218px;
 }
 
@@ -553,6 +558,10 @@ input[type="text"]:focus {
 
 .perforator-item h3 {
     text-align: center;
+}
+
+.technomart-info {
+    min-height: 535px;
 }
 
 .modal {
@@ -597,11 +606,13 @@ input[type="text"]:focus {
 /* Footer*/
 
 .footer-navigation {
+    min-height: 300px;
     background-color: #32425c;
     margin-bottom: -18px;
 }
 
 .footer-feedback {
+    min-height: 110px;
     display: flex;
     justify-content: space-around;
     background-color: #293449;
