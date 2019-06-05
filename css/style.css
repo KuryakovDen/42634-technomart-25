@@ -80,6 +80,12 @@ input[type="text"]:focus {
     color: #000000;
 }
 
+.page-header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .page-header-title {
     color: #ee3643;
     width: 196px;
@@ -706,11 +712,11 @@ body > *{
     background: rgba(255, 0, 0, 0.3)
 }
 
-/*
+
 body > * > * {
     background: rgba(255, 255, 0, 0.3)
 }
-
+/*
 body > * > * > * {
     background: rgba(0, 0, 255, 0.3)
 }
