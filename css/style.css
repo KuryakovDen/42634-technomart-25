@@ -38,6 +38,8 @@ input[type="text"]:focus {
 
 .main-navigation-list {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .main-navigation-list,
@@ -46,6 +48,13 @@ input[type="text"]:focus {
 .pagination-list,
 .main-menu-list {
     list-style: none;
+}
+
+.main-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .navigation-usual-list,
@@ -83,7 +92,8 @@ input[type="text"]:focus {
 
 /* Шапка */
 
-header {
+.main-header {
+    min-height: 320px;
     background-color: #f4f7f9;
 }
 
@@ -125,7 +135,10 @@ header {
 .header-additional-navigation {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background-color: #293449;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .menu-item {
@@ -183,6 +196,11 @@ header {
     list-style-type: none;
 }
 
+.main-navigation {
+    background-color: #32425c;
+    margin-bottom: 60px;
+}
+
 .main-navigation-link a{
     display: block;
     height: auto;
@@ -206,10 +224,6 @@ header {
     background-color: #1d2739;
 }
 
-.main-navigation {
-    background-color: #32425c;
-}
-
 .entry-links {
     display: flex;
 }
@@ -223,6 +237,10 @@ header {
     text-align: center;
     width: 121px;
     margin: 10px;
+}
+
+.main-page {
+    min-height: 1120px;
 }
 
 .entry-links a:hover,
@@ -257,18 +275,22 @@ header {
 
 /* Main */
 
-.main-menu {
+.main-menu-item {
     color: #ffffff;
     width: 300px;
 }
 
-.main-menu h3 {
+.main-menu-item h3:last-child {
+    color:#000000;
+}
+
+.main-menu-item h3 {
     font-size: 24px;
     font-weight: bold;
     text-align: left;
 }
 
-.main-menu a {
+.main-menu-item a {
     display: block;
     width: 135px;
     height: 38px;
@@ -279,27 +301,32 @@ header {
     text-align: center;
 }
 
-.main-menu:first-child {
+.main-menu-item:first-child {
     background-color: #ffbf47;
 }
 
-.main-menu:nth-child(2) {
+.main-menu-item:nth-child(2) {
     background-color: #3bbce3;
 }
 
-.main-menu:nth-child(3) {
+.main-menu-item:nth-child(3) {
     background-color: #dc91d8;
 }
 
-.main-menu:nth-child(4) {
+.main-menu-item:nth-child(4) {
     background-color: #8ed78f;
 }
 
-.main-menu:nth-child(5) {
+.main-menu-item:nth-child(5) {
     background-color: #ffc047;
 }
 
+.slider-item {
+    margin-bottom: 53px;
+}
+
 .advantages-container {
+    min-height: 522px;
     background-color: #f4f7f9;
 }
 
@@ -309,12 +336,19 @@ header {
 }
 
 .popular-header {
+    display: flex;
+    justify-content: space-between;
     background-color: #f9f5f0;
     line-height: 1;
+    min-height: 90px;
 }
 
 .popular-header h2 {
     color: #32425c;
+}
+
+.popular-header a {
+    align-items: center;
 }
 
 .popular-generators-img li{
@@ -345,6 +379,15 @@ header {
 
 .popular-generator-item:active {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-generator-link {
+    width: 100%;
+    height: 100%;
+}
+
+.popular-perforators {
+    display: flex;
 }
 
 .pagination-list {
@@ -538,6 +581,7 @@ header {
 
 
 .modal-feedback-form {
+    display:none;
     min-height: 430px;
 }
 
@@ -645,25 +689,28 @@ header {
     color:#ffd180;
 }
 
-/* Сеточные стили */
+/* Временно */
 
-.main-header {
-    min-height: 320px;
-    border:4px dotted blue;
-    margin-bottom: 59px;
+body > *{
+    background: rgba(255, 0, 0, 0.3)
 }
 
-.header-additional-navigation {
-    border:4px dotted firebrick;
-    margin: 5px;
+/*
+body > * > * {
+    background: rgba(255, 255, 0, 0.3)
 }
 
-.entry-links {
-    border:4px dotted mediumpurple;
-    margin: 5px;
+body > * > * > * {
+    background: rgba(0, 0, 255, 0.3)
 }
 
-.main-navigation {
-    border:4px dotted teal;
-    margin: 5px;
+body > * > * > *> * {
+    background: rgba(0, 255, 255, 0.3)
 }
+*/
+
+/* */
+
+
+    
+   
