@@ -204,7 +204,6 @@ input[type="text"]:focus {
 
 .main-navigation {
     background-color: #32425c;
-    margin-bottom: 60px;
 }
 
 .main-navigation-link a{
@@ -305,6 +304,14 @@ input[type="text"]:focus {
     background-color: #000000;
     color: #ffffff;
     text-align: center;
+}
+
+.main-menu-item a:hover {
+    opacity: 0.2;
+}
+
+.main-menu-item a:active {
+    opacity: 0.3;
 }
 
 .main-menu-item:first-child {
@@ -549,7 +556,7 @@ input[type="text"]:focus {
 .perforator-item {
     margin-left: 22px;
     margin-bottom: 21px;
-    width: 218px;
+    width: 220px;
 }
 
 .perforator-item:hover {
