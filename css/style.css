@@ -180,6 +180,7 @@ input[type="text"]:focus {
 }
 
 .private-office a{
+    flex-direction: column;
     width: 183px;
     height: auto;
     font-family: Cuprum;
@@ -436,6 +437,7 @@ input[type="text"]:focus {
     font-family: PTSans;
     font-size: 13px;
     line-height: 1.38;
+    vertical-align: baseline;
     text-align: left;
     color: #000000;
 }
@@ -491,6 +493,7 @@ input[type="text"]:focus {
 .perforator-info {
     background-color: #f4f7f9;
     padding: 67px 132px 73px 130px;
+    min-height: 260px;
 }
 
 .index-link {
@@ -590,6 +593,11 @@ input[type="text"]:focus {
 .modal-cart b {
     font-size: 30px;
     font-weight: normal;
+}
+
+.modal-cart,
+.modal-map-window {
+    display: none;
 }
 
 .modal-button-background {
@@ -714,7 +722,7 @@ input[type="text"]:focus {
 }
 
 /* Временно */
-
+/*
 body > *{
     background: rgba(255, 0, 0, 0.3)
 }
