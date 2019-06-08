@@ -16,6 +16,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 input[type="text"]:hover {
     border: solid 2px #b5b5b5;
 }
@@ -46,7 +51,9 @@ input[type="text"]:focus {
 .navigation-usual-list,
 .navigation-equipment-list,
 .pagination-list,
-.main-menu-list {
+.main-menu-list,
+.generator-list,
+.supply-list {
     list-style: none;
 }
 
@@ -61,6 +68,7 @@ input[type="text"]:focus {
 .navigation-equipment-list {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 } 
 
@@ -129,13 +137,44 @@ input[type="text"]:focus {
 }
 
 .header-phone {
+    display: block;
+    position: relative;
     width: 270px;
-    height: auto;
+    height: 45px;
     border: solid 3px #ffffff;
     font-size: 21px;
-    text-align: left;
     color: #ee3643;
     text-align: center;
+    box-sizing: border-box;
+}
+
+.header-phone::before {
+    position: absolute;
+    content: "";
+    top: 13px;
+    left: 15px;
+    right: 236px;
+    bottom: 13px;
+    background-color: #5fbb2d;
+    width: 19px;
+    height: 19px;
+}
+
+.search-button {
+    position: relative;
+    width:14px;
+    height:16px;
+}
+
+.search-button::before {
+    content: "";
+    position: absolute;
+    left:17px;
+    top:12px;
+    width:14px;
+    height:16px;
+    background-color: #5fbb2d;
+    background-image: url("img/icon-bookmark.svg") no-repeat 0 0;
 }
 
 .header-additional-navigation {
@@ -145,6 +184,46 @@ input[type="text"]:focus {
     background-color: #293449;
     padding-left: auto;
     padding-right: auto;
+}
+
+.header-additional-navigation .menu-item {
+    position: relative;
+} 
+
+.item-bookmarks::before {
+    content: "";
+    position: absolute;
+    left:17px;
+    top:12px;
+    width:14px;
+    height:16px;
+    opacity: 0.3;
+    background-color: #5fbb2d;
+    background-image: url("img/icon-bookmark.svg") no-repeat 0 0;
+}
+
+.item-cart::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top:12px;
+    width:14px;
+    height:16px;
+    opacity: 0.3;
+    background-color: #5fbb2d;
+    background-image: url("img/icon-cart.svg") no-repeat 0 0;
+}
+
+.item-bookmarks:hover::before,
+.item-cart:hover::before,
+.search-button:hover::before {
+    opacity: 1;
+}
+
+.item-bookmarks:active::before,
+.item-cart:active::before,
+.search-button:active::before {
+    opacity: 0.5;
 }
 
 .menu-item {
@@ -230,6 +309,22 @@ input[type="text"]:focus {
     background-color: #1d2739;
 }
 
+.entry:first-child {
+    position: relative;
+}
+
+.entry:first-child::before {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 14px;
+    right: 87px;
+    bottom: 14px;
+    width: 20px;
+    height: 17px;
+    background-color: #5fbb2d;
+}
+
 .entry-links {
     display: flex;
 }
@@ -242,6 +337,7 @@ input[type="text"]:focus {
     line-height: 1;
     text-align: center;
     width: 121px;
+    height: 45px;
     margin: 10px;
 }
 
@@ -255,6 +351,7 @@ input[type="text"]:focus {
 }
 
 .private-office-name{
+    position: relative;
     background-color: white;
     text-align: center;
     padding: 14px 69px 11px 47px;
@@ -263,6 +360,29 @@ input[type="text"]:focus {
 .private-office-list a:active {
     opacity: 0.3;
     color: rgba(50, 66, 92, 0.3);
+}
+
+.private-office-name::before {
+    position: absolute;
+    content: "";
+    top: 13px;
+    left: 13px;
+    right: 266px;
+    bottom: 14px;
+    width: 20px;
+    height: 18px;
+    background-color: #5fbb2d;
+}
+.private-office-name::after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 269px;
+    right: 10px;
+    bottom: 14px;
+    width: 20px;
+    height: 17px;
+    background-color: #5fbb2d;
 }
 
 .entry-links a:active {
@@ -277,13 +397,17 @@ input[type="text"]:focus {
 
 .entry-links a:last-child {
     padding: 14px 25px 11px 25px;
+    width: 150px;
+    box-sizing: border-box;
 }
 
 /* Main */
 
 .main-menu-item {
+    position: relative;
     color: #ffffff;
     width: 300px;
+    min-height: 125px;
 }
 
 .main-menu-item h3:last-child {
@@ -291,13 +415,31 @@ input[type="text"]:focus {
 }
 
 .main-menu-item h3 {
+    position: absolute;
+    top:0px;
+    left:23px;
+    right:166px;
+    bottom:75px;
     font-size: 24px;
     font-weight: bold;
-    text-align: left;
+    white-space: nowrap;
+}
+
+.main-menu-item img {
+    position: absolute;
+    top:31px;
+    left:213px;
+    right:43px;
+    bottom:27px;
 }
 
 .main-menu-item a {
     display: block;
+    position: absolute;
+    top:63px;
+    left:25px;
+    right:140px;
+    bottom:22px;
     width: 135px;
     height: 38px;
     line-height: 38px;
@@ -428,7 +570,7 @@ input[type="text"]:focus {
 }
 
 .breadcrumbs {
-    display: flex;
+    display: inline-block;
     width: 255px;
     justify-content: space-around;
 }
@@ -437,7 +579,6 @@ input[type="text"]:focus {
     font-family: PTSans;
     font-size: 13px;
     line-height: 1.38;
-    vertical-align: baseline;
     text-align: left;
     color: #000000;
 }
@@ -449,10 +590,12 @@ input[type="text"]:focus {
 .breadcrumbs-current {
     font-family: PTSans;
     font-size: 13px;
+    vertical-align: bottom;
 }
 
 .buy-button {
     display: block;
+    position: relative;
     width: 135px;
     line-height: 1.29;
     background-color: #63a63e;
@@ -466,6 +609,18 @@ input[type="text"]:focus {
 
 .buy-button:active {
     background-color: #518534;
+}
+
+.buy-button::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 14px;
+    right: 106px;
+    bottom: 12px;
+    width: 15px;
+    height: 15px;
+    background-color: #5fbb2d;
 }
 
 .bookmarks-button {
@@ -505,6 +660,46 @@ input[type="text"]:focus {
     text-align: center;
     border-radius: 4px;
     font-size: 14px;
+}
+
+.index-link-footer {
+    position: relative;
+}
+
+.index-link-footer:first-child::before {
+    position: absolute;
+    content: "";
+    top: 13px;
+    left: 8px;
+    right: 8px;
+    bottom: 14px;
+    width: 26px;
+    height: 15px;
+    background-color: #5fbb2d;
+}
+
+.index-link-footer:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 15px;
+    right: 15px;
+    bottom: 10px;
+    width: 12px;
+    height: 22px;
+    background-color: #5fbb2d;
+}
+
+.index-link-footer:last-child::before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 10px;
+    right: 11px;
+    bottom: 11px;
+    width: 21px;
+    height: 21px;
+    background-color: #5fbb2d;
 }
 
 .make-order {
