@@ -11,9 +11,7 @@
   <body>
     <header class="main-header">
       <section class="header-additional-navigation">
-        <a class="header-logo" href="index.html">
-          <img src="img/logo-technomart.svg" alt="Логотип" width="109" height="19">
-        </a>
+        <a class="header-logo" href="index.html" aria-label="Логотип"></a>
         <form class="header-form" action="https://echo.htmlacademy.ru" method="POST">
           <button class="search-button" aria-label="Кнопка поиска"></button>
           <input id="search-form" type="text" placeholder="Поиск:"> 
@@ -107,7 +105,21 @@
       <div class="header-perforator">
         <h2 class="upper">Перфораторы</h2>
       </div>
+      <div class="form-filter">
+        <p>ФИЛЬТР:</p>
+      </div>
+      <div class="form-sorting">
+        <p>СОРТИРОВКА:</p>
+        <a href="#" class="active-sorting">ПО ЦЕНЕ</a>
+        <a href="#">ПО ТИПУ</a>
+        <a href="#">ПО ФУНКЦИОНАЛУ</a>
+        <a href="#" aria-label="Стрелочка вниз" class="form-sorting-top"></a>
+        <a href="#" aria-label="Стрелочка вверх" class="form-sorting-bottom"></a>
+      </div>
       <section class="filters-container">
+        <form class="form-price">
+          <legend>ЦЕНА:</legend>
+        </form>
         <form class="form-generators upper" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset>
             <legend>Производители:</legend>
@@ -173,7 +185,7 @@
           </button>
           <button class="perforator-bookmarks upper bookmarks-button">В закладки</button>
         </div>
-        <div class="perforator-item">
+        <div class="perforator-item perforator-item-new">
           <img src="img/item3.jpg" alt="Изображение товара" width="218" height="170">
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <span class="discount-price">12500 Р.</span>
@@ -194,7 +206,7 @@
           </button>
           <button class="perforator-bookmarks upper bookmarks-button">В закладки</button>
         </div>
-        <div class="perforator-item">
+        <div class="perforator-item perforator-item-new">
           <img src="img/item2.jpg" alt="Изображение товара" width="218" height="170">
           <h3>Перфоратор BOSCH BFG 6000</h3>
           <span class="crossed-outed-price">30500 Р.</span>
@@ -215,7 +227,7 @@
           </button>
           <button class="perforator-bookmarks upper bookmarks-button">В закладки</button>
         </div>
-        <div class="perforator-item">
+        <div class="perforator-item perforator-item-new">
           <img src="img/item1.jpg" alt="Изображение товара" width="218" height="170">
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <span class="crossed-outed-price">22500 Р.</span>

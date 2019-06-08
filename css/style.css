@@ -129,6 +129,23 @@ input[type="text"]:focus {
     background-color: #ba2732;
 }
 
+.header-logo a {
+    position: relative;
+}
+
+.header-logo a::before {
+    position: absolute;
+    content: "";
+    top: 13px;
+    left: 55px;
+    right: 56px;
+    bottom: 15px;
+    width: 109px;
+    height: 19px;
+    background-color: #5fbb2d;
+}
+
+
 .header-address {
     font-size: 14px;
     line-height: 1.71;
@@ -570,17 +587,27 @@ input[type="text"]:focus {
 }
 
 .breadcrumbs {
-    display: inline-block;
+    display: flex;
     width: 255px;
     justify-content: space-around;
 }
 
 .breadcrumbs a {
+    position: relative;
     font-family: PTSans;
     font-size: 13px;
     line-height: 1.38;
     text-align: left;
     color: #000000;
+    margin-left: 40px;
+}
+
+.breadcrumbs a::before {
+    position: absolute;
+    content: "";
+    top: 24px;
+    bottom: 24px;
+    background-color: #5fbb2d;
 }
 
 .breadcrumbs li {
@@ -591,6 +618,7 @@ input[type="text"]:focus {
     font-family: PTSans;
     font-size: 13px;
     vertical-align: bottom;
+    margin-left: 40px;
 }
 
 .buy-button {
@@ -771,8 +799,78 @@ input[type="text"]:focus {
     text-align: center;
 }
 
+.perforator-item-new {
+    position: relative;
+}
+
+.perforator-item-new::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 159px;
+    bottom: 259px;
+    width: 60px;
+    height: 60px;
+    background-color: #5fbb2d;
+}
+
 .technomart-info {
     min-height: 535px;
+}
+
+.form-filter,
+.form-sorting {
+    display: block;
+    background-color: #f7f3ec;
+    min-height: 40px;
+    font-family: PTSans;
+    font-size: 13px;
+}
+
+.form-sorting a {
+    color: rgba(0, 0, 0, 0.18);
+    border-bottom: 1px dashed #df0000;
+    opacity: 0.18;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form-sorting a:hover {
+    color: #000000;
+    opacity: 1;
+}
+
+.form-sorting a:active {
+    color: #df0000;
+}
+
+.form-sorting-top,
+.form-sorting-bottom {
+    position: relative;
+}
+
+.form-sorting-top::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: 640px;
+    right: 49px;
+    bottom: 14px;
+    width: 11px;
+    height: 10px;
+    background-color: #5fbb2d;
+}
+
+.form-sorting-bottom::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: 672px;
+    right: 17px;
+    bottom: 14px;
+    width: 11px;
+    height: 10px;
+    background-color: #5fbb2d;
 }
 
 .modal {
@@ -837,7 +935,6 @@ input[type="text"]:focus {
 
 .logo-footer {
     width: 220px;
-    height: auto;
     margin-left: 130px;
 }
 
