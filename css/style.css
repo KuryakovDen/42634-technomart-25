@@ -57,11 +57,11 @@ input[type="text"]:focus {
     list-style: none;
 }
 
-.main-menu-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.main-menu-list::before,
+.main-menu-list::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .navigation-usual-list,
@@ -90,8 +90,7 @@ input[type="text"]:focus {
 
 .page-header-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .page-header-title {
@@ -102,6 +101,11 @@ input[type="text"]:focus {
     font-weight: normal;
     font-style: italic;
     text-align: left;
+    margin: 0;
+}
+
+.phone-wrapper {
+    margin: 0;
 }
 
 /* Шапка */
@@ -112,11 +116,18 @@ input[type="text"]:focus {
 }
 
 .header-logo {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     background-color: #ee3643;
     width: 220px;
     text-align: center;
+}
+
+.header-logo img {
+    margin: 0;
+    padding: 0;
 }
 
 .header-logo:hover,
@@ -145,6 +156,11 @@ input[type="text"]:focus {
     background-color: #5fbb2d;
 }
 
+.container {
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .header-address {
     font-size: 14px;
@@ -163,6 +179,7 @@ input[type="text"]:focus {
     color: #ee3643;
     text-align: center;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .header-phone::before {
@@ -194,13 +211,16 @@ input[type="text"]:focus {
     background-image: url("img/icon-bookmark.svg") no-repeat 0 0;
 }
 
+.header-form {margin-right: auto;}
+
 .header-additional-navigation {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     background-color: #293449;
     padding-left: auto;
     padding-right: auto;
+}
+
+.header-additional-navigation .container {
+    display: flex;
 }
 
 .header-additional-navigation .menu-item {
@@ -215,7 +235,7 @@ input[type="text"]:focus {
     width:14px;
     height:16px;
     opacity: 0.3;
-    background-color: #5fbb2d;
+    background-size: cover;
     background-image: url("img/icon-bookmark.svg") no-repeat 0 0;
 }
 
@@ -421,10 +441,28 @@ input[type="text"]:focus {
 /* Main */
 
 .main-menu-item {
+    float: left;
     position: relative;
     color: #ffffff;
     width: 300px;
     min-height: 125px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-gallary {
+    width: 620px;
+    margin-top:-104px;
+}
+
+.main-menu-item:nth-child(5),
+.main-menu-item:nth-child(6) {
+    float: right;
+    margin-right: 0;
+} 
+
+.main-menu-item:nth-child(3) {
+    margin-right: 0;
 }
 
 .main-menu-item h3:last-child {
@@ -440,14 +478,6 @@ input[type="text"]:focus {
     font-size: 24px;
     font-weight: bold;
     white-space: nowrap;
-}
-
-.main-menu-item img {
-    position: absolute;
-    top:31px;
-    left:213px;
-    right:43px;
-    bottom:27px;
 }
 
 .main-menu-item a {
@@ -486,11 +516,11 @@ input[type="text"]:focus {
     background-color: #dc91d8;
 }
 
-.main-menu-item:nth-child(4) {
+.main-menu-item:nth-child(5) {
     background-color: #8ed78f;
 }
 
-.main-menu-item:nth-child(5) {
+.main-menu-item:nth-child(6) {
     background-color: #ffc047;
 }
 
@@ -535,6 +565,9 @@ input[type="text"]:focus {
 }
 
 .popular-generator-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 220px;
     height: 145px;
     border: solid 1px #eaeaea;
@@ -543,21 +576,12 @@ input[type="text"]:focus {
     margin: 20px;
 }
 
-.popular-generator-item img {
-    vertical-align: bottom;
-}
-
 .popular-generator-item:hover {
     box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .popular-generator-item:active {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
-}
-
-.popular-generator-link {
-    width: 100%;
-    height: 100%;
 }
 
 .popular-perforators {
@@ -623,7 +647,6 @@ input[type="text"]:focus {
 
 .buy-button {
     display: block;
-    position: relative;
     width: 135px;
     line-height: 1.29;
     background-color: #63a63e;
@@ -668,7 +691,28 @@ input[type="text"]:focus {
     border: solid 3px #32425c;
 }
 
+.perforator-img {
+   margin-left: 43px;
+}
+
+.discount-price {
+    position: absolute;
+    content: "";
+    top: 270px;
+    left: 80px;
+    right: 75px;
+    bottom: 34px;
+    color: #ffffff;
+    font-family: PTSans;
+}
+
 .crossed-outed-price {
+    position: absolute;
+    content: "";
+    top: 240px;
+    left: 78px;
+    right: 75px;
+    bottom: 72px;
     text-decoration: line-through;
     color: #999999;
 }
@@ -780,8 +824,10 @@ input[type="text"]:focus {
 }
 
 .perforator-item {
+    position: relative;
     margin-left: 22px;
     margin-bottom: 21px;
+    min-height: 320px;
     width: 220px;
 }
 
@@ -933,6 +979,12 @@ input[type="text"]:focus {
     font-size: 16px;
 }
 
+.footer-feedback-container {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+}
+
 .logo-footer {
     width: 220px;
     margin-left: 130px;
@@ -1014,6 +1066,7 @@ input[type="text"]:focus {
 }
 
 /* Временно */
+
 /*
 body > *{
     background: rgba(255, 0, 0, 0.3)
@@ -1023,7 +1076,7 @@ body > *{
 body > * > * {
     background: rgba(255, 255, 0, 0.3)
 }
-/*
+
 body > * > * > * {
     background: rgba(0, 0, 255, 0.3)
 }
