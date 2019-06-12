@@ -75,7 +75,7 @@ input[type="text"]:focus {
 } 
 
 .navigation-equipment {
-    padding-top: 45px;
+    padding-top: 40px;
     padding-left: 23px;
 }
 
@@ -100,12 +100,6 @@ input[type="text"]:focus {
     justify-content: space-between;
     align-items: center;
     padding-top: 50px;
-    margin-bottom: 45px;
-}
-
-.header-wrapper-item {
-    min-height: 68px;
-    background-color: #ca2c37;
 }
 
 .page-header-title {
@@ -118,10 +112,14 @@ input[type="text"]:focus {
     text-align: left;
     line-height: 1.44;
     margin: 0;
+    padding: 0;
+    margin-left: 53px;
+    margin-bottom: 28px;
 }
 
 .phone-wrapper {
     margin: 0;
+    margin-bottom: 19px;
 }
 
 /* Шапка */
@@ -139,6 +137,7 @@ input[type="text"]:focus {
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     width: 220px;
     text-align: center;
+    margin-bottom: -5px;
     box-sizing: border-box;
 }
 
@@ -188,6 +187,7 @@ input[type="text"]:focus {
     line-height: 1.71;
     text-align: left;
     color: #32425c;
+    margin-top: 10px;
 }
 
 .header-phone {
@@ -315,6 +315,8 @@ input[type="text"]:focus {
 .title {
     font-size: 30px;
     text-align: left;
+    font-weight: normal;
+    color: #000000;
 }
 
 .advantages-container h3:first-child,
@@ -390,6 +392,7 @@ input[type="text"]:focus {
 
 .entry-links {
     display: flex;
+    margin-bottom: 67px;
 }
 
 .entry-links a{
@@ -888,7 +891,7 @@ input[type="text"]:focus {
     line-height: 38px;
     background-color: #ee3643;
     text-align: center;
-    border-radius: 2px;
+    border-radius: 4px;
     font-size: 14px;
 }
 
@@ -1036,6 +1039,8 @@ input[type="text"]:focus {
 .company-list,
 .advantages-description-1,
 .advantages-description-2 {
+    padding: 0;
+    margin: 0;
     line-height: 1.85;
 }
 
@@ -1056,6 +1061,11 @@ input[type="text"]:focus {
 .about-company-description-4 {
     display: block;
     width: 180px;
+    line-height: 1.85;
+}
+
+.contacts img {
+    margin-top: 36px;
 }
 
 .form-filter,
@@ -1114,9 +1124,48 @@ input[type="text"]:focus {
 }
 
 .company-list {
+    position: relative;
     padding: 0;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 40px;
+    list-style-type: none;
+}
+
+.company-list li {
+    position: relative;
+}
+
+.company-list li:first-child::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    left: -36px;
+    top: 15px;
+    display: block;
+    background-color: #fb565a;
+}
+
+.company-list li:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    left: -36px;
+    top: 15px;
+    display: block;
+    background-color: #fb565a;
+}
+
+.company-list li:last-child:before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    left: -36px;
+    top: 15px;
+    display: block;
+    background-color: #fb565a;
 }
 
 .about-company {
@@ -1129,12 +1178,17 @@ input[type="text"]:focus {
     margin-right: 120px;
 }
 
+.about-company-item {
+    margin-top: 82px;
+    margin-bottom: 86px;
+}
+
 .about-company-link {
     margin-top: 40px;
 }
 
-.about-company-link:last-child {
-    margin-top: 50px;
+.link-map {
+    width: 300px;
 }
 
 .modal {
@@ -1251,7 +1305,6 @@ input[type="text"]:focus {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    min-height: 300px;
     background-color: #32425c;
     margin: 0;
 }
@@ -1327,6 +1380,13 @@ input[type="text"]:focus {
 .footer-address-telephone {
     font-size: 18px;
     color: #ffffff;
+}
+
+.footer-address-telephone {
+    margin:0;
+    padding: 0;
+    margin-top: 32px;
+    margin-bottom: 53px;
 }
 
 .navigation-list a:hover, 
