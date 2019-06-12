@@ -841,26 +841,27 @@ input[type="text"]:focus {
     background-color: #5fbb2d;
 }
 
-.breadcrumbs .breadcrumbs-perforator::before {
+.breadcrumbs-current {
+    position: relative;
+    font-family: "PTSans";
+    font-size: 13px;
+    vertical-align: bottom;
+    margin-left: 40px;
+}
+
+.breadcrumbs .breadcrumbs-current::before {
     position: absolute;
     content: "";
     width: 14px;
     height: 12px;
-    top: 0;
-    left: 35px;
+    top: 0px;
+    left: -25px;
     bottom: 24px;
     background-color: #5fbb2d;
 }
 
 .breadcrumbs li {
     list-style-type: none;
-}
-
-.breadcrumbs-current {
-    font-family: "PTSans";
-    font-size: 13px;
-    vertical-align: bottom;
-    margin-left: 40px;
 }
 
 .perforator-buy {
@@ -952,6 +953,11 @@ input[type="text"]:focus {
     text-align: left;
     font-size: 13px;
     line-height: 24px;
+}
+
+.perforator-info h2 {
+    font-weight: normal;
+    font-size: 30px;
 }
 
 .index-link {
@@ -1449,6 +1455,8 @@ input[type="text"]:focus {
     height: 38px;
     font-size: 14px;
 }
+
+
 
 /* Footer*/
 
