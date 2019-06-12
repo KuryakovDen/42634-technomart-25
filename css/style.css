@@ -95,6 +95,13 @@ input[type="text"]:focus {
     color: #000000;
 }
 
+.button-show {
+    width: 140px;
+    height: 38px;
+    font-size: 13px;
+    font-family: PTSans;
+}
+
 .page-header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -325,12 +332,15 @@ input[type="text"]:focus {
     font-size: 13px;
 }
 
+.private-office {
+    margin-bottom: 25px;
+}
+
 .private-office a{
     flex-direction: column;
     width: 183px;
     height: auto;
     font-family: Cuprum;
-    font-size: 21px;
     color: #000000;
 }
 
@@ -417,10 +427,18 @@ input[type="text"]:focus {
 
 .private-office-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
     margin-top: 15px;
     white-space: nowrap;
+}
+
+.private-office-list li:first-child {
+    margin-left: -60px;
+}
+
+.private-office-list li:last-child {
+    margin-left: -80px;
 }
 
 .entry-links a:hover,
@@ -433,6 +451,7 @@ input[type="text"]:focus {
     background-color: white;
     text-align: center;
     padding: 14px 69px 11px 47px;
+    font-size: 21px;
 }
 
 .private-office-list a:active {
@@ -652,8 +671,18 @@ input[type="text"]:focus {
 }
 
 .header-perforator {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #f2f6f8;
-    padding: 32px 742px 34px 30px;
+    min-height: 90px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.header-perforator h2 {
+    margin-left: 30px;
+    font-weight: normal;
 }
 
 .popular-header {
@@ -744,6 +773,8 @@ input[type="text"]:focus {
 .pagination-list {
     display: flex;
     width: 106px;
+    padding: 0;
+    margin: 0;
     justify-content: space-between;
 }
 
@@ -764,6 +795,7 @@ input[type="text"]:focus {
     display: flex;
     width: 255px;
     justify-content: space-around;
+    margin-left: 28px;
 }
 
 .breadcrumbs a {
@@ -776,10 +808,46 @@ input[type="text"]:focus {
     margin-left: 40px;
 }
 
-.breadcrumbs a::before {
+.breadcrumbs .breadcrumbs-catalog::before {
     position: absolute;
     content: "";
-    top: 24px;
+    width: 14px;
+    height: 12px;
+    top: 0;
+    left: -25px;
+    bottom: 24px;
+    background-color: #5fbb2d;
+}
+
+.breadcrumbs .breadcrumbs-catalog::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 12px;
+    top: 0;
+    left: -54px;
+    bottom: 24px;
+    background-color: #5fbb2d;
+}
+
+.breadcrumbs .breadcrumbs-tool::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 12px;
+    top: 0;
+    left: -25px;
+    bottom: 24px;
+    background-color: #5fbb2d;
+}
+
+.breadcrumbs .breadcrumbs-perforator::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 12px;
+    top: 0;
+    left: 35px;
     bottom: 24px;
     background-color: #5fbb2d;
 }
@@ -872,8 +940,10 @@ input[type="text"]:focus {
 }
 
 .perforator-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f4f7f9;
-    padding: 67px 132px 73px 130px;
     min-height: 260px;
 }
 
@@ -991,10 +1061,10 @@ input[type="text"]:focus {
 
 .perforator-item {
     position: relative;
-    margin-right: 18px;
-    margin-bottom: 21px;
+    margin-right: 20px;
+    margin-bottom: 52px;
     min-height: 320px;
-    width: 216px;
+    width: 220px;
 }
 
 .perforator-item:hover {
@@ -1020,13 +1090,35 @@ input[type="text"]:focus {
 .perforator-item-new::after{
     position: absolute;
     content: "";
-    top: 0px;
+    top: 0;
     left: 159px;
     bottom: 259px;
     width: 60px;
     height: 60px;
     background-color: #5fbb2d;
 }
+
+.menu-item-new {
+    position: relative;
+}
+
+.menu-item-new::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 259px;
+    width: 60px;
+    height: 60px;
+    background-color: #5fbb2d;
+}
+
+.perforator-item:nth-child(3),
+.perforator-item:nth-child(6),
+.perforator-item:last-child {
+    margin-right: 0;
+}
+
 
 .technomart-info {
     min-height: 535px;
@@ -1068,9 +1160,23 @@ input[type="text"]:focus {
     margin-top: 36px;
 }
 
+.form-filter {
+    display: flex;
+    width: 220px;
+    height: 38px;
+    margin-bottom: 20px;
+}
+
+.form-sorting {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
 .form-filter,
 .form-sorting {
-    display: block;
     background-color: #f7f3ec;
     min-height: 40px;
     font-family: "PTSans", Arial, sans-serif;
@@ -1078,11 +1184,17 @@ input[type="text"]:focus {
 }
 
 .form-sorting a {
-    color: rgba(0, 0, 0, 0.18);
+    color: rgba(0, 0, 0, 0.3);
     border-bottom: 1px dashed #df0000;
-    opacity: 0.18;
-    margin-left: 40px;
+    opacity: 0.3;
+    margin-left: 30px;
     margin-right: 40px;
+    white-space: nowrap;
+}
+
+.active-sorting {
+    opacity: 0.18;
+    color: rgba(0, 0, 0, 0.18);
 }
 
 .form-sorting a:hover {
@@ -1102,8 +1214,8 @@ input[type="text"]:focus {
 .form-sorting-top::before {
     position: absolute;
     content: "";
-    top: -10px;
-    left: 640px;
+    top: -5px;
+    left: 80px;
     right: 49px;
     bottom: 14px;
     width: 11px;
@@ -1114,13 +1226,52 @@ input[type="text"]:focus {
 .form-sorting-bottom::before {
     position: absolute;
     content: "";
-    top: -10px;
-    left: 672px;
+    top: -5px;
+    left: 30px;
     right: 17px;
     bottom: 14px;
     width: 11px;
     height: 10px;
     background-color: #5fbb2d;
+}
+
+.form-price {
+    width: 220px;
+    min-height: 130px;
+    background-color: #f7f3ec;
+    margin-bottom: 25px;
+}
+
+.generators-fieldset {
+    margin-bottom: 48px;
+}
+
+.product-fieldset {
+    margin-bottom: 83px;
+}
+
+.main-filter-wrapper {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.filter-container-wrapper-1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    min-height: 670px;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.filter-container-wrapper-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    min-height: 1080px;
+    margin: 0;
+    padding: 0;
 }
 
 .company-list {
