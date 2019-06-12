@@ -98,8 +98,14 @@ input[type="text"]:focus {
 .page-header-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    padding-top: 50px;
     margin-bottom: 45px;
+}
+
+.header-wrapper-item {
+    min-height: 68px;
+    background-color: #ca2c37;
 }
 
 .page-header-title {
@@ -121,8 +127,8 @@ input[type="text"]:focus {
 /* Шапка */
 
 .main-header {
-    min-height: 320px;
     background-color: #f4f7f9;
+    padding-bottom: 60px;
 }
 
 .header-logo {
@@ -171,6 +177,7 @@ input[type="text"]:focus {
     max-width: 940px;
     margin-right: auto;
     margin-left: auto;
+    box-sizing: border-box;
 }
 
 .header-address {
@@ -394,7 +401,11 @@ input[type="text"]:focus {
     text-align: center;
     width: 121px;
     height: 45px;
-    margin: 10px;
+    margin: 0px;
+}
+
+.entry-links a:first-child {
+    margin-right: 10px;
 }
 
 .main-page {
@@ -484,6 +495,30 @@ input[type="text"]:focus {
     height: 270px;
     margin-top:0px;
     margin-bottom: 53px;
+}
+
+.menu-gallary::before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 40px;
+    top: 114px;
+    left: 25px;
+    right: 573px;
+    bottom: 112px;
+    background-color: #5fbb2d;
+}
+
+.menu-gallary::after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 40px;
+    top: 114px;
+    left: 578px;
+    right: 20px;
+    bottom: 112px;
+    background-color: #5fbb2d;
 }
 
 .menu-gallary h2 {
@@ -625,6 +660,7 @@ input[type="text"]:focus {
     line-height: 1;
     min-height: 90px;
     padding-left: 30px;
+    margin-bottom: 20px;
 }
 
 .popular-header h2 {
@@ -652,6 +688,12 @@ input[type="text"]:focus {
 .popular-generators-img {
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.generators-img-container {
+    width: 940px;
 }
 
 .popular-generator-item {
@@ -662,8 +704,23 @@ input[type="text"]:focus {
     height: 145px;
     border: solid 1px #eaeaea;
     background-color: #ffffff;
+    box-sizing: border-box;
     text-align: center;
-    margin: 20px;
+    margin: 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.popular-generator-item:first-child {
+    margin-left: 0px;
+}
+
+.popular-generator-item:nth-child(4) {
+    margin-right: 0px;
+}
+
+.popular-generator-item:last-child {
+    margin-right: 0px;
 }
 
 .popular-generator-item:hover {
@@ -708,7 +765,7 @@ input[type="text"]:focus {
 
 .breadcrumbs a {
     position: relative;
-    font-family: PTSans;
+    font-family: "PTSans";
     font-size: 13px;
     line-height: 1.38;
     text-align: left;
@@ -729,7 +786,7 @@ input[type="text"]:focus {
 }
 
 .breadcrumbs-current {
-    font-family: PTSans;
+    font-family: "PTSans";
     font-size: 13px;
     vertical-align: bottom;
     margin-left: 40px;
@@ -797,7 +854,7 @@ input[type="text"]:focus {
     right: 75px;
     bottom: 34px;
     color: #ffffff;
-    font-family: PTSans;
+    font-family: "PTSans";
 }
 
 .crossed-outed-price {
@@ -815,6 +872,13 @@ input[type="text"]:focus {
     background-color: #f4f7f9;
     padding: 67px 132px 73px 130px;
     min-height: 260px;
+}
+
+.perforator-info p {
+    width: 938px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 24px;
 }
 
 .index-link {
@@ -913,7 +977,7 @@ input[type="text"]:focus {
     text-align: center;
     color: #000000;
     font-size: 13px;
-    font-family: PTSans;
+    font-family: "PTSans";
 }
 
 .page-link-next {
@@ -935,7 +999,7 @@ input[type="text"]:focus {
 }
 
 .perforator-item span{
-    font-family: PTSans;
+    font-family: "PTSans";
     font-weight: bold;
     line-height: 1.06;
     padding: 0;
@@ -965,12 +1029,41 @@ input[type="text"]:focus {
     min-height: 535px;
 }
 
+.about-company-description-1,
+.about-company-description-2
+.about-company-description-3
+.about-company-description-4,
+.company-list,
+.advantages-description-1,
+.advantages-description-2 {
+    line-height: 1.85;
+}
+
+.advantages-description-1 {
+    width: 398px;
+    font-family: "PTSans";
+    font-size: 13px;
+    text-align: left;
+}
+
+.advantages-description-2 {
+    width: 275px;
+    font-family: "PTSans";
+    font-size: 13px;
+    text-align: left;
+}
+
+.about-company-description-4 {
+    display: block;
+    width: 180px;
+}
+
 .form-filter,
 .form-sorting {
     display: block;
     background-color: #f7f3ec;
     min-height: 40px;
-    font-family: PTSans;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 13px;
 }
 
@@ -1045,7 +1138,7 @@ input[type="text"]:focus {
 }
 
 .modal {
-    display: block;
+    display: none;
     width: 620px;
     min-height: 282px;
     background-color: #ffffff;
@@ -1062,7 +1155,7 @@ input[type="text"]:focus {
 .modal-cart,
 .modal-map-window {
     position: relative;
-    display: block;
+    display: none;
 }
 
 .modal-cart::after {
@@ -1101,7 +1194,7 @@ input[type="text"]:focus {
 
 .modal-feedback-form {
     position: relative;
-    display:flex;
+    display:none;
     min-height: 430px;
 }
 
