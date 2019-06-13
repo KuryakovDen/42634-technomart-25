@@ -932,12 +932,13 @@ input[type="text"]:focus {
 
 .perforator-img {
    margin-left: 43px;
+   margin-top: 15px;
 }
 
 .discount-price {
     position: absolute;
     content: "";
-    top: 270px;
+    top: 275px;
     left: 80px;
     right: 75px;
     bottom: 34px;
@@ -952,6 +953,7 @@ input[type="text"]:focus {
     left: 78px;
     right: 75px;
     bottom: 72px;
+    margin-bottom: 18px;
     text-decoration: line-through;
     color: #999999;
 }
@@ -1102,6 +1104,10 @@ input[type="text"]:focus {
 }
 
 .perforator-item h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 18px;
     text-align: center;
 }
 
@@ -1186,7 +1192,10 @@ input[type="text"]:focus {
     display: flex;
     width: 220px;
     height: 38px;
-    margin-bottom: 20px;
+}
+
+.form-filter p {
+    margin-left: 18px;
 }
 
 .form-sorting {
@@ -1203,6 +1212,7 @@ input[type="text"]:focus {
     min-height: 40px;
     font-family: "PTSans", Arial, sans-serif;
     font-size: 13px;
+    margin-bottom: 21px;
 }
 
 .form-sorting a {
@@ -1260,8 +1270,103 @@ input[type="text"]:focus {
 .form-price {
     width: 220px;
     min-height: 130px;
-    background-color: #f7f3ec;
+    padding: 0;
+    margin: 0;
     margin-bottom: 25px;
+}
+
+.form-price-fieldset, 
+.generators-fieldset,
+.product-fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.form-price-fieldset .range-filter {
+    position: relative;
+    width: 220px;
+    min-height: 80px;
+    margin-top: 21px;
+    background-color: #f1f1f1;
+    margin-bottom: 9px;
+    border-radius: 5px;   
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.range-filter .scale {
+    height: 2px;
+    background-color: #f7f3ec;
+}
+
+.scale .bar {
+    width: 70%;
+    height: 2px;
+    background-color: #00ca74;
+}
+
+.toogle {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.toogle-min {
+    left: 20px;
+}
+
+.toogle-max {
+    left: 140px;
+}
+
+.price-controls label {
+    display: inline-block;
+    font-size: 17px;
+    text-align: center;
+}
+
+.price-controls input[type="text"] {
+    width: 95px;
+    text-align: center;
+    background-color: #f7f3ec;
+    border-radius: 5px;
+}
+
+.price-controls p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.form-price-fieldset legend,
+.generators-fieldset legend,
+.product-fieldset legend {
+    width: 46px;
+    height: 14px;
+    font-family: PTSans;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.76;
+    text-align: left;
+}
+
+.filter-option {
+    padding-top: 20px;
+}
+
+.filter-option label {
+    padding-left: 8px;
 }
 
 .generators-fieldset {

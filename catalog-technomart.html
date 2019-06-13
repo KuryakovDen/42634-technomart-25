@@ -122,8 +122,22 @@
           <div class="form-filter">
               <p>ФИЛЬТР:</p>
           </div>
-          <form class="form-price">
-            <legend>ЦЕНА:</legend>
+          <form class="form-price" method="GET" action="https://echo.htmlacademy.ru">
+            <fieldset class="form-price-fieldset">
+              <legend>ЦЕНА:</legend>
+              <div class="range-filter">
+                <div class="scale">
+                  <div class="bar"></div>
+                  <div class="toogle toogle-min"></div>
+                  <div class="toogle toogle-max"></div>
+                </div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price"><input name="min-price" type="text" value="0"></label>
+                <p>-</p>
+                <label class="max-price"><input name="max-price" type="text" value="30000"></label>
+              </div>
+            </fieldset>
           </form>
           <form class="form-generators upper" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="generators-fieldset">
