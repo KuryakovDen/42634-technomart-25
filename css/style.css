@@ -869,6 +869,9 @@ input[type="text"]:focus {
 }
 
 .buy-button {
+    position: absolute;
+    top: 80px;
+    left: 40px;
     display: block;
     width: 135px;
     line-height: 1.29;
@@ -898,6 +901,9 @@ input[type="text"]:focus {
 }
 
 .bookmarks-button {
+    position: absolute;
+    top: 50px;
+    left: 40px;
     background-color: white;
     width: 135px;
     height: auto;
@@ -912,6 +918,16 @@ input[type="text"]:focus {
 .bookmarks-button:active {
     opacity: 0.3;
     border: solid 3px #32425c;
+}
+
+.button-actions {
+    background-color: rgba(255,255,255,0.9);
+    z-index: 10;
+    display: none;
+}
+
+.perforator-item:hover .button-actions {
+    display: block;
 }
 
 .perforator-img {
