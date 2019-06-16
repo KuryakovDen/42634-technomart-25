@@ -59,6 +59,24 @@ input[type="text"]:focus {
     list-style: none;
 }
 
+.generator-list,
+.supply-list {
+    padding: 0;
+    margin: 0;
+    line-height: 1.33;
+    font-family: PTSans;
+    font-size: 15px;
+    text-align: left;
+}
+
+.generator-list li,
+.supply-list li {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
 .main-menu-list::before,
 .main-menu-list::after {
   content: "";
@@ -219,31 +237,40 @@ input[type="text"]:focus {
     left: 15px;
     right: 236px;
     bottom: 13px;
-    background-color: #5fbb2d;
     width: 19px;
     height: 19px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-.search-button {
-    position: relative;
-    width:14px;
-    height:16px;
+.header-form {
+    width: 270px;
 }
 
-.search-button::before {
-    content: "";
+.header-form input[type="search"] {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #293449;
+    border: none;
+}
+
+.header-form input[type="search"]:hover {
+    background-color: #212a3a;
+}
+
+.search-label {
     position: absolute;
-    left:17px;
-    top:12px;
-    width:14px;
-    height:16px;
-    background-color: #5fbb2d;
-    background-image: url("img/icon-bookmark.svg") no-repeat 0 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-
-.header-form {margin-right: auto;}
 
 .header-additional-navigation {
+    min-height: 42px;
     background-color: #293449;
     padding-left: auto;
     padding-right: auto;
@@ -265,12 +292,13 @@ input[type="text"]:focus {
     content: "";
     position: absolute;
     left:17px;
-    top:12px;
+    top:15px;
     width:14px;
     height:16px;
-    background: url("icon-close.svg");
-    background-position: 0 0;
+    opacity: 0.3;
+    background: url("../img/icon-bookmark.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .item-cart::before {
@@ -281,8 +309,9 @@ input[type="text"]:focus {
     width:14px;
     height:16px;
     opacity: 0.3;
-    background-color: #5fbb2d;
-    background-image: url("img/icon-cart.svg") no-repeat 0 0;
+    background: url("../img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .item-bookmarks:hover::before,
@@ -397,7 +426,13 @@ input[type="text"]:focus {
     bottom: 14px;
     width: 20px;
     height: 17px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-login.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.entry:first-child:hover::before {
+    object-fit: contain;
 }
 
 .entry-links {
@@ -468,7 +503,9 @@ input[type="text"]:focus {
     bottom: 14px;
     width: 20px;
     height: 18px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-user.svg");
+    background-size: 100%;
+    background-position: center;
 }
 .private-office-name::after {
     position: absolute;
@@ -479,7 +516,9 @@ input[type="text"]:focus {
     bottom: 14px;
     width: 20px;
     height: 17px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-logout.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .entry-links a:active {
@@ -528,7 +567,9 @@ input[type="text"]:focus {
     left: 25px;
     right: 573px;
     bottom: 112px;
-    background-color: #5fbb2d;
+    background: url("../img/icon-left.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .menu-gallary::after {
@@ -540,7 +581,9 @@ input[type="text"]:focus {
     left: 578px;
     right: 20px;
     bottom: 112px;
-    background-color: #5fbb2d;
+    background: url("../img/icon-right.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .menu-gallary h2 {
@@ -789,6 +832,7 @@ input[type="text"]:focus {
 .perforator-catalog {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 52px;
 }
 
 .breadcrumbs {
@@ -814,9 +858,11 @@ input[type="text"]:focus {
     width: 14px;
     height: 12px;
     top: 0;
-    left: -25px;
+    left: -54px;
     bottom: 24px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-home.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .breadcrumbs .breadcrumbs-catalog::after {
@@ -825,9 +871,11 @@ input[type="text"]:focus {
     width: 14px;
     height: 12px;
     top: 0;
-    left: -54px;
+    left: -25px;
     bottom: 24px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-right-small.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .breadcrumbs .breadcrumbs-tool::before {
@@ -838,7 +886,9 @@ input[type="text"]:focus {
     top: 0;
     left: -25px;
     bottom: 24px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-right-small.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .breadcrumbs-current {
@@ -857,7 +907,9 @@ input[type="text"]:focus {
     top: 0px;
     left: -25px;
     bottom: 24px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-right-small.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .breadcrumbs li {
@@ -870,13 +922,16 @@ input[type="text"]:focus {
 
 .buy-button {
     position: absolute;
-    top: 80px;
-    left: 40px;
     display: block;
+    top: 40px;
+    left: 40px;
     width: 135px;
+    height: 38px;
+    box-shadow: inset 0px -3px 0 0 #367315;
     line-height: 1.29;
     background-color: #63a63e;
-    border-radius: 5px;
+    border-radius: 3px;
+    margin-bottom: 8px;
     color: #ffffff;
 }
 
@@ -897,18 +952,20 @@ input[type="text"]:focus {
     bottom: 12px;
     width: 15px;
     height: 15px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-cart.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .bookmarks-button {
     position: absolute;
-    top: 50px;
+    top: 85px;
     left: 40px;
     background-color: white;
     width: 135px;
-    height: auto;
+    height: 38px;
     border: solid 3px #63a63e;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 .bookmarks-button:hover {
@@ -958,6 +1015,66 @@ input[type="text"]:focus {
     color: #999999;
 }
 
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin-top: 28px;
+    border: 2px solid black;
+}
+
+.tabs-list,
+.tabs-content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.tabs-list::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 279px;
+    top: 20px;
+    right: 0;
+    background-image: url("../img/shadow.png");
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.tabs-list li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 23px;
+    width: 240px;
+    min-height: 60px;
+    color: #ffffff;
+    box-sizing: border-box;
+    font-size: 21px;
+    cursor: pointer;
+    line-height: 1.43;
+    background-color: #405069;
+}
+
+.tabs-list li:hover {
+    box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+    background-color: #293449;
+    color: #ffffff;
+}
+
+.tabs-list li:active {
+    background-color: #ffffff;
+    color: #212a3a;
+}
+
 .perforator-info {
     display: flex;
     justify-content: center;
@@ -1002,7 +1119,9 @@ input[type="text"]:focus {
     bottom: 14px;
     width: 26px;
     height: 15px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-vk.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .index-link-footer:nth-child(2)::before {
@@ -1014,7 +1133,9 @@ input[type="text"]:focus {
     bottom: 10px;
     width: 12px;
     height: 22px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-fb.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .index-link-footer:last-child::before {
@@ -1026,7 +1147,9 @@ input[type="text"]:focus {
     bottom: 11px;
     width: 21px;
     height: 21px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-insta.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .make-order {
@@ -1034,6 +1157,7 @@ input[type="text"]:focus {
     justify-content: center;
     align-items: center;
     width: 150px;
+    min-height: 42px;
     background-color:#63a63e;
     text-align: center;
 }
@@ -1086,7 +1210,7 @@ input[type="text"]:focus {
 .perforator-item {
     position: relative;
     margin-right: 20px;
-    margin-bottom: 52px;
+    margin-bottom: 21px;
     min-height: 320px;
     width: 220px;
 }
@@ -1123,7 +1247,9 @@ input[type="text"]:focus {
     bottom: 259px;
     width: 60px;
     height: 60px;
-    background-color: #5fbb2d;
+    background-image: url("../img/new-flag.png");
+    background-size: 100%;
+    background-position: center;
 }
 
 .menu-item-new {
@@ -1138,15 +1264,22 @@ input[type="text"]:focus {
     bottom: 259px;
     width: 60px;
     height: 60px;
-    background-color: #5fbb2d;
+    background-image: url("../img/new-flag.png");
+    background-size: 100%;
+    background-position: center;
 }
 
-.perforator-item:nth-child(3),
-.perforator-item:nth-child(6),
-.perforator-item:last-child {
+.perforator-item:nth-child(3n) {
     margin-right: 0;
 }
 
+.perforator-item-main {
+    margin-right: 24px;
+}
+
+.perforator-item-main:nth-child(4n) {
+    margin-right: 0;
+}
 
 .technomart-info {
     min-height: 535px;
@@ -1215,6 +1348,7 @@ input[type="text"]:focus {
     margin-bottom: 21px;
 }
 
+
 .form-sorting a {
     color: rgba(0, 0, 0, 0.3);
     border-bottom: 1px dashed #df0000;
@@ -1252,7 +1386,9 @@ input[type="text"]:focus {
     bottom: 14px;
     width: 11px;
     height: 10px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-up-dir.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .form-sorting-bottom::before {
@@ -1264,12 +1400,13 @@ input[type="text"]:focus {
     bottom: 14px;
     width: 11px;
     height: 10px;
-    background-color: #5fbb2d;
+    background-image: url("../img/icon-down-dir.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .form-price {
     width: 220px;
-    min-height: 130px;
     padding: 0;
     margin: 0;
     margin-bottom: 25px;
@@ -1288,7 +1425,7 @@ input[type="text"]:focus {
     width: 220px;
     min-height: 80px;
     margin-top: 21px;
-    background-color: #f1f1f1;
+    background-color: #f7f3ec;
     margin-bottom: 9px;
     border-radius: 5px;   
     box-sizing: border-box;
@@ -1330,6 +1467,12 @@ input[type="text"]:focus {
     left: 140px;
 }
 
+.price-controls {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
 .price-controls label {
     display: inline-block;
     font-size: 17px;
@@ -1338,15 +1481,31 @@ input[type="text"]:focus {
 
 .price-controls input[type="text"] {
     width: 95px;
+    height: 38px;
     text-align: center;
     background-color: #f7f3ec;
     border-radius: 5px;
+    border: none;
+}
+
+.price-controls::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    line-height: 1.13;
+    text-align: center;
+    background-color: #000000;
+    top: 18px;
+    right: 105px;
 }
 
 .price-controls p {
     padding: 0;
     margin: 0;
     text-align: center;
+    font-size: 16x;
+    width: 10px;
 }
 
 .form-price-fieldset legend,
@@ -1354,7 +1513,7 @@ input[type="text"]:focus {
 .product-fieldset legend {
     width: 46px;
     height: 14px;
-    font-family: PTSans;
+    font-family: "PTSans", Arial, sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.76;
@@ -1368,6 +1527,22 @@ input[type="text"]:focus {
 .filter-option label {
     padding-left: 8px;
 }
+
+/*
+.login-checkbox {
+    position: relative;
+}
+
+.login-checkbox .input[type="checkbox"] + .checkbox-indicator {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    background-color: #00ca74;
+  }
+*/
 
 .generators-fieldset {
     margin-bottom: 48px;

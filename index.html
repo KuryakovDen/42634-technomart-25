@@ -16,8 +16,8 @@
             <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип">
           </a>
           <form class="header-form" action="https://echo.htmlacademy.ru" method="POST">
-            <button class="search-button" aria-label="Кнопка поиска" type="submit"></button>
-            <input id="search-form" type="text" placeholder="Поиск:" name="search"> 
+            <input id="search-form" type="search" placeholder="Поиск:" name="search"> 
+            <label class="search-label" for="search-form"></label>
           </form>
           <a href="#" class="menu-item item-bookmarks">Закладки: 0</a>
           <a href="#" class="menu-item item-cart">Корзина: 10</a>
@@ -115,8 +115,6 @@
               <p>Соседям на радость!</p>
               <img src="img/slider-image.jpg" width="620" height="270" alt="Картинка слайдера">
               <a href="#" class="index-link">ОТКРЫТЬ КАТАЛОГ</a>
-              <button type="button" aria-label="Переключатель-1"></button>
-              <button type="button" aria-label="Переключатель-2"></button>
             </div>
             <div class="main-menu-item">
               <h3>Скидки 50%</h3>
@@ -136,14 +134,9 @@
           <h2 class="upper title popular-content">Популярные товары:</h2>
           <a href="#" class="upper index-link popular-header-link">все поПулярные товары</a>
         </div>
-        <div class="popular-products-price">
-          <ul class="popular-products-list">
-            <!--There will be li!-->
-          </ul>
-        </div>
       </section>
       <section class="popular-perforators container">
-        <div class="perforator-item">
+        <div class="perforator-item perforator-item-main">
           <img src="img/item-image.jpg" alt="Изображение товара" width="218" height="170">
           <h3>Перфоратор BOSCH BFG 9000</h3>
           <span class="crossed-outed-price">32500 Р.</span>
@@ -156,7 +149,7 @@
             <button class="perforator-bookmarks upper bookmarks-button">В закладки</button>
           </div>
         </div>
-        <div class="perforator-item">
+        <div class="perforator-item perforator-item-main">
           <img src="img/item1.jpg" alt="Изображение товара" width="218" height="170">
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <span class="crossed-outed-price">22500 Р.</span>
@@ -169,7 +162,7 @@
             <button class="perforator-bookmarks upper bookmarks-button">В закладки</button>
           </div>
         </div>
-        <div class="perforator-item">
+        <div class="perforator-item perforator-item-main">
           <img src="img/item2.jpg" alt="Изображение товара" width="218" height="170">
           <h3>Перфоратор BOSCH BFG 6000</h3>
           <span class="crossed-outed-price">30500 Р.</span>
@@ -182,7 +175,7 @@
             <button class="perforator-bookmarks upper bookmarks-button">В закладки</button>
           </div>
         </div>
-        <div class="perforator-item perforator-item-new">
+        <div class="perforator-item perforator-item-main perforator-item-new">
           <img src="img/item3.jpg" alt="Изображение товара" width="218" height="170">
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <span class="discount-price">12500 Р.</span>
@@ -251,10 +244,35 @@
           <h3 class="upper title">Сервисы</h3>
           <p class="advantages-description-1">Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-          <h3 class="upper title">Доставка</h3>
-          <p class="advantages-description-2">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br>
-            Ведь мы неплохо заработаем, <br>
-            поднимая его на ваш этаж!</p>
+          <div class="tabs">
+            <ul class="tabs-list">
+              <li>Доставка</li>
+              <li>Гарантия</li>
+              <li>Кредит</li>
+            </ul>
+            <ul class="tabs-content">
+              <li>
+                <p class="advantages-description-2">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br>
+                  Ведь мы неплохо заработаем, <br>
+                  поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li>
+                <p class="advantages-description-2">
+                  Если купленный у нас товар поломается или заискрит, 
+                  а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li>
+                <p class="advantages-description-2">
+                  Залезть в долговую яму стало проще! 
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a href="#" class="upper index-link">Отправить заявку</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="technomart-info">

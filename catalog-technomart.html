@@ -16,8 +16,8 @@
             <img src="img/logo-technomart.svg" width="109" height="19" alt="Логотип">
           </a>
           <form class="header-form" action="https://echo.htmlacademy.ru" method="POST">
-            <button class="search-button" aria-label="Кнопка поиска" type="submit"></button>
-            <input id="search-form" type="text" placeholder="Поиск:" name="search"> 
+            <input id="search-form" type="search" placeholder="Поиск:" name="search"> 
+            <label class="search-label" for="search-form"></label>
           </form>
           <a href="#" class="menu-item item-bookmarks">Закладки: 0</a>
           <a href="#" class="menu-item item-cart">Корзина: 10</a>
@@ -134,7 +134,6 @@
               </div>
               <div class="price-controls">
                 <label class="min-price"><input name="min-price" type="text" value="0"></label>
-                <p>-</p>
                 <label class="max-price"><input name="max-price" type="text" value="30000"></label>
               </div>
             </fieldset>
@@ -143,25 +142,40 @@
             <fieldset class="generators-fieldset">
               <legend>Производители:</legend>
               <ul class="generator-list">
-                <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" id="item-bosch" checked>
-                  <label for="item-bosch">BOSCH</label>
+                <li class="filter-option" class="login-checkbox">
+                  <label for="item-bosch">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" id="item-bosch" checked>
+                    <span class="checkbox-indicator"></span>
+                    BOSCH
+                  </label>
                 </li>
-                <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="interscole" id="item-interscole">
-                  <label for="item-interscole">ИНТЕРСКОЛ</label>
+                <li class="filter-option" class="login-checkbox">
+                  <label for="item-interscole">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="interscole" id="item-interscole">
+                    <span class="checkbox-indicator"></span>
+                    ИНТЕРСКОЛ
+                  </label>
                 </li>
-                <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="makita" id="item-makita" checked>
-                  <label for="item-makita">MAKIta</label>
+                <li class="filter-option" class="login-checkbox">
+                  <label for="item-makita">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="makita" id="item-makita" checked>
+                    <span class="checkbox-indicator"></span>
+                    MAKIta
+                  </label>
                 </li>
-                <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="item-dewalt">
-                  <label for="item-dewalt">Dewalt</label>
+                <li class="filter-option" class="login-checkbox">
+                  <label for="item-dewalt">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="item-dewalt">
+                    <span class="checkbox-indicator"></span>
+                    Dewalt
+                  </label>
                 </li>
-                <li class="filter-option">
-                  <input class="filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="item-hitachi">
-                  <label for="item-hitachi">Hitachi</label>
+                <li class="filter-option" class="login-checkbox">
+                  <label for="item-hitachi">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="item-hitachi">
+                    <span class="checkbox-indicator"></span>
+                    Hitachi
+                  </label>
                 </li>
               </ul>
             </fieldset>
