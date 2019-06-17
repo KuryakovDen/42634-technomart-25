@@ -107,7 +107,7 @@
       </section>
       <section class="breadcrumbs-container upper container">
         <ul class="breadcrumbs">
-          <li><a href="#" class="breadcrumbs-catalog">Каталог</a></li>
+          <li><a href="index.html" class="breadcrumbs-catalog">Каталог</a></li>
           <li><a href="#" class="breadcrumbs-tool">Инструмент</a></li>
           <li class="breadcrumbs-current breadcrumbs-perforator">Перфораторы</li>
         </ul>
@@ -143,36 +143,36 @@
               <legend>Производители:</legend>
               <ul class="generator-list">
                 <li class="filter-option">
-                  <label for="item-bosch">
-                    <input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" id="item-bosch" checked>
+                  <label class="item-bosch">
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="bosch" checked>
                     <span class="checkbox-indicator"></span>
                     BOSCH
                   </label>
                 </li>
                 <li class="filter-option">
-                  <label for="item-interscole">
-                    <input class="filter-input filter-input-checkbox" type="checkbox" name="interscole" id="item-interscole">
+                  <label class="item-interscole">
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="interscole">
                     <span class="checkbox-indicator"></span>
                     ИНТЕРСКОЛ
                   </label>
                 </li>
                 <li class="filter-option">
-                  <label for="item-makita">
-                    <input class="filter-input filter-input-checkbox" type="checkbox" name="makita" id="item-makita" checked>
+                  <label class="item-makita">
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="makita" checked>
                     <span class="checkbox-indicator"></span>
                     MAKIta
                   </label>
                 </li>
                 <li class="filter-option">
-                  <label for="item-dewalt">
-                    <input class="filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="item-dewalt">
+                  <label class="item-dewalt">
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="dewalt">
                     <span class="checkbox-indicator"></span>
                     Dewalt
                   </label>
                 </li>
                 <li class="filter-option">
-                  <label for="item-hitachi">
-                    <input class="filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="item-hitachi">
+                  <label class="item-hitachi">
+                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="hitachi">
                     <span class="checkbox-indicator"></span>
                     Hitachi
                   </label>
@@ -183,12 +183,18 @@
               <legend>Питание:</legend>
               <ul class="supply-list">
                 <li class="filter-option">
-                  <input class="filter-input filter-input-radio" type="radio" name="product-group" value="battery-value" id="battery" checked>
-                  <label for="battery">Аккумуляторные</label>
+                  <label class="battery">
+                    <input class="filter-input filter-input-radio visually-hidden" type="radio" name="product-group" value="battery-value" checked>
+                    <span class="radio-indicator"></span>
+                    Аккумуляторные
+                  </label>
                 </li>
                 <li class="filter-option">
-                  <input class="filter-input filter-input-radio" type="radio" name="product-group" value="network-value" id="network">
-                  <label for="network">Сетевые</label>
+                  <label class="network">
+                    <input class="filter-input filter-input-radio visually-hidden" type="radio" name="product-group" value="network-value">
+                    <span class="radio-indicator"></span>
+                    Сетевые
+                  </label>
                 </li>
               </ul>
             </fieldset>

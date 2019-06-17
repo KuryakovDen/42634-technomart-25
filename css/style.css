@@ -64,7 +64,7 @@ input[type="text"]:focus {
     padding: 0;
     margin: 0;
     line-height: 1.33;
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 15px;
     text-align: left;
 }
@@ -117,7 +117,7 @@ input[type="text"]:focus {
     width: 140px;
     height: 38px;
     font-size: 13px;
-    font-family: PTSans;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .page-header-wrapper {
@@ -357,7 +357,7 @@ input[type="text"]:focus {
 
 .advantages-container h3:first-child,
 .advantages-container p:first-child {
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
 }
 
@@ -693,8 +693,8 @@ input[type="text"]:focus {
     opacity: 1;
 }
  
-/*
-.main-menu-item img {
+
+.img-item img {
     position: absolute;
     content: "";
     top: 31px;
@@ -702,7 +702,6 @@ input[type="text"]:focus {
     right: 43px;
     bottom: 27px;
 }
-*/
 
 .slider-item {
     margin-bottom: 53px;
@@ -837,6 +836,7 @@ input[type="text"]:focus {
 
 .breadcrumbs {
     display: flex;
+    align-items: baseline;
     width: 255px;
     justify-content: space-around;
     margin-left: 28px;
@@ -844,7 +844,7 @@ input[type="text"]:focus {
 
 .breadcrumbs a {
     position: relative;
-    font-family: "PTSans";
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 1.38;
     text-align: left;
@@ -893,7 +893,7 @@ input[type="text"]:focus {
 
 .breadcrumbs-current {
     position: relative;
-    font-family: "PTSans";
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     vertical-align: bottom;
     margin-left: 40px;
@@ -1000,7 +1000,7 @@ input[type="text"]:focus {
     right: 75px;
     bottom: 34px;
     color: #ffffff;
-    font-family: "PTSans";
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .crossed-outed-price {
@@ -1198,7 +1198,7 @@ input[type="text"]:focus {
     text-align: center;
     color: #000000;
     font-size: 13px;
-    font-family: "PTSans";
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .page-link-next {
@@ -1220,7 +1220,7 @@ input[type="text"]:focus {
 }
 
 .perforator-item span{
-    font-family: "PTSans";
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: bold;
     line-height: 1.06;
     padding: 0;
@@ -1299,14 +1299,14 @@ input[type="text"]:focus {
 
 .advantages-description-1 {
     width: 398px;
-    font-family: "PTSans";
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     text-align: left;
 }
 
 .advantages-description-2 {
     width: 275px;
-    font-family: "PTSans";
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     text-align: left;
 }
@@ -1525,24 +1525,99 @@ input[type="text"]:focus {
 }
 
 .filter-option label {
-    padding-left: 8px;
+    padding-left: 0;
 }
 
-/*
-.login-checkbox {
+.item-bosch,
+.item-interscole,
+.item-makita,
+.item-dewalt,
+.item-hitachi {
     position: relative;
+    cursor: pointer;
+    padding-left: 20px;
 }
 
-.login-checkbox .input[type="checkbox"] + .checkbox-indicator {
-    display: block;
+.item-bosch input[type="checkbox"] + .checkbox-indicator,
+.item-makita input[type="checkbox"] + .checkbox-indicator {
     position: absolute;
+    margin-right: 30px;
     top: 0;
     left: 0;
-    width: 17px;
-    height: 17px;
-    background-color: #00ca74;
-  }
-*/
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-on.svg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.item-interscole input[type="checkbox"] + .checkbox-indicator,
+.item-dewalt input[type="checkbox"] + .checkbox-indicator,
+.item-hitachi input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    margin-right: 30px;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/checkbox-off.svg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.item-interscole input[type="checkbox"]:checked + .checkbox-indicator,
+.item-dewalt input[type="checkbox"]:checked + .checkbox-indicator,
+.item-hitachi input[type="checkbox"]:checked + .checkbox-indicator {
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.item-bosch input[type="checkbox"]:not(:checked) + .checkbox-indicator,
+.item-makita input[type="checkbox"]:not(:checked) + .checkbox-indicator {
+    background-image: url("../img/checkbox-off.svg");
+}
+
+.battery,
+.network {
+    position: relative;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.battery input[type="radio"] + .radio-indicator {
+    position: absolute;
+    margin-right: 30px;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/radio-on.svg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.network input[type="radio"] + .radio-indicator {
+    position: absolute;
+    margin-right: 30px;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 23px;
+    background-image: url("../img/radio-off.svg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.battery input[type="radio"]:checked + .radio-indicator,
+.network input[type="radio"]:checked + .radio-indicator
+ {
+    background-image: url("../img/radio-on.svg");
+}
+
+.battery input[type="radio"]:not(:checked) + .radio-indicator,
+.network input[type="radio"]:not(:checked) + .radio-indicator {
+    background-image: url("../img/radio-off.svg");
+}
+
 
 .generators-fieldset {
     margin-bottom: 48px;
