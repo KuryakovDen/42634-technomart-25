@@ -245,6 +245,8 @@ input[type="text"]:focus {
 }
 
 .header-form {
+    position: relative;
+    display: flex;
     width: 270px;
 }
 
@@ -264,6 +266,8 @@ input[type="text"]:focus {
     position: absolute;
     width: 20px;
     height: 20px;
+    top: 12px;
+    left: 17px;
     background-image: url("../img/icon-search.svg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -693,6 +697,25 @@ input[type="text"]:focus {
     opacity: 1;
 }
  
+/*
+.materials-item,
+.tools-item,
+.equipment-item,
+.sales-item,
+.delivery-item {
+    position: relative;
+}
+
+.materials-item::after {
+    position: absolute;
+    content: "";
+    top: 31px;
+    left: 213px;
+    right: 43px;
+    bottom: 27px;
+    
+}
+*/
 
 .img-item img {
     position: absolute;
@@ -702,6 +725,7 @@ input[type="text"]:focus {
     right: 43px;
     bottom: 27px;
 }
+
 
 .slider-item {
     margin-bottom: 53px;
@@ -1535,7 +1559,7 @@ input[type="text"]:focus {
 .item-hitachi {
     position: relative;
     cursor: pointer;
-    padding-left: 20px;
+    /*left: 40px;*/
 }
 
 .item-bosch input[type="checkbox"] + .checkbox-indicator,
@@ -1633,10 +1657,10 @@ input[type="text"]:focus {
 }
 
 .filter-container-wrapper-1 {
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
     width: 220px;
-    min-height: 670px;
+    /*max-height: 670px;*/
     margin: 0;
     padding: 0;
     margin-right: 20px;
