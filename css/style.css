@@ -8,7 +8,6 @@ body {
     font-family: "Cuprum", Arial, sans-serif;
     color: #000000;
     background-color: #ffffff;
-    background-image: url();
 }
 
 a {
@@ -256,6 +255,13 @@ input[type="text"]:focus {
     width: 100%;
     background-color: #293449;
     border: none;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 49px;
+}
+
+.header-form input[type="search"]::placeholder {
+    color: #ffffff;
 }
 
 .header-form input[type="search"]:hover {
@@ -264,8 +270,8 @@ input[type="text"]:focus {
 
 .search-label {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     top: 12px;
     left: 17px;
     background-image: url("../img/icon-search.svg");
@@ -571,7 +577,7 @@ input[type="text"]:focus {
     left: 25px;
     right: 573px;
     bottom: 112px;
-    background: url("../img/icon-left.svg");
+    background-image: url("../img/icon-left.svg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -697,7 +703,7 @@ input[type="text"]:focus {
     opacity: 1;
 }
  
-/*
+
 .materials-item,
 .tools-item,
 .equipment-item,
@@ -706,17 +712,74 @@ input[type="text"]:focus {
     position: relative;
 }
 
-.materials-item::after {
+.materials-item::before {
     position: absolute;
     content: "";
+    width: 44px;
+    height: 65px;
     top: 31px;
     left: 213px;
     right: 43px;
     bottom: 27px;
-    
+    background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-*/
 
+.tools-item::before {
+    position: absolute;
+    content: "";
+    width: 75px;
+    height: 61px;
+    top: 31px;
+    left: 213px;
+    right: 43px;
+    bottom: 27px;
+    background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.equipment-item::before {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 62px;
+    top: 31px;
+    left: 213px;
+    right: 43px;
+    bottom: 27px;
+    background-image: url("../img/icon-3.svg");
+    background-size: 100%;
+}
+
+.sales-item::before {
+    position: absolute;
+    content: "";
+    width: 59px;
+    height: 72px;
+    top: 31px;
+    left: 213px;
+    right: 43px;
+    bottom: 27px;
+    background-image: url("../img/icon-4.svg");
+    background-size: 100%;
+}
+
+.delivery-item::before {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 63px;
+    top: 31px;
+    left: 213px;
+    right: 43px;
+    bottom: 27px;
+    background-image: url("../img/icon-5.svg");
+    background-size: 100%;
+}
+
+/*
 .img-item img {
     position: absolute;
     content: "";
@@ -725,7 +788,7 @@ input[type="text"]:focus {
     right: 43px;
     bottom: 27px;
 }
-
+*/
 
 .slider-item {
     margin-bottom: 53px;
@@ -1270,7 +1333,7 @@ input[type="text"]:focus {
     left: 159px;
     bottom: 259px;
     width: 60px;
-    height: 60px;
+    height: 59px;
     background-image: url("../img/new-flag.png");
     background-size: 100%;
     background-position: center;
@@ -1287,7 +1350,7 @@ input[type="text"]:focus {
     right: 0;
     bottom: 259px;
     width: 60px;
-    height: 60px;
+    height: 59px;
     background-image: url("../img/new-flag.png");
     background-size: 100%;
     background-position: center;
@@ -1575,6 +1638,10 @@ input[type="text"]:focus {
     background-position: center;
 }
 
+.filter-paragraph {
+    margin-left : 35px;
+}
+
 .item-interscole input[type="checkbox"] + .checkbox-indicator,
 .item-dewalt input[type="checkbox"] + .checkbox-indicator,
 .item-hitachi input[type="checkbox"] + .checkbox-indicator {
@@ -1582,7 +1649,7 @@ input[type="text"]:focus {
     margin-right: 30px;
     top: 0;
     left: 0;
-    width: 27px;
+    width: 23px;
     height: 23px;
     background-image: url("../img/checkbox-off.svg");
     background-size: 100%;
@@ -1592,11 +1659,15 @@ input[type="text"]:focus {
 .item-interscole input[type="checkbox"]:checked + .checkbox-indicator,
 .item-dewalt input[type="checkbox"]:checked + .checkbox-indicator,
 .item-hitachi input[type="checkbox"]:checked + .checkbox-indicator {
+    width: 27px;
+    height: 23px;
     background-image: url("../img/checkbox-on.svg");
 }
 
 .item-bosch input[type="checkbox"]:not(:checked) + .checkbox-indicator,
 .item-makita input[type="checkbox"]:not(:checked) + .checkbox-indicator {
+    width: 23px;
+    height: 23px;
     background-image: url("../img/checkbox-off.svg");
 }
 
@@ -1612,8 +1683,8 @@ input[type="text"]:focus {
     margin-right: 30px;
     top: 0;
     left: 0;
-    width: 27px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     background-image: url("../img/radio-on.svg");
     background-size: 100%;
     background-position: center;
@@ -1624,8 +1695,8 @@ input[type="text"]:focus {
     margin-right: 30px;
     top: 0;
     left: 0;
-    width: 27px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     background-image: url("../img/radio-off.svg");
     background-size: 100%;
     background-position: center;
@@ -1644,7 +1715,7 @@ input[type="text"]:focus {
 
 
 .generators-fieldset {
-    margin-bottom: 48px;
+    margin-bottom: 21px;
 }
 
 .product-fieldset {
@@ -1673,6 +1744,12 @@ input[type="text"]:focus {
     min-height: 1080px;
     margin: 0;
     padding: 0;
+}
+
+.filter-line {
+    width: 220px;
+    height: 1px;
+    background-color: #e5e5e5;
 }
 
 .company-list {
@@ -1744,7 +1821,7 @@ input[type="text"]:focus {
 }
 
 .modal {
-    display: none;
+    display: block;
     width: 620px;
     min-height: 282px;
     background-color: #ffffff;
@@ -1761,7 +1838,6 @@ input[type="text"]:focus {
 .modal-cart,
 .modal-map-window {
     position: relative;
-    display: none;
 }
 
 .modal-cart::after {
@@ -1773,7 +1849,9 @@ input[type="text"]:focus {
     left: 590px;
     right: 6px;
     bottom: 188px;
-    background-color: #5fbb2d;
+    background-image: url("../img/modal-close.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .modal-map-window::after {
@@ -1785,7 +1863,9 @@ input[type="text"]:focus {
     left: 910px;
     right: 6px;
     bottom: 417px;
-    background-color: #5fbb2d;
+    background-image: url("../img/modal-close.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .modal-button-background {
@@ -1800,7 +1880,6 @@ input[type="text"]:focus {
 
 .modal-feedback-form {
     position: relative;
-    display:none;
     min-height: 430px;
 }
 
@@ -1813,7 +1892,9 @@ input[type="text"]:focus {
     left: 590px;
     right: 6px;
     bottom: 393px;
-    background-color: #5fbb2d;
+    background-image: url("../img/modal-close.svg");
+    background-size: 100%;
+    background-position: center;
 }
 
 .modal-feedback-item {

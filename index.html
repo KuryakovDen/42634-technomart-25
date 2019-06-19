@@ -64,50 +64,20 @@
       </div>
     </header>
     <main class="main-page">
-      <section class="modal modal-feedback-form">
-          <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
-            <p class="form-feedback-fullname">
-              <label for="fullname-customer">
-                Ваше имя:
-              </label> 
-              <input id="fullname-customer" type="text" name="fullname" placeholder="Имя Фамилия">
-            </p>
-            <p class="form-feedback-email">
-              <label for="email-customer">
-                Ваш e-mail:
-              </label> 
-              <input id="email-customer" type="text" name="email" placeholder="email@example.com">
-            </p>
-            <p class="form-feedback-description">
-              <label for="feedback-site">
-                Текст письма:
-              </label> 
-              <input id="feedback-site" type="text" name="text-description" placeholder="В свободной форме">
-            </p>
-            <div class="modal-submit-background">
-              <div class="submit-button-container">
-                <button class="form-submit-button upper button" type="submit">Отправить</button>
-              </div>
-            </div>
-          </form>
-        </section>
       <section class="menu-container">
         <div class="container">
           <h2 class="visually-hidden">Меню</h2>
           <div class="main-menu-list">
             <div class="main-menu-item menu-item-new img-item materials-item">
               <h3>Материалы</h3>
-              <img src="img/icon-1.svg" width="44" height="65" alt="Карточка материалов">
               <a href="#" aria-label="materials" class="upper">на любой вкус</a>
             </div>
             <div class="main-menu-item img-item tools-item">
               <h3>Инструмент</h3>
-              <img src="img/icon-2.svg" width="75" height="61" alt="Карточка инструментов">
               <a href="#" aria-label="tool" class="upper">НА ВСЕ СЛУЧАИ</a>
             </div>
             <div class="main-menu-item img-item equipment-item">
               <h3>Техника</h3>
-              <img src="img/icon-3.svg" width="78" height="62" alt="Карточка техники">
               <a href="#" aria-label="equipment" class="upper">для стройки</a>
             </div>
             <div class="main-menu-item menu-gallary">
@@ -118,12 +88,10 @@
             </div>
             <div class="main-menu-item img-item sales-item">
               <h3>Скидки 50%</h3>
-              <img src="img/icon-4.svg" width="59" height="72" alt="Карточка со скидками">
               <a href="#" aria-label="sales" class="upper">На 350 ТОВАРОВ</a>
             </div>
             <div class="main-menu-item img-item delivery-item">
               <h3>Доставка</h3>
-              <img src="img/icon-5.svg" width="78" height="63" alt="Карточка с доставкой">
               <a href="#" aria-label="delivery" class="upper">бесплатно</a>
             </div>
           </div>
@@ -360,10 +328,37 @@
           </div>
           <div class="site-developer">
             <p>Разработано —</p>
-            <a href="#" class="navigation-list-about">Сайт HTML Academy</a>
+            <a href="https://htmlacademy.ru" class="navigation-list-about">Сайт HTML Academy</a>
           </div>
         </div>
       </section>
     </footer>
+    <section class="modal modal-feedback-form">
+      <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="form-feedback-fullname">
+          <label for="fullname-customer">
+            Ваше имя:
+          </label> 
+          <input id="fullname-customer" type="text" name="fullname" placeholder="Имя Фамилия">
+        </p>
+        <p class="form-feedback-email">
+          <label for="email-customer">
+            Ваш e-mail:
+          </label> 
+          <input id="email-customer" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p class="form-feedback-description">
+          <label for="feedback-site">
+            Текст письма:
+          </label> 
+          <input id="feedback-site" type="text" name="text-description" placeholder="В свободной форме">
+        </p>
+        <div class="modal-submit-background">
+          <div class="submit-button-container">
+            <button class="form-submit-button upper button" type="submit">Отправить</button>
+          </div>
+        </div>
+      </form>
+    </section>
   </body>
 </html>

@@ -67,44 +67,6 @@
       </div>
     </header>
     <main>
-      <section class="modal modal-cart">
-        <img src="img/modal-check.svg" width="66" height="66" alt="Галочка подтверждения">
-        <b>Товар добавлен в корзину!</b>
-        <div class="modal-button-background">
-          <button class="button">ОФОРМИТЬ ЗАКАЗ</button>
-          <button class="button button-buy">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-        </div>
-      </section>
-      <section class="modal-map-window">
-        <img src="img/big_map.jpg" width="940" height="446" alt="Картинка большой карты">
-      </section>
-      <section class="modal modal-feedback-form">
-        <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
-          <p class="form-feedback-fullname">
-            <label for="fullname-customer">
-              Ваше имя:
-            </label> 
-            <input id="fullname-customer" type="text" name="fullname" placeholder="Имя Фамилия">
-          </p>
-          <p class="form-feedback-email">
-            <label for="email-customer">
-              Ваш e-mail:
-            </label> 
-            <input id="email-customer" type="text" name="email" placeholder="email@example.com">
-          </p>
-          <p class="form-feedback-description">
-            <label for="feedback-site">
-              Текст письма:
-            </label> 
-            <input id="feedback-site" type="text" name="text-description" placeholder="В свободной форме">
-          </p>
-          <div class="modal-submit-background">
-            <div class="submit-button-container">
-              <button class="form-submit-button upper button" type="submit">Отправить</button>
-            </div>
-          </div>
-        </form>
-      </section>
       <section class="breadcrumbs-container upper container">
         <ul class="breadcrumbs">
           <li><a href="index.html" class="breadcrumbs-catalog">Каталог</a></li>
@@ -138,6 +100,7 @@
               </div>
             </fieldset>
           </form>
+          <hr class="filter-line">
           <form class="form-generators upper" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="generators-fieldset">
               <legend>Производители:</legend>
@@ -146,39 +109,40 @@
                   <label class="item-bosch">
                     <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="bosch" checked>
                     <span class="checkbox-indicator"></span>
-                    BOSCH
+                    <p class="filter-paragraph">BOSCH</p>
                   </label>
                 </li>
                 <li class="filter-option">
                   <label class="item-interscole">
                     <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="interscole">
                     <span class="checkbox-indicator"></span>
-                    ИНТЕРСКОЛ
+                    <p class="filter-paragraph">ИНТЕРСКОЛ</p>
                   </label>
                 </li>
                 <li class="filter-option">
                   <label class="item-makita">
                     <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="makita" checked>
                     <span class="checkbox-indicator"></span>
-                    MAKIta
+                    <p class="filter-paragraph">MAKIta</p>
                   </label>
                 </li>
                 <li class="filter-option">
                   <label class="item-dewalt">
                     <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="dewalt">
                     <span class="checkbox-indicator"></span>
-                    Dewalt
+                    <p class="filter-paragraph">Dewalt</p>
                   </label>
                 </li>
                 <li class="filter-option">
                   <label class="item-hitachi">
                     <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="hitachi">
                     <span class="checkbox-indicator"></span>
-                    Hitachi
+                    <p class="filter-paragraph">Hitachi</p>
                   </label>
                 </li>
               </ul>
             </fieldset>
+            <hr class="filter-line">
             <fieldset class="product-fieldset">
               <legend>Питание:</legend>
               <ul class="supply-list">
@@ -186,14 +150,14 @@
                   <label class="battery">
                     <input class="filter-input filter-input-radio visually-hidden" type="radio" name="product-group" value="battery-value" checked>
                     <span class="radio-indicator"></span>
-                    Аккумуляторные
+                    <p class="filter-paragraph">Аккумуляторные</p>
                   </label>
                 </li>
                 <li class="filter-option">
                   <label class="network">
                     <input class="filter-input filter-input-radio visually-hidden" type="radio" name="product-group" value="network-value">
                     <span class="radio-indicator"></span>
-                    Сетевые
+                    <p class="filter-paragraph">Сетевые</p>
                   </label>
                 </li>
               </ul>
@@ -405,10 +369,48 @@
           </div>
           <div class="site-developer">
             <p>Разработано —</p>
-            <a href="#" class="navigation-list-about">Сайт HTML Academy</a>
+            <a href="https://htmlacademy.ru" class="navigation-list-about">Сайт HTML Academy</a>
           </div>
         </div>
       </section>
     </footer>
+    <section class="modal modal-cart">
+      <img src="img/modal-check.svg" width="66" height="66" alt="Галочка подтверждения">
+      <b>Товар добавлен в корзину!</b>
+      <div class="modal-button-background">
+        <button class="button">ОФОРМИТЬ ЗАКАЗ</button>
+        <button class="button button-buy">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+      </div>
+    </section>
+    <section class="modal-map-window">
+      <img src="img/big_map.jpg" width="940" height="446" alt="Картинка большой карты">
+    </section>
+    <section class="modal modal-feedback-form">
+      <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="form-feedback-fullname">
+          <label for="fullname-customer">
+            Ваше имя:
+          </label> 
+          <input id="fullname-customer" type="text" name="fullname" placeholder="Имя Фамилия">
+        </p>
+        <p class="form-feedback-email">
+          <label for="email-customer">
+            Ваш e-mail:
+          </label> 
+          <input id="email-customer" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p class="form-feedback-description">
+          <label for="feedback-site">
+            Текст письма:
+          </label> 
+          <input id="feedback-site" type="text" name="text-description" placeholder="В свободной форме">
+        </p>
+        <div class="modal-submit-background">
+          <div class="submit-button-container">
+            <button class="form-submit-button upper button" type="submit">Отправить</button>
+          </div>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
