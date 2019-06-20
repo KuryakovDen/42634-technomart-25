@@ -1831,6 +1831,8 @@ input[type="text"]:focus {
 }
 
 .modal-cart b {
+    padding: 0;
+    margin: 0;
     font-size: 30px;
     font-weight: normal;
 }
@@ -1898,8 +1900,14 @@ input[type="text"]:focus {
 }
 
 .modal-feedback-item {
-    display: flex;
-    flex-direction: column;
+    display: block;
+}
+
+.form-feedback-wrapper {
+    background-color: #00ca74;
+    width: 620px;
+    height: 226px;
+    margin-top: 55px;
 }
 
 .modal-feedback-container {
@@ -1918,6 +1926,15 @@ input[type="text"]:focus {
     background-color: #f4f4f4;
     width: 620px;
     min-height: 112px;
+    margin-top: 37px;
+}
+
+.cart-button {
+    width: 220px;
+    height: 38px;
+    font-size: 14px;
+    line-height: 1.29;
+    margin-right: 20px;
 }
 
 .submit-button-container {
