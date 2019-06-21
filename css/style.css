@@ -1430,7 +1430,7 @@ input[type="text"]:focus {
 .form-sorting {
     background-color: #f7f3ec;
     min-height: 40px;
-    font-family: "PTSans", Arial, sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     margin-bottom: 21px;
 }
@@ -1821,7 +1821,7 @@ input[type="text"]:focus {
 }
 
 .modal {
-    display: block;
+    display: none;
     width: 620px;
     min-height: 282px;
     background-color: #ffffff;
@@ -1839,7 +1839,12 @@ input[type="text"]:focus {
 
 .modal-cart,
 .modal-map-window {
+    display: none;
     position: relative;
+}
+
+.modal-map-window img {
+    box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
 }
 
 .modal-cart::after {
@@ -1854,6 +1859,34 @@ input[type="text"]:focus {
     background-image: url("../img/modal-close.svg");
     background-size: 100%;
     background-position: center;
+}
+
+.modal-cart-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    width: 620px;
+    min-height: 163px;
+}
+
+.modal-cart-wrapper::before {
+    position: absolute;
+    content: "";
+    top: 32px;
+    left: 80px;
+    right: 473px;
+    width: 66px;
+    height: 66px;
+    background-image: url("../img/modal-check.svg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.modal-cart-wrapper b {
+    padding: 0;
+    margin: 0;
 }
 
 .modal-map-window::after {
@@ -1883,6 +1916,7 @@ input[type="text"]:focus {
 .modal-feedback-form {
     position: relative;
     min-height: 430px;
+    width: 620px;
 }
 
 .modal-feedback-form::after {
@@ -1904,10 +1938,16 @@ input[type="text"]:focus {
 }
 
 .form-feedback-wrapper {
-    background-color: #00ca74;
-    width: 620px;
+    width: 460px;
     height: 226px;
     margin-top: 55px;
+    margin-left: 80px;
+    margin-bottom: 37px;
+}
+
+.form-feedback-wrapper p {
+    padding: 0;
+    margin: 0;
 }
 
 .modal-feedback-container {
@@ -1927,6 +1967,42 @@ input[type="text"]:focus {
     width: 620px;
     min-height: 112px;
     margin-top: 37px;
+}
+
+.fullname-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-feedback-wrapper input[type="text"] {
+    padding: 0;
+    margin: 0;
+    border: 2px solid #dee3e4;
+    border-radius: 4px;
+    width: 220px;
+    height: 38px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-align: left;
+    color: #a9a9a9;
+    margin-top: 13px;
+}
+
+.form-feedback-wrapper textarea {
+    padding: 0;
+    margin: 0;
+    border: 2px solid #dee3e4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 460px;
+    height: 114px;
+    padding-top: 13px;
+    padding-left: 16px;
+    margin-top: 15px;
 }
 
 .cart-button {

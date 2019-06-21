@@ -375,7 +375,9 @@
       </section>
     </footer>
     <section class="modal modal-cart">
-      <b>Товар добавлен в корзину!</b>
+      <div class="modal-cart-wrapper">
+        <b>Товар добавлен в корзину!</b>
+      </div>
       <div class="modal-submit-background">
         <button class="button cart-button">ОФОРМИТЬ ЗАКАЗ</button>
         <button class="button button-buy cart-button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
@@ -387,23 +389,25 @@
     <section class="modal modal-feedback-form">
       <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form-feedback-wrapper">
-          <p class="form-feedback-fullname">
+          <div class="fullname-wrapper">
+            <p class="form-feedback-fullname">
               <label for="fullname-customer">
-                Ваше имя:
+                Ваше имя:<br>
               </label> 
               <input id="fullname-customer" type="text" name="fullname" placeholder="Имя Фамилия">
             </p>
             <p class="form-feedback-email">
               <label for="email-customer">
-                Ваш e-mail:
+                Ваш e-mail:<br>
               </label> 
               <input id="email-customer" type="text" name="email" placeholder="email@example.com">
             </p>
-            <p class="form-feedback-description">
-              <label for="feedback-site">
-                Текст письма:
-              </label> 
-              <textarea placeholder="В свободной форме"></textarea> 
+          </div>
+          <p class="form-feedback-description">
+            <label for="feedback-site">
+              Текст письма:
+            </label> 
+            <textarea placeholder="В свободной форме"></textarea> 
           </p>
         </div>
         <div class="modal-submit-background">

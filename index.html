@@ -335,24 +335,28 @@
     </footer>
     <section class="modal modal-feedback-form">
       <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
-        <p class="form-feedback-fullname">
-          <label for="fullname-customer">
-            Ваше имя:
-          </label> 
-          <input id="fullname-customer" type="text" name="fullname" placeholder="Имя Фамилия">
-        </p>
-        <p class="form-feedback-email">
-          <label for="email-customer">
-            Ваш e-mail:
-          </label> 
-          <input id="email-customer" type="text" name="email" placeholder="email@example.com">
-        </p>
-        <p class="form-feedback-description">
-          <label for="feedback-site">
-            Текст письма:
-          </label> 
-          <input id="feedback-site" type="text" name="text-description" placeholder="В свободной форме">
-        </p>
+        <div class="form-feedback-wrapper">
+          <div class="fullname-wrapper">
+            <p class="form-feedback-fullname">
+              <label for="fullname-customer">
+                Ваше имя:<br>
+              </label> 
+              <input id="fullname-customer" type="text" name="fullname" placeholder="Имя Фамилия">
+            </p>
+            <p class="form-feedback-email">
+              <label for="email-customer">
+                Ваш e-mail:<br>
+              </label> 
+              <input id="email-customer" type="text" name="email" placeholder="email@example.com">
+            </p>
+          </div>
+          <p class="form-feedback-description">
+            <label for="feedback-site">
+              Текст письма:
+            </label> 
+            <textarea placeholder="В свободной форме"></textarea> 
+          </p>
+        </div>
         <div class="modal-submit-background">
           <div class="submit-button-container">
             <button class="form-submit-button upper button" type="submit">Отправить</button>
