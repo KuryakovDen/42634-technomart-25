@@ -1816,12 +1816,12 @@ input[type="text"]:focus {
     margin-top: 40px;
 }
 
-.link-map {
+.feedback-link {
     width: 300px;
 }
 
 .modal {
-    display: none;
+    display: block;
     width: 620px;
     min-height: 282px;
     background-color: #ffffff;
@@ -1842,6 +1842,10 @@ input[type="text"]:focus {
     display: none;
     position: relative;
 }
+/*
+.modal-map-window {
+    position: fixed;
+}*/
 
 .modal-map-window img {
     box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
@@ -1889,7 +1893,7 @@ input[type="text"]:focus {
     margin: 0;
 }
 
-.modal-map-window::after {
+.button-map {
     position: absolute;
     content: "";
     width: 21px;
@@ -1901,6 +1905,22 @@ input[type="text"]:focus {
     background-image: url("../img/modal-close.svg");
     background-size: 100%;
     background-position: center;
+    cursor: pointer;
+}
+
+.button-feedback {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 21px;
+    top: 10px;
+    left: 590px;
+    right: 6px;
+    bottom: 417px;
+    background-image: url("../img/modal-close.svg");
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
 }
 
 .modal-button-background {
@@ -1914,12 +1934,13 @@ input[type="text"]:focus {
 
 
 .modal-feedback-form {
+    display: none;
     position: relative;
     min-height: 430px;
     width: 620px;
 }
 
-.modal-feedback-form::after {
+.button-map {
     position: absolute;
     content: "";
     width: 21px;
@@ -1936,6 +1957,10 @@ input[type="text"]:focus {
 .modal-feedback-item {
     display: block;
 }
+
+.modal-show {
+    display: block;
+} 
 
 .form-feedback-wrapper {
     width: 460px;
