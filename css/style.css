@@ -1821,7 +1821,7 @@ input[type="text"]:focus {
 }
 
 .modal {
-    display: block;
+    display: none;
     width: 620px;
     min-height: 282px;
     background-color: #ffffff;
@@ -1841,10 +1841,6 @@ input[type="text"]:focus {
 .modal-map-window {
     display: none;
     position: relative;
-}
-
-.modal-show {
-    display: block;
 }
 
 .modal-map-window img {
