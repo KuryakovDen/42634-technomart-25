@@ -48,6 +48,10 @@ input[type="text"]:focus {
     padding: 0;
 }
 
+.main-menu-list {
+    min-height: 521px;
+}
+
 .main-navigation-list,
 .navigation-usual-list,
 .navigation-equipment-list,
@@ -123,34 +127,39 @@ input[type="text"]:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    min-height: 153px;
 }
 
 .page-header-title {
     color: #ee3643;
     width: 196px;
-    height: auto;
+    min-height: 60px;
     font-size: 16px;
     font-weight: normal;
+    font-family: "Cuprum", Arial, sans-serif;
     font-style: italic;
     text-align: left;
     line-height: 1.44;
     margin: 0;
     padding: 0;
     margin-left: 53px;
-    margin-bottom: 28px;
+    margin-bottom: 35px;
 }
 
 .phone-wrapper {
     margin: 0;
-    margin-bottom: 19px;
+    margin-bottom: 25px;
+    margin-top: -15px;
+    box-sizing: border-box;
 }
 
 /* Шапка */
 
 .main-header {
     background-color: #f4f7f9;
-    padding-bottom: 60px;
+    padding-bottom: 59px;
 }
 
 .header-logo {
@@ -160,6 +169,7 @@ input[type="text"]:focus {
     background-color: #ee3643;
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
     width: 220px;
+    height: 47px;
     text-align: center;
     margin-bottom: -5px;
     box-sizing: border-box;
@@ -211,7 +221,9 @@ input[type="text"]:focus {
     line-height: 1.71;
     text-align: left;
     color: #32425c;
-    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
 }
 
 .header-phone {
@@ -227,12 +239,13 @@ input[type="text"]:focus {
     text-align: center;
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 .header-phone::before {
     position: absolute;
     content: "";
-    top: 13px;
+    top: 10px;
     left: 15px;
     right: 236px;
     bottom: 13px;
@@ -255,8 +268,6 @@ input[type="text"]:focus {
     width: 100%;
     background-color: #293449;
     border: none;
-    padding-top: 12px;
-    padding-bottom: 13px;
     padding-left: 49px;
 }
 
@@ -298,11 +309,17 @@ input[type="text"]:focus {
     position: relative;
 }
 
+.item-bookmarks p {
+    padding: 0;
+    margin: 0;
+    margin-left: 13px;
+}
+
 .item-bookmarks::before {
     content: "";
     position: absolute;
     left:17px;
-    top:15px;
+    top:12px;
     width:14px;
     height:16px;
     opacity: 0.3;
@@ -311,13 +328,23 @@ input[type="text"]:focus {
     background-size: 100%;
 }
 
+.item-cart-red {
+    background-color: #ee3643;
+}
+
+.item-cart p {
+    padding: 0;
+    margin: 0;
+    margin-left: 16px;
+}
+
 .item-cart::before {
     content: "";
     position: absolute;
     left: 18px;
     top:12px;
-    width:14px;
-    height:16px;
+    width:15px;
+    height:15px;
     opacity: 0.3;
     background: url("../img/icon-cart.svg");
     background-repeat: no-repeat;
@@ -341,7 +368,8 @@ input[type="text"]:focus {
     justify-content: center;
     align-items: center;
     width: 150px;
-    min-height: 40px;
+    min-height: 42px;
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -372,6 +400,7 @@ input[type="text"]:focus {
 }
 
 .private-office {
+    margin-top: 8px;
     margin-bottom: 25px;
 }
 
@@ -379,7 +408,7 @@ input[type="text"]:focus {
     flex-direction: column;
     width: 183px;
     height: auto;
-    font-family: Cuprum;
+    font-family: "Cuprum", Arial, sans-serif;
     color: #000000;
 }
 
@@ -390,8 +419,22 @@ input[type="text"]:focus {
 
 .private-office-link {
     text-decoration: underline;
-    color: #32425c;
     font-size: 16px;
+}
+
+.private-office-link p {
+    padding: 0;
+    margin: 0;
+    color: #32425c;
+}
+
+.private-office-link p:hover {
+    color: #ee3643;
+}
+
+.private-office li {
+    padding: 0;
+    margin: 0;
 }
 
 .private-office li:first-child {
@@ -495,7 +538,8 @@ input[type="text"]:focus {
     position: relative;
     background-color: white;
     text-align: center;
-    padding: 14px 69px 11px 47px;
+    box-sizing: border-box;
+    padding: 10px 65px 10px 47px;
     font-size: 21px;
 }
 
@@ -557,7 +601,7 @@ input[type="text"]:focus {
     min-height: 125px;
     margin-right: 20px;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 56px;
 }
 
 .menu-gallary {
@@ -598,6 +642,7 @@ input[type="text"]:focus {
 
 .menu-gallary h2 {
     position: absolute;
+    font-size: 36px;
     content: "";
     top: 0px;
     left: 24px;
@@ -608,7 +653,7 @@ input[type="text"]:focus {
 .menu-gallary p {
     position: absolute;
     content: "";
-    top: 40px;
+    top: 58px;
     left: 24px;
     right: 502px;
     bottom: 210px;
@@ -637,13 +682,14 @@ input[type="text"]:focus {
     right:166px;
     bottom:75px;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
     white-space: nowrap;
 }
 
 .main-menu-item a {
     display: block;
     position: absolute;
+    font-size: 14px;
     top:63px;
     left:25px;
     right:140px;
@@ -651,18 +697,17 @@ input[type="text"]:focus {
     width: 135px;
     height: 38px;
     line-height: 38px;
-    opacity: 0.1;
-    background-color: #000000;
+    background: rgba(0,0,0,0.1);
     color: #ffffff;
     text-align: center;
 }
 
 .main-menu-item a:hover {
-    opacity: 0.2;
+    background: rgba(0,0,0,0.2);
 }
 
 .main-menu-item a:active {
-    opacity: 0.3;
+    background: rgba(0,0,0,0.3);
 }
 
 .main-menu-item:first-child {
@@ -732,8 +777,7 @@ input[type="text"]:focus {
     width: 75px;
     height: 61px;
     top: 31px;
-    left: 213px;
-    right: 43px;
+    left: 200px;
     bottom: 27px;
     background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
@@ -746,8 +790,7 @@ input[type="text"]:focus {
     width: 78px;
     height: 62px;
     top: 31px;
-    left: 213px;
-    right: 43px;
+    left: 195px;
     bottom: 27px;
     background-image: url("../img/icon-3.svg");
     background-size: 100%;
@@ -759,7 +802,7 @@ input[type="text"]:focus {
     width: 59px;
     height: 72px;
     top: 31px;
-    left: 213px;
+    left: 200px;
     right: 43px;
     bottom: 27px;
     background-image: url("../img/icon-4.svg");
@@ -772,8 +815,7 @@ input[type="text"]:focus {
     width: 78px;
     height: 63px;
     top: 31px;
-    left: 213px;
-    right: 43px;
+    left: 190px;
     bottom: 27px;
     background-image: url("../img/icon-5.svg");
     background-size: 100%;
@@ -1105,6 +1147,7 @@ input[type="text"]:focus {
 .tabs {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 940px;
     margin-top: 28px;
     border: 2px solid black;
@@ -1128,7 +1171,7 @@ input[type="text"]:focus {
     content: "";
     width: 10px;
     height: 279px;
-    top: 20px;
+    top: -40px;
     right: 0;
     background-image: url("../img/shadow.png");
     background-size: 100%;
@@ -1378,7 +1421,7 @@ input[type="text"]:focus {
 .about-company-description-4,
 .company-list,
 .advantages-description-1,
-.advantages-description-2 {
+.tabs-content-text {
     padding: 0;
     margin: 0;
     line-height: 1.85;
@@ -1391,11 +1434,22 @@ input[type="text"]:focus {
     text-align: left;
 }
 
-.advantages-description-2 {
+.tabs-content-text {
     width: 275px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     text-align: left;
+}
+
+.delivery-text,
+.guarantee-text,
+.credit-text,
+.submit-task {
+    display: none;
+}
+
+.tabs-list li:checked ~ .delivery-text {
+    display: block;
 }
 
 .about-company-description-4 {
@@ -1837,7 +1891,10 @@ input[type="text"]:focus {
     font-weight: normal;
 }
 
-.modal-cart,
+.modal-cart {
+    display: none;
+}
+
 .modal-map-window {
     display: none;
     position: relative;
@@ -1906,6 +1963,9 @@ input[type="text"]:focus {
     background-size: 100%;
     background-position: center;
     cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
 .button-feedback {
@@ -1921,6 +1981,9 @@ input[type="text"]:focus {
     background-size: 100%;
     background-position: center;
     cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
 .modal-button-background {
@@ -1946,8 +2009,7 @@ input[type="text"]:focus {
     width: 21px;
     height: 21px;
     top: 10px;
-    left: 590px;
-    right: 6px;
+    left: 910px;
     bottom: 393px;
     background-image: url("../img/modal-close.svg");
     background-size: 100%;
@@ -2022,6 +2084,7 @@ input[type="text"]:focus {
     margin: 0;
     border: 2px solid #dee3e4;
     box-sizing: border-box;
+    font-size: 13px;
     border-radius: 4px;
     width: 460px;
     height: 114px;

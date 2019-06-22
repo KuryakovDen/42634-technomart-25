@@ -1,4 +1,3 @@
-
 var mapLink = document.querySelector(".go-to-map");
 var modalMapWindow = document.querySelector(".modal-map-window");
 var closeMapWindow = document.querySelector(".button-map");
@@ -6,11 +5,6 @@ var closeMapWindow = document.querySelector(".button-map");
 var feedbackLink = document.querySelector(".feedback-link");
 var modalFeedbackForm = document.querySelector(".modal-feedback-form");
 var closeFeedbackForm = document.querySelector(".button-feedback");
-
-var perforatorBuy = document.querySelector(".perforator-buy");
-var modalCart = document.querySelector(".modal-cart-wrapper");
-var closeModalCart = document.querySelector(".button-map");
-
 
 
 mapLink.addEventListener("click", function (evt) {
