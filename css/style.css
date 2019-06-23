@@ -103,6 +103,8 @@ input[type="text"]:focus {
 .button {
     display: block;
     width: 253px;
+    border: none;
+    border: solid 1px #e5e5e5;
     line-height: 1.29;
     background-color: #ee3643;
     color: #ffffff;
@@ -126,6 +128,7 @@ input[type="text"]:focus {
 .page-header-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     box-sizing: border-box;
     padding-top: 40px;
@@ -437,8 +440,23 @@ input[type="text"]:focus {
     margin: 0;
 }
 
-.private-office li:first-child {
+.private-office li {
     list-style-type: none;
+}
+
+.private-office li:last-child {
+    position: relative;
+}
+
+.private-office li:last-child::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 7px;
+    width:5px;
+    height:5px;
+    background-color: #000000;
+    border-radius: 50%;
 }
 
 .main-navigation {
@@ -643,8 +661,9 @@ input[type="text"]:focus {
 .menu-gallary h2 {
     position: absolute;
     font-size: 36px;
+    font-weight: 550;
     content: "";
-    top: 0px;
+    top: -10px;
     left: 24px;
     right: 502px;
     bottom: 210px;
@@ -653,7 +672,7 @@ input[type="text"]:focus {
 .menu-gallary p {
     position: absolute;
     content: "";
-    top: 58px;
+    top: 50px;
     left: 24px;
     right: 502px;
     bottom: 210px;
@@ -1056,10 +1075,12 @@ input[type="text"]:focus {
     left: 40px;
     width: 135px;
     height: 38px;
+    border: none;
+    font-size: 14px;
     box-shadow: inset 0px -3px 0 0 #367315;
     line-height: 1.29;
     background-color: #63a63e;
-    border-radius: 3px;
+    border-radius: 4px;
     margin-bottom: 8px;
     color: #ffffff;
 }
@@ -1075,7 +1096,7 @@ input[type="text"]:focus {
 .buy-button::before {
     position: absolute;
     content: "";
-    top: 5px;
+    top: 10px;
     left: 14px;
     right: 106px;
     bottom: 12px;
@@ -1093,8 +1114,9 @@ input[type="text"]:focus {
     background-color: white;
     width: 135px;
     height: 38px;
+    font-size: 14px;
     border: solid 3px #63a63e;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .bookmarks-button:hover {
@@ -1117,31 +1139,36 @@ input[type="text"]:focus {
 }
 
 .perforator-img {
-   margin-left: 43px;
-   margin-top: 15px;
+    padding: 0;
+    margin: 0;
+    margin-left: 43px;
+    margin-top: 30px;
 }
 
 .discount-price {
     position: absolute;
     content: "";
-    top: 275px;
-    left: 80px;
+    top: 270px;
+    left: 76px;
     right: 75px;
     bottom: 34px;
     color: #ffffff;
+    font-size: 17px;
     font-family: "PT Sans", Arial, sans-serif;
 }
 
 .crossed-outed-price {
     position: absolute;
     content: "";
-    top: 240px;
+    top: 230px;
     left: 78px;
     right: 75px;
     bottom: 72px;
     margin-bottom: 18px;
     text-decoration: line-through;
     color: #999999;
+    font-size: 17px;
+    font-family: "PT Sans", Arial, sans-serif;
 }
 
 .tabs {
@@ -1216,6 +1243,7 @@ input[type="text"]:focus {
 .perforator-info p {
     width: 938px;
     text-align: left;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
 }
@@ -1341,8 +1369,9 @@ input[type="text"]:focus {
     position: relative;
     margin-right: 20px;
     margin-bottom: 21px;
-    min-height: 320px;
-    width: 220px;
+    min-height: 318px;
+    width: 218px;
+    border: solid 1px #eaeaea;
 }
 
 .perforator-item:hover {
@@ -1360,7 +1389,10 @@ input[type="text"]:focus {
 .perforator-item h3 {
     padding: 0;
     margin: 0;
-    margin-top: 12px;
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.11;
     margin-bottom: 18px;
     text-align: center;
 }
@@ -1403,8 +1435,8 @@ input[type="text"]:focus {
     margin-right: 0;
 }
 
-.perforator-item-main {
-    margin-right: 24px;
+.perforator-item-main:nth-child(3n) {
+    margin-right: 20px;
 }
 
 .perforator-item-main:nth-child(4n) {
@@ -1416,14 +1448,22 @@ input[type="text"]:focus {
 }
 
 .about-company-description-1,
-.about-company-description-2
-.about-company-description-3
-.about-company-description-4,
+.about-company-description-2,
+.about-company-description-3,
 .company-list,
 .advantages-description-1,
 .tabs-content-text {
     padding: 0;
     margin: 0;
+    line-height: 1.85;
+    padding-top: 30px;
+}
+
+.about-company-description-1,
+.about-company-description-2,
+.about-company-description-3 {
+    font-size: 13px;
+    font-family: "PT Sans", Arial, sans-serif;
     line-height: 1.85;
 }
 
@@ -1441,24 +1481,24 @@ input[type="text"]:focus {
     text-align: left;
 }
 
+/*
 .delivery-text,
 .guarantee-text,
 .credit-text,
 .submit-task {
     display: none;
 }
+*/
 
+/*
 .tabs-list li:checked ~ .delivery-text {
     display: block;
 }
-
-.about-company-description-4 {
-    display: block;
-    width: 180px;
-    line-height: 1.85;
-}
+*/
 
 .contacts img {
+    padding: 0;
+    margin: 0;
     margin-top: 36px;
 }
 
@@ -1812,10 +1852,12 @@ input[type="text"]:focus {
     margin: 0;
     margin-left: 40px;
     list-style-type: none;
+    margin-top: 10px;
 }
 
 .company-list li {
     position: relative;
+    margin-top: 10px;
 }
 
 .company-list li:first-child::before {
@@ -1862,11 +1904,20 @@ input[type="text"]:focus {
 }
 
 .about-company-item {
-    margin-top: 82px;
     margin-bottom: 86px;
+    margin-top: 80px;
 }
 
-.about-company-link {
+.about-company-item h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.about-company-link-1 {
+    margin-top: 38px;
+}
+
+.about-company-link-2 {
     margin-top: 40px;
 }
 
@@ -1875,13 +1926,17 @@ input[type="text"]:focus {
 }
 
 .modal {
+    position: fixed;
     display: block;
+    top: 150px;
+    left: 50%;
     width: 620px;
     min-height: 282px;
     background-color: #ffffff;
     box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
     border-top: 7px solid #ee3643;
     margin: 20px;
+    margin-left: -310px;
 }
 
 .modal-cart b {
@@ -1897,7 +1952,12 @@ input[type="text"]:focus {
 
 .modal-map-window {
     display: none;
-    position: relative;
+    position: fixed;
+    border: none;
+    width: 940px;
+    left: 50%;
+    margin-left: -470px;
+    height: 446px;
 }
 /*
 .modal-map-window {
@@ -1906,20 +1966,6 @@ input[type="text"]:focus {
 
 .modal-map-window img {
     box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
-}
-
-.modal-cart::after {
-    position: absolute;
-    content: "";
-    width: 21px;
-    height: 21px;
-    top: 10px;
-    left: 590px;
-    right: 6px;
-    bottom: 188px;
-    background-image: url("../img/modal-close.svg");
-    background-size: 100%;
-    background-position: center;
 }
 
 .modal-cart-wrapper {
@@ -1998,7 +2044,7 @@ input[type="text"]:focus {
 
 .modal-feedback-form {
     display: none;
-    position: relative;
+    position: fixed;
     min-height: 430px;
     width: 620px;
 }
@@ -2084,6 +2130,7 @@ input[type="text"]:focus {
     margin: 0;
     border: 2px solid #dee3e4;
     box-sizing: border-box;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     border-radius: 4px;
     width: 460px;
