@@ -2068,7 +2068,14 @@ input[type="text"]:focus {
 
 .modal-show {
     display: block;
+    animation-name: bounce;
+    animation-duration: 0.5s; 
 } 
+
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.8s;
+}
 
 .form-feedback-wrapper {
     width: 460px;
@@ -2315,7 +2322,17 @@ input[type="text"]:focus {
     color:#ffd180;
 }
 
+@keyframes bounce {
+    0% {transform: translateX(-1000px)}
+    70% {transform: translateX(50px)}
+    90% {transform: translateX(-100px)}
+    100% {transform: translateX(0)}
+}
 
-
+@keyframes shake {
+    0%, 100% {transform: translateX(0)}
+    10%, 30%, 50%, 70% {transform: translateX(-30px)}
+    20%, 40%, 60%, 80% {transform: translateX(30px)}
+}
     
    

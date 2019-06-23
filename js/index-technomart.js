@@ -11,7 +11,24 @@ var perforatorBuy = document.querySelector(".perforator-buy");
 var modalCart = document.querySelector(".modal-cart-wrapper");
 var closeModalCart = document.querySelector(".button-map");
 
+var userFullname = modalFeedbackForm.querySelector("[name=fullname]");
+var userEmail = modalFeedbackForm.querySelector("[name=email]");
+var userMessage = modalFeedbackForm.querySelector("textarea");
 
+var form = modalFeedbackForm.querySelector(".form-feedback");
+var localStorageFullname = localStorage.getItem("userFullname");
+
+var isStorageSupport = true;
+var localStorageFullname = "";
+
+try {
+    localStorageFullname = localStorage.getItem("userFullname");
+} catch (err) {
+    isStorageSupport = false;
+}
+
+
+/*1*/
 
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -28,6 +45,16 @@ closeMapWindow.addEventListener("click", function (evt) {
 feedbackLink.addEventListener("click", function(evt) {
     evt.preventDefault();
     modalFeedbackForm.classList.add("modal-show");
+    if (localStorageFullname) {
+        userFullname.value = localStorageFullname;
+        userEmail.focus();
+    } else {
+        userFullnam.focus();
+    }
+    
+    if (localStorageFullname) {
+        userFullname.value = localStorageFullname;
+    }
 });
 
 closeFeedbackForm.addEventListener("click", function (evt) {
@@ -35,3 +62,24 @@ closeFeedbackForm.addEventListener("click", function (evt) {
     modalFeedbackForm.classList.remove("modal-show");
 });
 
+form.addEventListener("submit", function (evt) {
+    evt.preventDefault();
+    if (!userFullname.value || !userEmail.value || !userMessage.value) {
+        evt.preventDefault();
+        modalFeedbackForm.classList.add("modal-error")
+    } else {
+        if (isStorageSupport) {
+            localStorage.setItem("userFullname", userFullname.value);
+        }
+    }
+});
+
+window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+        if (modalFeedbackForm.classList.contains("modal-show") || modalMapWindow.classList.contains("modal-show")) {
+            evt.preventDefault();
+            modalFeedbackForm.classList.remove("modal-show");
+            modalMapWindow.classList.remove("modal-show");
+        }
+    }
+});
