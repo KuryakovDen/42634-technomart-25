@@ -13,6 +13,7 @@ body {
 a {
     color:#ffffff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 img {
@@ -51,6 +52,7 @@ input[type="text"]:focus {
 }
 
 .main-menu-list {
+    margin-top: 5px;
     min-height: 521px;
 }
 
@@ -531,13 +533,14 @@ input[type="text"]:focus {
 
 .main-navigation-link a{
     display: block;
-    padding: 20px 31px;
+    padding: 20px 30px;
     font-weight: 400;
     font-style: normal;
     font-size: 17px;
     line-height: 17px;
     font-family: "Cuprum","Arial",sans-serif;
     text-decoration: none;
+    text-align: left;
     color: #fff;
 }
 
@@ -732,22 +735,24 @@ input[type="text"]:focus {
 .menu-gallary h2 {
     position: absolute;
     font-size: 36px;
-    font-weight: 550;
+    font-weight: bold;
     content: "";
     top: -10px;
     left: 24px;
     right: 502px;
     bottom: 210px;
+    letter-spacing: 0.025em;
 }
 
 .menu-gallary p {
     position: absolute;
     content: "";
-    top: 50px;
-    left: 24px;
-    right: 502px;
+    top: 45px;
+    left: 25px;
+    right: 515px;
     bottom: 210px;
     white-space: nowrap;
+    letter-spacing: 0.025em;
 }
 
 .open-catalog {
@@ -793,23 +798,40 @@ input[type="text"]:focus {
 
 .main-menu-item h3 {
     position: absolute;
-    top:0px;
-    left:23px;
-    right:166px;
-    bottom:75px;
+    top:-2px;
+    left: 23px;
+    right: 166px;
+    bottom: 75px;
     font-size: 24px;
-    font-weight: 550;
+    font-weight: 500;
     white-space: nowrap;
+    letter-spacing: 0.025em;
 }
 
 .main-menu-item a {
     display: block;
     position: absolute;
     font-size: 14px;
-    top:63px;
-    left:25px;
-    right:140px;
-    bottom:22px;
+    top: 63px;
+    left: 25px;
+    right: 140px;
+    bottom: 22px;
+    width: 135px;
+    height: 38px;
+    line-height: 38px;
+    background: rgba(0,0,0,0.1);
+    color: #ffffff;
+    text-align: center;
+}
+
+.menu-right-link {
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    top: 63px;
+    left: 21px;
+    right: 140px;
+    bottom: 22px;
     width: 135px;
     height: 38px;
     line-height: 38px;
@@ -892,8 +914,8 @@ input[type="text"]:focus {
     content: "";
     width: 75px;
     height: 61px;
-    top: 31px;
-    left: 200px;
+    top: 33px;
+    left: 198px;
     bottom: 27px;
     background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
@@ -906,7 +928,7 @@ input[type="text"]:focus {
     width: 78px;
     height: 62px;
     top: 31px;
-    left: 195px;
+    left: 192px;
     bottom: 27px;
     background-image: url("../img/icon-3.svg");
     background-size: 100%;
@@ -917,8 +939,8 @@ input[type="text"]:focus {
     content: "";
     width: 59px;
     height: 72px;
-    top: 31px;
-    left: 200px;
+    top: 25px;
+    left: 196px;
     right: 43px;
     bottom: 27px;
     background-image: url("../img/icon-4.svg");
@@ -957,6 +979,12 @@ input[type="text"]:focus {
     background-color: #f4f7f9;
 }
 
+
+.advantages-container h3 {
+    margin: 0;
+    padding: 0;
+}
+
 .header-perforator {
     display: flex;
     justify-content: flex-start;
@@ -979,9 +1007,11 @@ input[type="text"]:focus {
     justify-content: space-between;
     background-color: #f9f5f0;
     line-height: 1;
-    min-height: 90px;
+    min-height: 88px;
     padding-left: 30px;
-    margin-bottom: 20px;
+    margin-top: -2px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
 }
 
 .popular-header h2 {
@@ -996,11 +1026,15 @@ input[type="text"]:focus {
 .popular-header-link {
     width: 253px;
     margin-right: 25px;
-    margin-top: 25px;
+    margin-top: 22px;
 }
 
 .popular-content {
-    margin-top: 28px;
+    margin-top: 26px;
+}
+
+.popular-generators-header {
+    margin-top: 0;
 }
 
 .popular-generators-img li{
@@ -1043,6 +1077,10 @@ input[type="text"]:focus {
 
 .popular-generator-item:last-child {
     margin-right: 0px;
+}
+
+.popular-generator-link img:nth-child(4) {
+    margin-bottom: 20px;
 }
 
 .popular-generator-item:hover {
@@ -1188,6 +1226,11 @@ input[type="text"]:focus {
     border-radius: 4px;
     margin-bottom: 8px;
     color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 3px;
+    padding-bottom: 8px;
 }
 
 .buy-button:hover {
@@ -1216,12 +1259,17 @@ input[type="text"]:focus {
     position: absolute;
     top: 85px;
     left: 40px;
+    line-height: 1.29;
     background-color: white;
+    color: #32425c;
     width: 135px;
     height: 38px;
     font-size: 14px;
     border: solid 3px #63a63e;
     border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 8px;
 }
 
 .bookmarks-button:hover {
@@ -1253,13 +1301,14 @@ input[type="text"]:focus {
 .discount-price {
     position: absolute;
     content: "";
-    top: 270px;
-    left: 76px;
+    top: 268px;
+    left: 78px;
     right: 75px;
     bottom: 34px;
     color: #ffffff;
     font-size: 17px;
     font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bolder;
 }
 
 .crossed-outed-price {
@@ -1274,6 +1323,7 @@ input[type="text"]:focus {
     color: #999999;
     font-size: 17px;
     font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bolder;
 }
 
 .tabs {
@@ -1295,14 +1345,8 @@ input[type="text"]:focus {
     display: none;
 }
 
-.tabs-contol:nth-of-type(1):checked ~ .tabs-content li:nth-of-type(1) {
-    display: block;
-}
-
-.tabs-contol:nth-of-type(2):checked ~ .tabs-content li:nth-of-type(2) {
-    display: block;
-}
-
+.tabs-contol:nth-of-type(1):checked ~ .tabs-content li:nth-of-type(1),
+.tabs-contol:nth-of-type(2):checked ~ .tabs-content li:nth-of-type(2),
 .tabs-contol:nth-of-type(3):checked ~ .tabs-content li:nth-of-type(3) {
     display: block;
 }
@@ -1351,6 +1395,13 @@ input[type="text"]:focus {
     background-color: #ffffff;
     color: #212a3a;
 }
+
+/*
+.tabs input[type="radio"]:checked {
+    background-color: #ffffff;
+    color: #212a3a;
+}
+*/
 
 .perforator-info {
     display: flex;
@@ -1447,6 +1498,9 @@ input[type="text"]:focus {
     line-height: 1.06;
     padding: 0;
     margin: 0;
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 0.025em;
 }
 
 .perforator-item h3 {
@@ -1456,7 +1510,9 @@ input[type="text"]:focus {
     font-size: 18px;
     font-weight: bold;
     line-height: 1.11;
-    margin-bottom: 18px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
