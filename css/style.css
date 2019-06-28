@@ -977,12 +977,22 @@ input[type="text"]:focus {
 .advantages-container {
     min-height: 522px;
     background-color: #f4f7f9;
+    box-sizing: border-box;
 }
 
 
 .advantages-container h3 {
     margin: 0;
     padding: 0;
+    top: 68px;
+}
+
+.advantages-inside-container {
+    padding-top: 68px;
+}
+
+.advantages-inside-container h3 {
+    margin-top: -5px;
 }
 
 .header-perforator {
@@ -1046,6 +1056,7 @@ input[type="text"]:focus {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    margin-bottom: 65px;
 }
 
 .generators-img-container {
@@ -1328,10 +1339,8 @@ input[type="text"]:focus {
 
 .tabs {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 940px;
-    margin-top: 28px;
+    margin-top: 75px;
 }
 
 .tabs-list,
@@ -1345,6 +1354,10 @@ input[type="text"]:focus {
     display: none;
 }
 
+.tabs-content img {
+    margin-left: 200px;
+}
+
 .tabs-contol:nth-of-type(1):checked ~ .tabs-content li:nth-of-type(1),
 .tabs-contol:nth-of-type(2):checked ~ .tabs-content li:nth-of-type(2),
 .tabs-contol:nth-of-type(3):checked ~ .tabs-content li:nth-of-type(3) {
@@ -1353,6 +1366,8 @@ input[type="text"]:focus {
 
 .tabs-list {
     display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
     flex-direction: column;
     position: relative;
 }
@@ -1391,17 +1406,73 @@ input[type="text"]:focus {
     color: #ffffff;
 }
 
+/*
 .tabs-list label:active {
     background-color: #ffffff;
     color: #212a3a;
 }
-
-/*
-.tabs input[type="radio"]:checked {
-    background-color: #ffffff;
-    color: #212a3a;
-}
 */
+
+.text-service-wrapper {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 275px;
+    min-height: 153px;
+    margin-left: 80px;
+}
+
+.text-service-wrapper-1::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 152px;
+    width: 468px;
+    height: 261px;
+    background-image: url("../img/delivery.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-service-wrapper-2::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 152px;
+    width: 389px;
+    height: 283px;
+    background-image: url("../img/guarantee.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-service-wrapper-3::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 152px;
+    width: 465px;
+    height: 285px;
+    background-image: url("../img/credit.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-service-wrapper h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+    line-height: 0.67;
+    text-align: left;
+    color: #32425c;
+    padding-top: 3px;
+    margin-bottom: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 .perforator-info {
     display: flex;
@@ -1591,29 +1662,31 @@ input[type="text"]:focus {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     text-align: left;
+    padding-top: 20px;
 }
 
 .tabs-content-text {
+    display: block;
     width: 275px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     text-align: left;
+    padding: 0;
 }
 
-/*
-.delivery-text,
-.guarantee-text,
-.credit-text,
+.tabs-content-text p {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-top: 80px;
+}
+
 .submit-task {
-    display: none;
-}
-*/
-
-/*
-.tabs-list li:checked ~ .delivery-text {
     display: block;
+    margin-top: 5px;
+    margin-left: 80px;
+    width: 195px;
 }
-*/
 
 .contacts img {
     padding: 0;
