@@ -100,8 +100,14 @@ input[type="text"]:focus {
 } 
 
 .navigation-equipment {
-    padding-top: 40px;
-    padding-left: 23px;
+    padding-top: 37px;
+    padding-left: 25px;
+    padding-right: 7px;
+}
+
+.navigation-usual {
+    padding-left: 3px;
+    padding-right: 7px;
 }
 
 .button {
@@ -1350,6 +1356,10 @@ input[type="text"]:focus {
     margin: 0;
 }
 
+.tabs-content {
+    margin-top: -5px;
+}
+
 .tabs-content li {
     display: none;
 }
@@ -1370,6 +1380,7 @@ input[type="text"]:focus {
     align-content: flex-start;
     flex-direction: column;
     position: relative;
+    margin-top: -5px;
 }
 
 .tabs-list::after {
@@ -1382,7 +1393,6 @@ input[type="text"]:focus {
     background-image: url("../img/shadow.png");
     background-size: 100%;
     background-position: center;
-
 }
 
 .tabs-list label {
@@ -1425,7 +1435,7 @@ input[type="text"]:focus {
 .text-service-wrapper-1::after {
     position: absolute;
     content: "";
-    top: 10px;
+    top: 22px;
     left: 152px;
     width: 468px;
     height: 261px;
@@ -1634,7 +1644,7 @@ input[type="text"]:focus {
 }
 
 .technomart-info {
-    min-height: 535px;
+    min-height: 537px;
 }
 
 .about-company-description-1,
@@ -1646,7 +1656,7 @@ input[type="text"]:focus {
     padding: 0;
     margin: 0;
     line-height: 1.85;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .about-company-description-1,
@@ -1662,7 +1672,11 @@ input[type="text"]:focus {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     text-align: left;
-    padding-top: 20px;
+    padding-top: 25px;
+}
+
+.about-company-description-2 {
+    margin-top: 5px;
 }
 
 .tabs-content-text {
@@ -2042,9 +2056,9 @@ input[type="text"]:focus {
     position: relative;
     padding: 0;
     margin: 0;
-    margin-left: 40px;
+    margin-left: 35px;
     list-style-type: none;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .company-list li {
@@ -2096,7 +2110,7 @@ input[type="text"]:focus {
 }
 
 .about-company-item {
-    margin-bottom: 86px;
+    margin-bottom: 80px;
     margin-top: 80px;
 }
 
@@ -2106,11 +2120,11 @@ input[type="text"]:focus {
 }
 
 .about-company-link-1 {
-    margin-top: 38px;
+    margin-top: 30px;
 }
 
 .about-company-link-2 {
-    margin-top: 40px;
+    margin-top: 34px;
 }
 
 .feedback-link {
@@ -2388,13 +2402,14 @@ input[type="text"]:focus {
 
 .footer-navigation-item:first-child {
     width: 322px;
-    margin-right: 30px;
+    margin-right: 38px;
     line-height: 1.33;
     white-space: nowrap;
 }
 
 .footer-navigation-item:first-child p {
-    margin-top: 32px;
+    margin-top: 34px;
+    margin-left: 4px;
 }
 
 .footer-navigation-item:last-child {
@@ -2409,6 +2424,7 @@ input[type="text"]:focus {
     align-items: center;
     background-color: #293449;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .footer-feedback p {
@@ -2421,6 +2437,9 @@ input[type="text"]:focus {
     display: flex;
     justify-content: space-between;
     width: 940px;
+    box-sizing: border-box;
+    padding-right: 15px;
+    margin-top: 7px;
 }
 
 .logo-footer {
@@ -2447,8 +2466,8 @@ input[type="text"]:focus {
 .footer-address-telephone {
     margin:0;
     padding: 0;
-    margin-top: 32px;
-    margin-bottom: 53px;
+    margin-left: 2px;
+    margin-bottom: 50px;
 }
 
 .navigation-list a:hover, 
@@ -2467,6 +2486,8 @@ input[type="text"]:focus {
 .social-networks {
     display: flex;
     justify-content: space-between;
+    margin-right: 55px;
+    margin-left: 40px;
 }
 
 .social-networks a {
@@ -2504,6 +2525,7 @@ input[type="text"]:focus {
 
 .copyright {
     color: #ffffff;
+    margin-right: 73px;
 }
 
 .site-developer {
