@@ -53,7 +53,7 @@ input[type="text"]:focus {
     margin: 0;
     padding: 0;
     min-height: 60px;
-    width: 905px;
+    width: 890px;
 }
 
 .main-menu-list {
@@ -165,6 +165,7 @@ input[type="text"]:focus {
     padding: 0;
     margin-left: 50px;
     margin-bottom: 28px;
+    white-space: nowrap;
 }
 
 .phone-wrapper {
@@ -238,7 +239,7 @@ input[type="text"]:focus {
 .main-header {
     background-color: #f4f7f9;
     padding-bottom: 59px;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
 .header-logo {
@@ -365,9 +366,6 @@ input[type="text"]:focus {
     height: 17px;
     top: 12px;
     left: 17px;
-    background-image: url("../img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .header-additional-navigation {
@@ -609,8 +607,6 @@ input[type="text"]:focus {
 */
 
 .entry-links:last-child a {
-    width: 150px;
-    height: 45px;
     padding-top: 15px;
     box-sizing: border-box;
 }
@@ -625,7 +621,6 @@ input[type="text"]:focus {
 
 .entry-links-2 {
     display: flex;
-    width: 150px;
     margin-left: 13px;
     margin-bottom: 57px;
     margin-right: 5px;
@@ -636,10 +631,6 @@ input[type="text"]:focus {
     margin-right: 6px;
 }
 
-.entry-registration {
-    padding: 40px;
-}
-
 .entry-links a {
     display: block;
     background-color: white;
@@ -647,17 +638,18 @@ input[type="text"]:focus {
     font-size: 21px;
     line-height: 1;
     text-align: center;
-    width: 121px;
-    height: 45px;
-    margin: 0px;
+    margin: 0;
 }
 
 .entry-links-1 a {
-    margin-right: 10px;
+    margin-left: 20px;
+    padding-right: 25px;
+    padding-left: 15px;
 }
 
 .entry-links-2 a {
-    padding: 20px 20px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .entry-links-1:hover path,
@@ -746,7 +738,6 @@ input[type="text"]:focus {
 }
 
 .entry-links a:first-child {
-    width: 121px;
     height: 45px;
     padding-top: 15px;
     box-sizing: border-box;
@@ -1095,6 +1086,7 @@ input[type="text"]:focus {
 .popular-header {
     display: flex;
     justify-content: space-between;
+    width: 940px;
     background-color: #f9f5f0;
     line-height: 1;
     min-height: 88px;
@@ -1485,18 +1477,24 @@ input[type="text"]:focus {
     background-color: #405069;
 }
 
+.tabs-contol:nth-of-type(1):checked ~ .tabs-list li:nth-of-type(1) label,
+.tabs-contol:nth-of-type(2):checked ~ .tabs-list li:nth-of-type(2) label,
+.tabs-contol:nth-of-type(3):checked ~ .tabs-list li:nth-of-type(3) label {
+    background-color: #ffffff;
+    color: #000000;
+}
+
 .tabs-list label:hover {
     box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
     background-color: #293449;
     color: #ffffff;
 }
 
-/*
+
 .tabs-list label:active {
     background-color: #ffffff;
     color: #212a3a;
 }
-*/
 
 .text-service-wrapper {
     position: relative;
@@ -1581,6 +1579,7 @@ input[type="text"]:focus {
 }
 
 .perforator-info-container {
+    width: 940px;
     margin-bottom: 11px;
 }
 
@@ -1659,7 +1658,7 @@ input[type="text"]:focus {
     padding: 0;
     margin: 0;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0.025em;
 }
 
@@ -1899,13 +1898,6 @@ input[type="text"]:focus {
 .form-sorting-top:active path,
 .form-sorting-bottom:active path {
     fill: #ee3643;
-}
-
-.private-office:hover path,
-.private-office:focus path
-.private-office:hover g,
-.private-office:focus g {
-   fill:#293449;
 }
 
 /*
@@ -2556,7 +2548,10 @@ input[type="text"]:focus {
     font-size: 14px;
 }
 
-
+input:focus + label,
+input:focus + label {
+    border: 2px solid #3bbce3;
+}
 
 /* Footer*/
 
@@ -2587,7 +2582,7 @@ input[type="text"]:focus {
     width: 322px;
     margin-right: 38px;
     line-height: 1.33;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .footer-navigation-item:first-child p {
@@ -2651,6 +2646,7 @@ input[type="text"]:focus {
     padding: 0;
     margin-left: 2px;
     margin-bottom: 50px;
+    white-space: nowrap;
 }
 
 .navigation-list a:hover, 
