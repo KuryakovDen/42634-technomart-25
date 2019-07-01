@@ -163,8 +163,8 @@ input[type="text"]:focus {
     line-height: 1.44;
     margin: 0;
     padding: 0;
-    margin-left: 50px;
-    margin-bottom: 28px;
+    margin-left: 53px;
+    margin-bottom: 25px;
     white-space: nowrap;
 }
 
@@ -358,6 +358,32 @@ input[type="text"]:focus {
 
 .header-form input[type="search"]:hover {
     background-color: #212a3a;
+}
+
+.header-form input[type="search"]:focus {
+    background-color: #ffffff;
+}
+
+.header-form input[type="search"]:focus::placeholder {
+    color: #000000;
+}
+
+.header-form path,
+.header-form path {
+   fill: #ffffff;
+   fill-opacity: 0.3;
+}
+
+
+.header-form:hover path,
+.header-form:focus path {
+   fill: #ffffff;
+   fill-opacity: 1;
+}
+
+.header-form:focus path {
+   fill: #ee3643;
+   fill-opacity: 1;
 }
 
 .search-label {
@@ -741,6 +767,8 @@ input[type="text"]:focus {
     height: 45px;
     padding-top: 15px;
     box-sizing: border-box;
+    margin-right: -7px;
+    margin-left: 0;
 }
 
 /* Main */
@@ -813,6 +841,10 @@ input[type="text"]:focus {
     bottom: 210px;
     white-space: nowrap;
     letter-spacing: 0.025em;
+}
+
+.menu-gallary img:last-child {
+    display: none;
 }
 
 .img-hidden {
@@ -1187,6 +1219,8 @@ input[type="text"]:focus {
     padding: 0;
     margin: 0;
     justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 7px;
 }
 
 .pagination-list a:hover{
@@ -1204,7 +1238,7 @@ input[type="text"]:focus {
 }
 
 .breadcrumbs-container {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: -15px;
     margin-bottom: 20px;
 }
@@ -1374,7 +1408,11 @@ input[type="text"]:focus {
 .perforator-item:hover .button-actions {
     display: block;
 }
-
+/*
+.perforator-item:hover img:first-child {
+    display: none;
+}
+*/
 .perforator-img {
     padding: 0;
     margin: 0;
@@ -1463,17 +1501,17 @@ input[type="text"]:focus {
 }
 
 .tabs-list label {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    display: block;
     padding-left: 23px;
+    padding-top: 15px;
     width: 240px;
-    min-height: 60px;
+    min-height: 61px;
     color: #ffffff;
     box-sizing: border-box;
     font-size: 21px;
     cursor: pointer;
     line-height: 1.43;
+    letter-spacing: 0.025em;
     background-color: #405069;
 }
 
@@ -1481,7 +1519,8 @@ input[type="text"]:focus {
 .tabs-contol:nth-of-type(2):checked ~ .tabs-list li:nth-of-type(2) label,
 .tabs-contol:nth-of-type(3):checked ~ .tabs-list li:nth-of-type(3) label {
     background-color: #ffffff;
-    color: #000000;
+    color: #32425c;
+    font-weight: bold;
 }
 
 .tabs-list label:hover {
@@ -1559,7 +1598,6 @@ input[type="text"]:focus {
 
 .perforator-info {
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: #f4f7f9;
     min-height: 260px;
@@ -1580,7 +1618,7 @@ input[type="text"]:focus {
 
 .perforator-info-container {
     width: 940px;
-    margin-bottom: 11px;
+    margin-bottom: 15px;
 }
 
 .make-order {
@@ -1604,7 +1642,7 @@ input[type="text"]:focus {
 }
 
 .pagination-item {
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .pagination-item a:hover {
@@ -1641,7 +1679,7 @@ input[type="text"]:focus {
 .perforator-item {
     position: relative;
     margin-right: 20px;
-    margin-bottom: 21px;
+    margin-bottom: 19px;
     min-height: 318px;
     width: 218px;
     border: solid 1px #eaeaea;
@@ -2085,6 +2123,7 @@ input[type="text"]:focus {
     background-image: url("../img/checkbox-on.svg");
     background-size: 100%;
     background-position: center;
+    outline: #3bbce3;
 }
 
 .filter-paragraph {
@@ -2215,6 +2254,7 @@ input[type="text"]:focus {
     margin-left: 35px;
     list-style-type: none;
     margin-top: 15px;
+    letter-spacing: 0.025em;
 }
 
 .company-list li {
