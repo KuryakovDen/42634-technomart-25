@@ -586,7 +586,7 @@ input[type="text"]:focus {
 
 .main-navigation-link a{
     display: block;
-    padding: 20px 30px;
+    padding: 20px 23px;
     font-weight: 400;
     font-style: normal;
     font-size: 17px;
@@ -1204,6 +1204,7 @@ input[type="text"]:focus {
 
 .popular-generator-item:active {
     box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+    opacity: 0.3;
 }
 
 .popular-perforators {
@@ -2682,11 +2683,12 @@ input:focus + label {
 }
 
 .footer-address-telephone {
+    width: 325px;
     margin:0;
     padding: 0;
     margin-left: 2px;
     margin-bottom: 50px;
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .navigation-list a:hover, 
