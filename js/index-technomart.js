@@ -9,7 +9,7 @@ var closeFeedbackForm = document.querySelector(".button-feedback");
 
 var perforatorBuy = document.querySelector(".perforator-buy");
 var modalCart = document.querySelector(".modal-cart-wrapper");
-var closeModalCart = document.querySelector(".button-map");
+var closeModalFeedback = document.querySelector(".button-feedback");
 
 var userFullname = modalFeedbackForm.querySelector("[name=fullname]");
 var userEmail = modalFeedbackForm.querySelector("[name=email]");
@@ -20,6 +20,7 @@ var localStorageFullname = localStorage.getItem("userFullname");
 
 var isStorageSupport = true;
 var localStorageFullname = "";
+
 
 try {
     localStorageFullname = localStorage.getItem("userFullname");
@@ -42,7 +43,7 @@ closeMapWindow.addEventListener("click", function (evt) {
 
 /*2*/
 
-feedbackLink.addEventListener("click", function(evt) {
+feedbackLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalFeedbackForm.classList.add("modal-show");
     if (localStorageFullname) {
@@ -80,6 +81,27 @@ window.addEventListener("keydown", function(evt) {
             evt.preventDefault();
             modalFeedbackForm.classList.remove("modal-show");
             modalMapWindow.classList.remove("modal-show");
+        }
+    }
+});
+
+/*3*/
+
+perforatorBuy.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modalCart.classList.add("modal-show");
+});
+
+closeModalFeedback.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modalCart.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+        if (modalCart.classList.contains("modal-show")) {
+            evt.preventDefault();
+            modalCart.classList.remove("modal-show");
         }
     }
 });
