@@ -25,6 +25,7 @@ img {
 svg {
     padding: 0;
     margin: 0;
+    outline: none;
 }
 
 input[type="text"]:hover {
@@ -373,6 +374,12 @@ input[type="text"]:focus {
     background-color: #ffffff;
 }
 
+.header-form input[type="search"]:focus + label path {
+    outline: none;
+    fill: #ee3643;
+    fill-opacity: 1;
+}
+
 .header-form input[type="search"]:focus::placeholder {
     color: #000000;
 }
@@ -384,11 +391,6 @@ input[type="text"]:focus {
 
 .header-form:hover path {
    fill: #ffffff;
-   fill-opacity: 1;
-}
-
-.header-form path:focus {
-   fill: #ee3643;
    fill-opacity: 1;
 }
 
