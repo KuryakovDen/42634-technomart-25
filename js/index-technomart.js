@@ -18,9 +18,9 @@ var userMessage = modalFeedbackForm.querySelector("textarea");
 var form = modalFeedbackForm.querySelector(".form-feedback");
 var localStorageFullname = localStorage.getItem("userFullname");
 
-var perforatorBuy = document.querySelector(".perforator-buy");
-var modalCart = document.querySelector(".modal-cart");
-var closeModalCart = document.querySelector(".button-feedback");
+var perforatorBuySecond = document.querySelector(".perforator-buy");
+var modalCartFeedback = document.querySelector(".modal-cart");
+var closeModalCartSecond = document.querySelector(".button-feedback");
 
 var isStorageSupport = true;
 var localStorageFullname = "";
@@ -91,21 +91,21 @@ window.addEventListener("keydown", function(evt) {
 
 /*3*/
 
-perforatorBuy.addEventListener("click", function(evt) {
+perforatorBuySecond.addEventListener("click", function(evt) {
     evt.preventDefault();
-    modalCart.classList.add("modal-show");
+    modalCartFeedback.classList.add("modal-show");
 });
 
-closeModalCart.addEventListener("click", function (evt) {
+closeModalCartSecond.addEventListener("click", function (evt) {
     evt.preventDefault();
-    modalCart.classList.remove("modal-show");
+    modalCartFeedback.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
-        if (modalCart.classList.contains("modal-show")) {
+        if (modalCartFeedback.classList.contains("modal-show")) {
             evt.preventDefault();
-            modalCart.classList.remove("modal-show");
+            modalCartFeedback.classList.remove("modal-show");
         }
     }
 });
