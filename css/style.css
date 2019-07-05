@@ -8,6 +8,7 @@ body {
     font-family: "Cuprum", Arial, sans-serif;
     color: #000000;
     background-color: #ffffff;
+    min-width: 960px;
 }
 
 a {
@@ -376,20 +377,17 @@ input[type="text"]:focus {
     color: #000000;
 }
 
-.header-form path,
 .header-form path {
    fill: #ffffff;
    fill-opacity: 0.3;
 }
 
-
-.header-form:hover path,
-.header-form:focus path {
+.header-form:hover path {
    fill: #ffffff;
    fill-opacity: 1;
 }
 
-.header-form:focus path {
+.header-form path:focus {
    fill: #ee3643;
    fill-opacity: 1;
 }
@@ -715,37 +713,6 @@ input[type="text"]:focus {
     opacity: 0.3;
     color: rgba(50, 66, 92, 0.3);
 }
-
-/*
-.private-office-name::before {
-    position: absolute;
-    content: "";
-    top: 13px;
-    left: 13px;
-    right: 266px;
-    bottom: 14px;
-    width: 20px;
-    height: 18px;
-    background-image: url("../img/icon-user.svg");
-    background-size: 100%;
-    background-position: center;
-}
-
-
-.private-office-name::after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    left: 269px;
-    right: 10px;
-    bottom: 14px;
-    width: 20px;
-    height: 17px;
-    background-image: url("../img/icon-logout.svg");
-    background-size: 100%;
-    background-position: center;
-}
-*/
 
 .entry-links a:active {
     opacity: 0.3;
